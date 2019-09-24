@@ -1,0 +1,27 @@
+.header__lang-ru {
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    left: 1106px;
+    top: 17px;
+    font-family: Inter;
+    font-size: 24px;
+    line-height: 23px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.header__lang-en {
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    left: 1154px;
+    top: 17px;
+    font-family: Inter;
+    font-size: 24px;
+    line-height: 23px;
+    text-align: right;
+    color: #FFFFFF;
+    text-decoration-line: none;
+}

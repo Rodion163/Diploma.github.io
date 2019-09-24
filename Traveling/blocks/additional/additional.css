@@ -1,0 +1,13 @@
+@import url('../additional/__content-title/__content-title.css');
+@import url('../additional/__content-subtitle/__content-subtitle.css');
+@import url('../additional/__container/__container.css');
+.additional {
+    position: absolute;
+    top: 6591px;
+    width: 1184px;
+    height: 542px;
+    display: flex;
+    flex-direction: column;
+    left: 48px;
+    align-items: center;
+}

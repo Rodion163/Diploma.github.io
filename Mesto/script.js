@@ -348,4 +348,8 @@ const newCardPopup = new NewCardPopup(
     cardName,
     cardLink,
     addBtn
+<<<<<<< HEAD
 );
+=======
+);
+>>>>>>> master

@@ -1,0 +1,11 @@
+@import url('../photo-grid/__item/__item.css');
+.photo-grid {
+    position: absolute;
+    width: 1184px;
+    height: 596px;
+    left: 48px;
+    top: 1689px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

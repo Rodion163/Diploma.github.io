@@ -1,0 +1,12 @@
+@import url('../video/__content-title/__content-title.css');
+@import url('../video/__content-subtitle/__content-subtitle.css');
+@import url('../video/__container/__container.css');
+.video {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 48px;
+    top: 5841px;
+    width: 1184px;
+}

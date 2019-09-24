@@ -1,0 +1,12 @@
+@import url('../lead/__title/__title.css');
+@import url('../lead/__subtitle/__subtitle.css');
+@import url('../lead/__image/__image.css');
+@import url('../lead/__caption/__caption.css');
+
+.lead {
+    position: absolute;
+    width: 985px;
+    height: 950px;
+    top: 130px;
+    left: 147px;
+}

@@ -1,0 +1,214 @@
+@media (width: 768px) {
+    .header__logo {
+        max-width: 142px;
+    }
+    .header__lang {
+        font-size: 1.5rem;
+    }
+    .lead {
+        margin: 48px auto;
+    }
+    .lead__title {
+        font-size: 6rem;
+    }
+    .lead__subtitle {
+        font-size: 1.875rem;
+        line-height: 36px;
+        margin-top: 8px;
+        max-width: 720px;
+    }
+    .lead__image {
+        margin: 32px auto 0;
+    }
+    .lead__caption {
+        margin-left: 1rem;
+        font-size: 0.625rem;
+    }
+    .intro {
+        margin: 64px auto;
+    }
+    .intro__title {
+        font-size: 3.375rem;
+        line-height: 59px;
+    }
+    .intro__cocntent-row_left-text {
+        line-height: 24px;
+    }
+    .intro__text {
+        font-size: calc(14px - 1px);
+        line-height: 20px;
+    }
+    .photo-grid {
+        margin: 97px auto 16px;
+        width: 720px;
+    }
+    .photo-grid__item {
+        padding-bottom: 16px;
+        min-width: 352px;
+        min-height: 234px;
+    }
+    .places {
+        max-width: 720px;
+    }
+    .place {
+        margin-top: 81px;
+    }
+    .part1__title {
+        font-size: 2.625rem;
+        line-height: 46px;
+        min-width: 340px;
+    }
+    .part1__website {
+        position: relative;
+        width: 352px;
+    }
+    .part2 {
+        margin-top: 32px;
+    }
+    .part2__image {
+        height: 340px;
+        width: 340px;
+        margin: 0 auto;
+    }
+    .part2__paragraph {
+        margin: 24px auto 0;
+        font-size: 1rem;
+        padding: 0 16px;
+    }
+    .part__paragraph_first {
+        margin: 0;
+        padding-bottom: 24px;
+    }
+    .part__paragraph_second {
+        margin: 0;
+    }
+    .video {
+        margin: 48px auto 0;
+        max-width: 720px;
+    }
+    .video__content-title {
+        font-size: 2.625rem;
+        line-height: 46px;
+        padding-bottom: 16px;
+    }
+    .video__content-subtitle {
+        font-size: 1.5rem;
+        line-height: 34px;
+        margin: 0;
+    }
+    .video__container {
+        margin-top: 56px;
+        max-height: 392px;
+        min-width: 720px;
+    }
+    .video__container_item {
+        max-width: 352px;
+        min-height: 192px;
+        padding-bottom: 8px;
+    }
+    .item__item-bg {
+        width: 100%;
+        min-height: 192px;
+    }
+    .item__icon-play {
+        max-height: 41px;
+        max-width: 41px;
+        margin: 0;
+        padding: 16px 16px;
+    }
+    .item__duration {
+        font-size: 12px;
+        line-height: 13px;
+        margin: 80px 16px 0;
+    }
+    .item__title {
+        font-size: 1.5rem;
+        line-height: 26px;
+        margin: 100px 16px 8px;
+    }
+    .item__subtitle {
+        font-size: 14px;
+        line-height: 15px;
+        margin: 0;
+        padding: 160px 16px;
+        min-width: 256px;
+    }
+    .additional {
+        display: none;
+    }
+    .emblem {
+        display: none;
+    }
+    .barentsburg {
+        display: none;
+    }
+    .comments {
+        margin: 64px 16px 0;
+    }
+    .comments__content-title {
+        font-size: 2.625rem;
+        line-height: 46px;
+        max-width: 660px;
+    }
+    .comments__content-subtitle {
+        font-size: 1.5rem;
+        line-height: 34px;
+        margin: 16px 0 0;
+        max-width: 640px;
+    }
+    .comments__container {
+        flex-direction: column;
+        margin: 34px auto 0;
+    }
+    .container_comment-image {
+        margin: 34px auto 0;
+        border-radius: 50%;
+    }
+    .container_comment-quote {
+        margin: 24px auto 0;
+        font-size: 1rem;
+        line-height: 23px;
+        order: 2;
+    }
+    .container_comment-author {
+        margin: 17px auto 0;
+        font-size: 14px;
+        line-height: 24px;
+        order: 1;
+    }
+    .cover {
+        margin: 102px 0 0;
+    }
+    .cover__image {
+        width: 100%;
+        min-height: 500px;
+    }
+    .cover__text_title {
+        margin: 165px auto 0;
+        min-width: 720px;
+    }
+    .cover__text_subtitle {
+        font-size: 1.125rem;
+        line-height: 26px;
+        margin: 45px auto 0;
+        width: 382px;
+    }
+    .footer {
+        display: flex;
+        max-width: 722px;
+        padding-bottom: 24px;
+    }
+    .footer__link {
+        margin: 0;
+    }
+    .footer__link_item {
+        font-size: 1rem;
+        line-height: 27px;
+        margin: 0;
+    }
+    .footer__copyright {
+        margin-left: 74px;
+        min-width: 183px;
+        margin: 0;
+    }
+}

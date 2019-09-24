@@ -1,0 +1,200 @@
+@media (width: 1024px) {
+    /*  .header__logo {
+        max-width: 142px;
+    }
+    .header__lang {
+        font-size: 1.125rem;
+    }
+    .lead {
+        margin: 48px auto;
+    }
+    .lead__title {
+        font-size: 2.5rem;
+    }
+    .lead__subtitle {
+        font-size: 1rem;
+        line-height: 23px;
+        margin-top: 8px;
+    }
+    .lead__image {
+        margin: 32px auto 0;
+    }
+    .lead__caption {
+        margin-left: 1rem;
+        font-size: 0.625rem;
+    }
+    .intro {
+        margin: 64px auto;
+    }
+    .intro__title {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+    .intro__cocntent-row_left-text {
+        font-size: 1rem;
+        line-height: 169%;
+    }
+    .intro__text {
+        font-size: calc(13px - 1px);
+        line-height: 19px;
+    }
+    .photo-grid {
+        margin: 64px auto 16px;
+    }
+    .photo-grid__item {
+        padding-bottom: 8px;
+    }
+    .place {
+        max-width: 984px;
+        margin-top: 48px;
+    }
+    .part1__title {
+        font-size: 2rem;
+        line-height: 35px;
+        margin: 0 auto;
+        width: 288px;
+    }
+    .part1__website {
+        display: none;
+    }
+    .part2 {
+        flex-wrap: wrap;
+        margin-top: 32px;
+    }
+    .part2__image {
+        height: 320px;
+        margin: 0 auto;
+    }
+    .part2__paragraph {
+        margin: 24px auto 0;
+        font-size: 1rem;
+        padding: 0 16px;
+    }
+    .part__paragraph_first {
+        margin: 0;
+        padding-bottom: 24px;
+    }
+    .part__paragraph_second {
+        margin: 0;
+    }
+    .video {
+        margin: 48px auto 0;
+        max-width: 288px;
+    }
+    .video__content-title {
+        font-size: 2rem;
+        line-height: 35px;
+        padding-bottom: 16px;
+    }
+    .video__content-subtitle {
+        font-size: 1rem;
+        line-height: 23px;
+        margin: 0;
+    } */
+    .video__container {
+        margin: 73px auto 0;
+        max-height: 288px;
+        max-width: 928px;
+    }
+    .video__container_item {
+        width: 100%;
+        min-height: 288px;
+        max-width: 456px;
+    }
+    .item__item-bg {
+        width: 100%;
+        min-height: 288px;
+    }
+    .item__icon-play {
+        max-height: 41px;
+        max-width: 41px;
+        margin: 0;
+        padding: 16px 16px;
+    }
+    .item__duration {
+        font-size: 12px;
+        line-height: 13px;
+        margin: 125px 30px 0;
+    }
+    .item__title {
+        font-size: 1.5rem;
+        line-height: 26px;
+        margin: 149px 30px 18px;
+    }
+    .item__subtitle {
+        font-size: 14px;
+        line-height: 15px;
+        margin: 0;
+        padding: 240px 30px;
+        min-width: 256px;
+    }
+    /*  .additional {
+        display: none;
+    }
+    .emblem {
+        display: none;
+    }
+    .barentsburg {
+        display: none;
+    }
+    .comments {
+        margin: 64px 16px 0;
+    }
+    .comments__content-title {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+    .comments__content-subtitle {
+        font-size: 1rem;
+        line-height: 23px;
+        margin: 16px 0 0;
+        max-width: 288px;
+    }*/
+    .comments__container {
+        margin-top: 72px;
+        margin-left: 48px;
+        min-width: 925px;
+    }
+    .comments__container_comment {
+        max-width: 296px;
+    }
+    /*  .container_comment-image {
+        margin: 34px auto 0;
+        border-radius: 50%;
+    }
+    .container_comment-quote {
+        margin: 24px auto 0;
+        font-size: 1rem;
+        line-height: 23px;
+        order: 2;
+    }
+    .container_comment-author {
+        margin: 17px auto 0;
+        font-size: 14px;
+        line-height: 24px;
+        order: 1;
+    }
+    .cover {
+        margin: 64px 0 0;
+    }*/
+    .cover__image {
+        height: 562px;
+    }
+    .cover__text {
+        margin: 0;
+        height: 562px;
+    }
+    .cover__text_title {
+        margin: 211px auto 0;
+    }
+    .cover__text_subtitle {
+        margin-bottom: 48px;
+    }
+    .footer {
+        display: flex;
+        max-width: 929px;
+    }
+    .footer__copyright {
+        margin-left: 163px;
+    }
+}

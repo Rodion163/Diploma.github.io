@@ -1,0 +1,12 @@
+@import url('..//cover/__image/__image.css');
+@import url('..//cover/__title/__title.css');
+@import url('..//cover/__subtitle/__subtitle.css');
+.cover {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 1184px;
+    height: 594px;
+    left: 48px;
+    top: 7931px;
+}

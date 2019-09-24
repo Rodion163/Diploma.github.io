@@ -1,0 +1,11 @@
+.additional__content-title {
+    position: relative;
+    width: 800px;
+    height: 69px;
+    font-family: Inter;
+    font-size: 72px;
+    line-height: 65px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
