@@ -4,6 +4,9 @@
 @import url('../lead/__caption/__caption.css');
 
 .lead {
-    max-width: 984px;
-    margin: 42px auto 0;
+    position: absolute;
+    width: 985px;
+    height: 950px;
+    top: 130px;
+    left: 147px;
 }

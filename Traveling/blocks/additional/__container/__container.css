@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 1184px;
+    height: 330px;
     margin-top: 72px;
 }
 
@@ -11,12 +12,13 @@
     display: flex;
     flex-direction: column;
     width: 284px;
+    height: 330px;
     border-radius: 5px;
-    position: relative;
 }
 
 .container__item_item-bg {
     width: 284px;
+    height: 330px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     opacity: 0.5;
@@ -25,6 +27,7 @@
 .container__item_heading {
     position: absolute;
     width: 248px;
+    height: 55px;
     font-family: Inter;
     font-size: 27px;
     line-height: 29px;
@@ -40,6 +43,5 @@
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
-    bottom: 30px;
-    left: 18px;
+    margin: 226px 18px 30px;
 }

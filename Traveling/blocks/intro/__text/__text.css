@@ -1,17 +1,14 @@
 .intro__text {
-    max-width: 383px;
+    width: 383px;
+    height: 93px;
+    margin-top: 35px;
     font-family: Inter;
     font-size: 13px;
     line-height: 20px;
     color: #FFFFFF;
-    list-style: none;
-    margin: 35px 0 0;
-    padding: 0;
+    white-space: pre-line;
 }
 
-.intro__text-item {
+.boldtext {
     font-weight: bold;
-}
-.intro__text-item-count {
-    font-weight: normal;
 }

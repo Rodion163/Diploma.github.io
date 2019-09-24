@@ -1,6 +1,9 @@
 @import url('../emblem/__city/__city.css');
 @import url('../emblem/__title/__title.css');
 .emblem {
-    margin: 82px auto 0;
+    position: absolute;
     width: 1184px;
+    height: 523px;
+    left: 48px;
+    top: 8607px;
 }

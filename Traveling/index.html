@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная страница</title>
     <link rel="stylesheet" href="styles/styles.css">
@@ -13,9 +13,9 @@
     <div class="page">
         <header class="header">
             <img src="images/logo.svg" class="header__logo logo">
-            <div class="header__langs">
-                <a href="#" class="header__lang header__lang_selected">Ru</a>
-                <a href="#" class="header__lang">En</a>
+            <div class="header__lang">
+                <a href="#" class="header__lang-ru">Ru</a>
+                <a href="#" class="header__lang-en">En</a>
             </div>
         </header>
         <main class="content">
@@ -27,6 +27,7 @@
             </section>
             <section class="intro">
                 <h2 class="intro__title">Чего мы там не видели?</h2>
+                <p class="intro__subtitle">Зачем путешествовать по своему дому</p>
                 <div class="intro__content-row">
                     <p class="intro__cocntent-row_left-text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать,
                         но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На
@@ -35,17 +36,16 @@
                         загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама,
                         которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по
                         родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
+                    <p class="intro__cocntent-row_right-text"><span class="boldtext">Автор текста:</span>
+                        Яндекс.Практикум
+                        <span class="boldtext">Дата:</span> 2019г.
+                    </p>
                 </div>
-                <ul class="intro__text">
-                    <li class="intro__text-item">Часовых поясов <span class="intro__text-item-count">11</span></li>
-                    <li class="intro__text-item">Объектов природного наследия ЮНЕСКО <span
-                            class="intro__text-item-count">12</span></li>
-                    <li class="intro__text-item">Объектов культурного наследия ЮНЕСКО <span
-                            class="intro__text-item-count">16</span></li>
-                    <li class="intro__text-item">Природных заповедников <span class="intro__text-item-count">105</span>
-                    </li>
-                    <li class="intro__text-item">Аэропортов <span class="intro__text-item-count">241</span></li>
-                </ul>
+                <p class="intro__text"><span class="boldtext">Часовых поясов</span> 11
+                    <span class="boldtext">Объектов природного наследия ЮНЕСКО</span> 12
+                    <span class="boldtext">Объектов культурного наследия ЮНЕСКО</span> 16
+                    <span class="boldtext">Природных заповедников</span> 105
+                    <span class="boldtext">Аэропортов</span> 241</p>
             </section>
             <section class="photo-grid">
                 <img class="photo-grid__item" src="images/train.jpg" alt="#">
@@ -183,19 +183,48 @@
                 <div class="video__container">
                     <div class="video__container_item">
                         <img class="item__item-bg" src="images/kamchatka.jpg" alt="#">
-                        <a href="https://vimeo.com/81106671" target="_blank" class="item__icon-play"><img
-                                src="images/icon_play.svg"></a>
+                        <a href="https://vimeo.com/81106671" target="_blank" class="item__icon-play"><img src="images/icon_play.svg"></a>
                         <div class="item__duration">6:30</div>
                         <h4 class="item__title">Colors of Kamchatka</h4>
                         <p class="item__subtitle">Director: Pavel Karykhalin</p>
                     </div>
                     <div class="video__container_item">
                         <img class="video__container_item" src="images/observatory.jpg" alt="#">
-                        <a href="https://vimeo.com/290675450" target="_blank" class="item__icon-play"><img
-                                src="images/icon_play.svg"></a>
+                        <a href="https://vimeo.com/290675450" target="_blank" class="item__icon-play"><img src="images/icon_play.svg"></a>
                         <div class="item__duration">24:45</div>
                         <h4 class="item__title">Обсерватория | Observatory</h4>
                         <p class="item__subtitle">Director: Alexander Khudokon</p>
+                    </div>
+                </div>
+            </section>
+            <section class="additional">
+                <h4 class="additional__content-title">А также</h4>
+                <p class="additional__content-subtitle">места, рекомендованнеы нашими фотографами</p>
+                <div class="additional__container">
+                    <div class="additional__container_item">
+                        <img class="container__item_item-bg" src="images/nvrssk.jpg" alt="#">
+                        <h4 class="container__item_heading">Новороссийская бухта</h4>
+                        <p class="container__item_text">Главный торговый порт не курорт, но море здесь лазурное, и
+                            толпы
+                            кораблей на рейде. Залюбуешься.</p>
+                    </div>
+                    <div class="additional__container_item">
+                        <img class="container__item_item-bg" src="images/shickan.jpg" alt="#">
+                        <h4 class="container__item_heading">Аракульский шихан</h4>
+                        <p class="container__item_text">Даже для Южного Урала, где красиво везде, это пейзаж выдающийся.
+                            И там отсутствует несносная мошкá.</p>
+                    </div>
+                    <div class="additional__container_item">
+                        <img class="container__item_item-bg" src="images/cherepovets.jpg" alt="#">
+                        <h4 class="container__item_heading">Череповец</h4>
+                        <p class="container__item_text">Громадный металлургический комбинат на водном пути с Волги в
+                            Балтийское море. В нём есть своя красота.</p>
+                    </div>
+                    <div class="additional__container_item">
+                        <img class="container__item_item-bg" src="images/nikola.jpg" alt="#">
+                        <h4 class="container__item_heading">Никола-Ленивец</h4>
+                        <p class="container__item_text">Оцените ответ современных художников идолам капища, которое было
+                            тут при древнем поселении на реке Угра.</p>
                     </div>
                 </div>
             </section>
@@ -230,11 +259,50 @@
             </section>
             <section class="cover">
                 <img class="cover__image" src="images/cover.jpg" alt="#">
-                <div class="cover__text">
-                    <h6 class="cover__text_title">До Байкала «на собаках»</h6>
-                    <p class="cover__text_subtitle">По мотивам учебной темы о Транссибе и iframes — путешествие от
-                        столицы до
-                        Байкала на электричках.</p>
+                <h6 class="cover__title">До Байкала «на собаках»</h6>
+                <p class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes — путешествие от столицы до
+                    Байкала на электричках.</p>
+            </section>
+            <section class="emblem">
+                <h6 class="emblem__title">Природа на гербах российских городов</h6>
+                <div class="emblem__city">
+                    <div class="emblem__city_item">
+                        <img class="city_item-image" src="images/novgorod.png" alt="#">
+                        <p class="city_item-name">Великий Новгород</p>
+                    </div>
+                    <div class="emblem__city_item">
+                        <img class="city_item-image" src="images/rostov.png" alt="#">
+                        <p class="city_item-name">Ростов Великий</p>
+                    </div>
+                    <div class="emblem__city_item">
+                        <img class="city_item-image" src="images/tambov.png" alt="#">
+                        <p class="city_item-name">Тамбов</p>
+                    </div>
+                    <div class="emblem__city_item">
+                        <img class="city_item-image" src="images/elabuga.png" alt="#">
+                        <p class="city_item-name">Елабуга</p>
+                    </div>
+                    <div class="emblem__city_item">
+                        <img class="city_item-image" src="images/perm.png" alt="#">
+                        <p class="city_item-name">Пермь</p>
+                    </div>
+                </div>
+            </section>
+            <section class="barentsburg">
+                <h6 class="barentsburg__title">Баренцбург</h6>
+                <p class="barentsburg__coord">78.0648° с.ш. 14.2335° в.д.</p>
+                <img src=".//images/map.jpg" alt="#" class="barentsburg__map">
+                <div class="barentsburg__subscribe">
+                    <p class="barentsburg__subscribe_text">Арктика и соседство с Норвегией — мало кто знает о жизни
+                        самого
+                        западного
+                        российского посёлка, который находится на Шпицбергене.</p>
+                    <div class="barentsburg__subscribe_url">
+                        <p class="barentsburg__subscribe_url-heading">URL</p>
+                        <a href="https://meduza.io/feature/2016/03/02/umeret-ili-roditsya-zdes-prakticheski-nevozmozhno"
+                            target="_blank" class="barentsburg__subscribe_url-link">Умереть или родиться здесь
+                            практически невозможно</a>
+                    </div>
                 </div>
             </section>
         </main>
@@ -246,9 +314,19 @@
                 <a href="https://calendar.yandex.ru/" class="footer__link_item">Календарь</a>
                 <a href="https://travel.yandex.ru" class="footer__link_item">Путешествия</a>
             </div>
-            <p class="footer__copyright">&#169; 2019. Rodion</p>
+            <p class="footer__copyright">&#169 2019. Rodion</p>
         </footer>
     </div>
 </body>
 
 </html>
+
+<!-- 
+    По всей работе:
+
+    Необходимо исправить:
+    - ширину и высоту любым блокам стоит задавать через css 
+    - не стоит использовать тег br для переноса блоков и строк
+    - стоит переписать пути ко всей изображениям. Например, для файла index.html путь до папки с изображениями будет: "images/picture.png"
+    - на странице нет соответствующих шрифтов
+ -->

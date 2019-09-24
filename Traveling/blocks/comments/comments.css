@@ -2,9 +2,12 @@
 @import url('../comments/__content-subtitle/__content-subtitle.css');
 @import url('../comments/__conteuner/__conteiner.css');
 .comments {
-    max-width: 1184px;
+    position: absolute;
+    width: 1184px;
+    height: 594px;
+    left: 48px;
+    top: 7235px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 102px auto 0;
 }

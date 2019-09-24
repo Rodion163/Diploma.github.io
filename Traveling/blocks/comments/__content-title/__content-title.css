@@ -1,6 +1,7 @@
 .comments__content-title {
     position: relative;
-    max-width: 800px;
+    width: 800px;
+    height: 133px;
     font-family: Inter;
     font-size: 72px;
     line-height: 65px;

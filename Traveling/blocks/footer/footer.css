@@ -3,7 +3,10 @@
 .footer {
     display: flex;
     flex-direction: row;
-    margin: 160px auto 0;
-    max-width: 1184px;
+    position: absolute;
+    width: 1184px;
+    height: 23px;
+    left: 48px;
+    top: 10155px;
     background-color: #2A2C2F;
 }

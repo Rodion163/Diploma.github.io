@@ -1,5 +1,6 @@
 .place {
-    max-width: 984px;
+    width: 984px;
+    height: 653px;
     margin-top: 72px;
 }
 
@@ -15,7 +16,7 @@
     line-height: 65px;
     color: #FFFFFF;
     margin: 0;
-    max-width: 460px;
+    width: 460px;
 }
 
 .part1__website {
@@ -29,6 +30,7 @@
 
 .part1__website_url-heading {
     width: 484px;
+    height: 12px;
     font-family: Inter;
     font-size: 12px;
     line-height: 20px;
@@ -38,6 +40,7 @@
 
 .part1__website_url {
     width: 484px;
+    height: 18px;
     font-family: Inter;
     font-size: 18px;
     text-decoration-line: underline;
@@ -53,27 +56,28 @@
 .part2__image {
     display: flex;
     position: relative;
-    width: 100%;
-    max-width: 460px;
-    max-height: 460px;
+    width: 460px;
+    height: 460px;
 }
 
 .part2__paragraph {
     margin-left: 40px;
+    height: 460px;
     font-family: Inter;
     font-size: 18px;
     line-height: 30px;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    max-width: 484px;
 }
 
 .part__paragraph_first {
     margin-top: 0;
-    max-width: 484px;
+    height: 138px;
+    width: 484px;
 }
 
 .part__paragraph_second {
-    max-width: 484px;
+    height: 198px;
+    width: 484px;
 }

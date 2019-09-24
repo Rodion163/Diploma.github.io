@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 1184px;
+    height: 323px;
     position: relative;
     margin-top: 72px;
 }
@@ -10,28 +11,31 @@
 .video__container_item {
     display: flex;
     flex-direction: column;
-    max-width: 583px;
+    width: 583px;
+    height: 323px;
     border-radius: 5px;
 }
 
 .item__item-bg {
     background: #000000;
     border-radius: 5px;
-    max-width: 583px;
+    width: 583px;
+    height: 323px;
     opacity: 0.5;
 }
 
 .item__icon-play {
     position: absolute;
     color: #FFFFFF;
-    max-height: 41px;
-    max-width: 41px;
+    height: 41px;
+    width: 41px;
     margin: 30px 30px 0;
 }
 
 .item__duration {
     position: absolute;
-    max-width: 44px;
+    width: 44px;
+    height: 12px;
     font-family: Inter;
     font-size: 12px;
     line-height: 13px;
@@ -42,7 +46,8 @@
 
 .item__title {
     position: absolute;
-    max-width: 322px;
+    width: 322px;
+    height: 73px;
     margin: 189px 30px 0;
     font-family: Inter;
     font-size: 36px;
@@ -52,7 +57,8 @@
 
 .item__subtitle {
     position: absolute;
-    max-width: 174px;
+    width: 174px;
+    height: 13px;
     margin: 280px 30px 0;
     font-family: Inter;
     font-size: 14px;

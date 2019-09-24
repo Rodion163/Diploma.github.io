@@ -1,34 +1,29 @@
+/* @font-face {
+    src: url('https://rsms.me/inter/inter.css');
+    font-family: Inter;
+} */
+/* @font-face {
+    src: local("Inter-Regular"), url("../fonts/Inter_woff/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter_woff/Inter-Regular.woff") format("woff"), url("../fonts/Inter_TTF/Inter-Regular.ttf") format("ttf");
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+} */
 @import url('../styles/normalize.css');
-@import url('../fonts/Inter_woff/inter.css');
 @import url('../blocks/header/header.css');
 @import url('../blocks/lead/lead.css');
 @import url('../blocks/intro/intro.css');
 @import url('../blocks/photo-grid/photo-grid.css');
 @import url('../blocks/places/places.css');
 @import url('../blocks/video/video.css');
-/* @import url('../blocks/additional/additional.css'); */
-
+@import url('../blocks/additional/additional.css');
 @import url('../blocks/comments/comments.css');
 @import url('../blocks/cover/cover.css');
-/* @import url('../blocks/emblem/emblem.css');
-@import url('../blocks/barentsburg/barentsburg.css'); */
-
+@import url('../blocks/emblem/emblem.css');
+@import url('../blocks/barentsburg/barentsburg.css');
 @import url('../blocks/footer/footer.css');
-@import url('../media/320/320.css');
-@import url('../media/375/375.css');
-@import url('../media/768/768.css');
-@import url('../media/1024/1024.css');
-@import url('../media/1280/1280.css');
 .page {
+    width: 1280px;
+    height: 10226px;
     background: #2A2C2F;
-    max-width: 1440px;
-    min-width: 320px;
-    margin: auto;
-    font-family: Inter;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
+
 }

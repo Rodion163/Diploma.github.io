@@ -1,4 +1,5 @@
 .emblem__city {
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,10 +15,12 @@
 .city_item-image {
     margin: 0 auto;
     width: 186px;
+    height: 226px;
 }
 
 .city_item-name {
     width: 208px;
+    height: 49px;
     font-family: Inter;
     font-size: 24px;
     line-height: 26px;

@@ -1,8 +1,12 @@
 @import url('../intro/__title/__title.css');
+@import url('../intro/__subtitle/__subtitle.css');
 @import url('../intro/__content-row/__content-row.css');
 @import url('../intro/__text/__text.css');
 
 .intro {
-    width: 90%;
-    margin: 80px auto 0;
+    position: absolute;
+    width: 984px;
+    height: 437px;
+    top: 1160px;
+    left: 148px;
 }
