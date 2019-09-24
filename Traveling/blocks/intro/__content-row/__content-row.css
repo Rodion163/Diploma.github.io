@@ -1,0 +1,15 @@
+.intro__content-row {
+    display: flex;
+    flex-direction: row;
+    max-width: 984px;
+    margin-top: 35px;
+    color: #FFFFFF;
+}
+
+.intro__cocntent-row_left-text {
+    margin: initial;
+    max-width: 683px;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 23px;
+}

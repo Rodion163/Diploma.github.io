@@ -1,0 +1,17 @@
+.intro__text {
+    max-width: 383px;
+    font-family: Inter;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+    list-style: none;
+    margin: 35px 0 0;
+    padding: 0;
+}
+
+.intro__text-item {
+    font-weight: bold;
+}
+.intro__text-item-count {
+    font-weight: normal;
+}

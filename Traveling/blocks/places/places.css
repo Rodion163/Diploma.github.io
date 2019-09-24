@@ -1,0 +1,7 @@
+@import url('.//places/__place/__place.css');
+.places {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 984px;
+}

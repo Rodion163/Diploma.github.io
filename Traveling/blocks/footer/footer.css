@@ -1,0 +1,9 @@
+@import url('../footer/__link/__link.css');
+@import url('../footer/__copyright/__copyright.css');
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin: 160px auto 0;
+    max-width: 1184px;
+    background-color: #2A2C2F;
+}

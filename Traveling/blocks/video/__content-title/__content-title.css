@@ -1,0 +1,10 @@
+.video__content-title {
+    position: relative;
+    font-family: Inter;
+    font-size: 72px;
+    line-height: 78px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 800px;
+    margin: 0;
+}

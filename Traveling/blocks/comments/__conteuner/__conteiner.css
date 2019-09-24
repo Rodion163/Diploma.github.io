@@ -1,0 +1,40 @@
+.comments__container {
+    position: relative;
+    max-width: 1184px;
+    margin: 72px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.comments__container_comment {
+    max-width: 382px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_comment-image {
+    width: 97px;
+    height: 97px;
+    border-radius: 50%;
+}
+
+.container_comment-quote {
+    position: relative;
+    max-width: 382px;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-top: 42px;
+}
+
+.container_comment-author {
+    position: relative;
+    font-weight: bold;
+    max-width: 382px;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}

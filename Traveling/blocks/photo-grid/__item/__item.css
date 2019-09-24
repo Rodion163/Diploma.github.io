@@ -1,0 +1,5 @@
+.photo-grid__item {
+    min-width: 284px;
+    height: 188px;
+    padding-bottom: 16px;
+}

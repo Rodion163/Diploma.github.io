@@ -1,0 +1,8 @@
+@import url('../barentsburg/title/title.css');
+@import url('../barentsburg/coord/coord.css');
+@import url('../barentsburg/map/map.css');
+@import url('../barentsburg/subscribe/subscribe.css');
+.barentsburg {
+    margin: 85px auto 0;
+    width: 1184px;
+}

@@ -1,0 +1,6 @@
+@import url('../emblem/__city/__city.css');
+@import url('../emblem/__title/__title.css');
+.emblem {
+    margin: 82px auto 0;
+    width: 1184px;
+}

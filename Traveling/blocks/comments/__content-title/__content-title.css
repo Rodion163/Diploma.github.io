@@ -1,0 +1,10 @@
+.comments__content-title {
+    position: relative;
+    max-width: 800px;
+    font-family: Inter;
+    font-size: 72px;
+    line-height: 65px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}

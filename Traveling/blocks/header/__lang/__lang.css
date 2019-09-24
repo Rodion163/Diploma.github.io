@@ -1,0 +1,17 @@
+.header__lang {
+    font-family: Inter;
+    font-size: 23px;
+    line-height: 23px;
+    text-align: right;
+    text-decoration-line: none;
+    color: #FFFFFF;
+    margin-top: 17px;
+    margin-left: 18px;
+}
+.header__lang_selected {
+    text-decoration-line: underline;
+}
+.header__langs {
+    display: flex;
+    flex-direction: row;
+}
