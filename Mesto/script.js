@@ -4,11 +4,6 @@ class Api {
         this.token = token;
     }
     load() {
-        /**
-         * Отлично
-         * 
-         * Из запроса возвращается promise и корректно обрабатываются ошибки
-         */
         return fetch(`${this.url}/cohort2/cards`, {
             method: "GET",
             headers: {
@@ -49,18 +44,6 @@ class Api {
                 about: about
             })
         });
-        /**
-         * Надо исправить 
-         * 
-         * Параметры url и token 
-         * следует записывать в поля класса 
-         * this.url
-         * this.token
-         * 
-         * во всех методах используется
-         * формат из переменной полей класса
-         * fetch(`${this.url}/cards`) а в authorization: this.token
-         */
     }
 }
 const userNameElement = document.querySelector(".user-info__name");
@@ -72,16 +55,7 @@ api.load().then(cards => {
         new CardList(document.querySelector(".places-list"),
             cards
         )
-    } // переменная результата запроса
-    // может называться любым именем
-
-    // cardList.addCard();  Надо исправить - лишняя логика
-    // render корректно выполняется без этого вызова
-
-    // запускать отрисовку можно только после проверки наличия данных
-    // then(cards => {
-    //    if (cards && cards.length > 0) { new cardList }
-    // })
+    }
 });
 
 api.loadProfileInfo().then(data => {
