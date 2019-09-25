@@ -1,2 +1,2 @@
-# https://rodion163.github.io/validation.github.io
+# https://rodion163.github.io/validation/index.html
 version 0.2
