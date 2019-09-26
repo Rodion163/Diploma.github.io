@@ -1,2 +1,2 @@
 # https://rodion163.github.io/validation/index.html
-version 0.2
+version 0.3
