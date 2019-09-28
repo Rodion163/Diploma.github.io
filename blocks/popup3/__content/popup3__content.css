@@ -1,0 +1,23 @@
+.popup3__content {
+  max-width: 80vw;
+  max-height: 80vh;
+  position: relative;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: 100%; 
+}
+.popup3__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 10px; 
+  background-repeat: no-repeat;
+  background-size: 100%; 
+}
+
+@media screen and (max-width: 540px) {
+  .popup3__content {
+    width: calc(100% - 60px);
+  }
+}
