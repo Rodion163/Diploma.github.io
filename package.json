@@ -1,0 +1,32 @@
+{
+  "name": "rodion163.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open --watch",
+    "deploy": "NODE_ENV=production gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodion163/Rodion163.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rodion163/Rodion163.github.io/issues"
+  },
+  "homepage": "https://github.com/Rodion163/Rodion163.github.io#readme",
+  "devDependencies": {
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "mini-css-extract-plugin": "0.8.0",
+    "html-webpack-plugin": "3.2.0",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
