@@ -1,5 +1,5 @@
 'use strict'
-
+import {getError, setError} from './utils';
 class ProfilePopup {
     constructor(
         elem,
@@ -79,6 +79,10 @@ class ProfilePopup {
         this.usernameInput.addEventListener("input", this.performValidate);
         this.about.addEventListener("input", this.performValidate);
     }
+}
+function resetError(element) {
+    element.parentNode.classList.remove("input-container__invalid");
+    element.textContent = "";
 }
 
 export { ProfilePopup };

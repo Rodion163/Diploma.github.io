@@ -1,5 +1,5 @@
 'use strict'
-
+const {Card} = require('./Card');
 class CardList {
     constructor(cardsContainer, cards) {
         this.cards = cards;

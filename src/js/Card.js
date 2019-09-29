@@ -5,11 +5,12 @@ class Card {
         this.name = name;
         this.link = link;
         this.cardElem = this.create();
+        this.like = this.like.bind(this);
     }
     remove() {
         this.cardsCont.removeChild(this.cardElement);
     }
-    like = () => {
+    like() {
         this.likeButton.classList.toggle("place-card__like-icon_liked");
     };
     create() {

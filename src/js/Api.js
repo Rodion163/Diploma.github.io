@@ -6,7 +6,7 @@ class Api {
         this.token = token;
     }
     load() {
-        return fetch(`${this.url}/cohort2/cards`, {
+        return fetch(`${this.url}/cards`, {
             method: "GET",
             headers: {
                 authorization: this.token,
@@ -24,7 +24,7 @@ class Api {
             });
     }
     loadProfileInfo() {
-        return fetch(`${this.url}/cohort2/users/me`, {
+        return fetch(`${this.url}/users/me`, {
             headers: {
                 authorization: this.token,
                 "Content-Type": "application/json"
@@ -35,7 +35,7 @@ class Api {
             })
     }
     saveProfile(name, about) {
-        return fetch(`${this.url}/cohort2/users/me`, {
+        return fetch(`${this.url}/users/me`, {
             method: 'PATCH',
             headers: {
                 authorization: this.token,
