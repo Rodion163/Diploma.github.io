@@ -31,7 +31,9 @@ api.loadProfileInfo().then(data => {
 
 
 
-
+const picElem = document.querySelector(".popup3__image");
+const popupElem = document.querySelector(".popup3");
+const closeElem = document.querySelector(".popup3__close");
 const userSettingsButton = document.querySelector(".popup2__button");
 const profileCloseBtn = document.querySelector(".popup2__close");
 const profileEditBtn = document.querySelector("edit");
@@ -45,7 +47,7 @@ const closeButton = document.querySelector(".popup__close");
 const cardName = document.querySelector(".popup__input_type_name");
 const cardLink = document.querySelector(".popup__input_type_link-url");
 const addBtn = document.querySelector("#addBtn");
-
+const imagePopup = new ImagePopup(picElem, popupElem, closeElem);
 const elem = new ProfilePopup(
     document.querySelector(".popup2"),
     about,
