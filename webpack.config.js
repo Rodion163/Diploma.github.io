@@ -5,10 +5,10 @@ const WebpackMd5Hash = require('webpack-md5-hash'); // добавили плаг
 
 
 module.exports = {
-    entry: { main: './src/index.js' },
+    entry: { main: './src/js/script.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[chunkhash].js'
+        filename: 'main.js'
     },
     // указали путь к файлу, в квадратных скобках куда вставлять сгенерированный хеш
     module: {
