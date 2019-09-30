@@ -6,7 +6,7 @@ class ImagePopup {
         this.popupElem = popupElem;
         this.closeElem = closeElem;
         this.close = this.close.bind(this);
-        this.opne = this.open.bind(this)
+        this.opne = this.open.bind(this);
         this.create();
     }
     open(link) {

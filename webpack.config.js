@@ -5,7 +5,7 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
-
+console.log(process.env);
 module.exports = {
     entry: { main: './src/js/script.js' },
     output: {
@@ -21,10 +21,6 @@ module.exports = {
                 use: {
                     loader: "babel-loader"
                 }
-            },
-            {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
             },
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,

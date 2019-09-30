@@ -1,4 +1,3 @@
-
 const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort2' : 'https://praktikum.tk/cohort2'
 const userNameElement = document.querySelector(".user-info__name");
 const aboutElement = document.querySelector(".user-info__job");
@@ -66,3 +65,4 @@ const newCardPopup = new NewCardPopup(
     cardLink,
     addBtn
 );
+export {elem, imagePopup, newCardPopup};

@@ -1,4 +1,5 @@
 'use strict'
+import { imagePopup } from './script';
 
 class Card {
     constructor(name, link) {
