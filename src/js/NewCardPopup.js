@@ -1,5 +1,6 @@
 'use strict'
 import {getError, setError} from './utils';
+import {cardList} from './script'
 
 class NewCardPopup {
     constructor(popup, openButton, closeButton, cardName, cardLink, addBtn) {

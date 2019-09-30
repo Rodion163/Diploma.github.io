@@ -5,8 +5,8 @@ class Card {
     constructor(name, link) {
         this.name = name;
         this.link = link;
-        this.cardElem = this.create();
         this.like = this.like.bind(this);
+        this.cardElem = this.create();
     }
     remove() {
         this.cardsCont.removeChild(this.cardElement);

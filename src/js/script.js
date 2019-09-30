@@ -9,11 +9,11 @@ const { NewCardPopup } = require('./NewCardPopup');
 const { CardList } = require('./CardList');
 
 const api = new Api(serverUrl, '4146a013-6856-47c3-9b2e-a37cb7db0b4c');
+export const cardList = new CardList(document.querySelector(".places-list"))
+
 api.load().then(cards => {
     if (cards && cards.length > 0) {
-        new CardList(document.querySelector(".places-list"),
-            cards
-        )
+        cardList.init(cards);
     }
 });
 
@@ -65,4 +65,4 @@ const newCardPopup = new NewCardPopup(
     cardLink,
     addBtn
 );
-export {elem, imagePopup, newCardPopup};
+export { elem, imagePopup, newCardPopup };

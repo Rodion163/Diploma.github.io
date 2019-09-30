@@ -1,9 +1,11 @@
 'use strict'
 const {Card} = require('./Card');
 class CardList {
-    constructor(cardsContainer, cards) {
-        this.cards = cards;
+    constructor(cardsContainer) {
         this.container = cardsContainer;
+    }
+    init(cards) {
+        this.cards = cards;
         this.render();
     }
     render() {
