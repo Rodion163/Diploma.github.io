@@ -1,0 +1,14 @@
+.news__button {
+    margin: 64px 576px 0;
+    width: 288px;
+    height: 64px;
+    background: #FFFFFF;
+    border-radius: 80px;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+}
+.news__button:hover {
+    background: #FFFFFF;
+    opacity: 0.9;
+}

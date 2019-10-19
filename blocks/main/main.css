@@ -1,0 +1,13 @@
+@import url('../main/__header/__header.css');
+@import url('../main/__search/__search.css');
+@import url('../main/__subtitle/__subtitle.css');
+@import url('../main/__title/__title.css');
+
+.main {
+    position: relative;
+    height: 100vh;
+    max-height: 576px;
+    width: 100%;
+    background-image: url('/Yandex.praktikum/diploma/images/header-image.jpg');
+    overflow: hidden;
+}

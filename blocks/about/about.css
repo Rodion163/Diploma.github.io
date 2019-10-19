@@ -1,0 +1,8 @@
+@import url('../about/__image/image.css');
+@import url('../about/__text/__text.css');
+.about {
+    display: flex;
+    max-width: 1440px;
+    max-height: 624px;
+    margin: 0 auto;
+}

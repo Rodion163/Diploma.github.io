@@ -1,0 +1,20 @@
+.chart__designation {
+    border-bottom: 1px solid #1A1B22;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6BCBF;
+    margin: 48px 104px 0;
+    height: 44px;
+}
+
+.chart__designation_date {
+    width: min-content;
+}
+
+.chart__designation_amount {
+    margin-left: 104px;
+    position: absolute;
+}
