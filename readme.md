@@ -1,4 +1,4 @@
-# https://github.com/Rodion163/Rodion163.github.io/tree/level-1
+# https://github.com/Rodion163/Rodion163.github.io/blob/gh-pages/index.html
 version 0.1
 
 Страница для анализа новостей из разных источников.
