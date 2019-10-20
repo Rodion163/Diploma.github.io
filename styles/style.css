@@ -5,18 +5,24 @@
 @import url('../blocks/about/about.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/commitCard/commitCard.css');
-@import url('../media/320/320.css');
 @import url('../blocks/news/news.css');
 @import url('../blocks/toCustomers/toCustomers.css');
 @import url('../blocks/technologies/technologies.css');
 @import url('../blocks/commitHistory/commitHistory.css');
 @import url('../blocks/analytics/analytics.css');
 @import url('../blocks/chart/chart.css');
+@import url('../media/320/320.css');
+@import url('../media/768/768.css');
 .page {
     min-width: 320px;
     max-width: 1440px;
     margin: 0 auto;
     font-family: 'Helvetica Neue', Arial, sans-serif, Roboto;
+}
+
+body {
+    margin: 0;
+    display: block;
 }
 
 @keyframes spin {

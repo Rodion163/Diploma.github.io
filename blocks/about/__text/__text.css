@@ -5,6 +5,7 @@
 }
 
 .about__text_title {
+    font-family: Roboto Slab;
     margin: 0;
     font-size: 40px;
     line-height: 46px;
@@ -12,6 +13,7 @@
 
 .about__text_subtitle {
     margin: 0;
+    font-family: Roboto;
     max-width: 600px;
     font-size: 18px;
     line-height: 24px;

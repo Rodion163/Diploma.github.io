@@ -2,4 +2,6 @@
     border-radius: 100%;
     color: black;
     margin: 80px 0 80px 104px;
+    max-width: 464px;
+    max-height: 464px;
 }

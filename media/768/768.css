@@ -1,16 +1,16 @@
-@media (max-width: 321px) {
+@media (min-width: 760px max-width: 769px) {
     .main {
-        height: 536px;
-        background-image: url('../../images/header-image320.png');
+        height: 400px;
+        background-image: url('../../images/header-image768.png');
     }
     .main__header {
-        max-width: 320px;
-        padding-top: 16px;
-        padding-bottom: 16px;
+        max-width: 768px;
+        padding-top: 22px;
+        padding-bottom: 18px;
     }
     .main__header_name {
         font-size: 16px;
-        margin-left: 16px;
+        margin-left: 40px;
         width: 0;
     }
     .main__header_link {
@@ -22,34 +22,33 @@
         height: 40px;
     }
     .main__title {
-        margin: 0px 16px;
+        margin: 0 163px;
         font-size: 36px;
         line-height: 40px;
+        width: 385px;
     }
     .main__subtitle {
-        margin-top: 56px;
-        margin-left: 16px;
+        margin-top: 16px;
+        margin-left: 163px;
         font-size: 20px;
         line-height: 26px;
-        width: 288px;
+        width: 452px;
     }
     .main__search {
-        margin: 24px 16px;
+        margin: 24px 163px;
     }
     .main__search_input {
-        width: 0;
+        width: 437px;
         height: 56px;
     }
     .main__search_button {
         width: 0;
         height: 56px;
-        min-width: 288px;
-        margin: 0;
-        margin-top: 16px;
+        min-width: 160px;
     }
     .news__header {
-        padding-top: 32px;
-        margin-left: 16px;
+        padding-top: 40px;
+        margin-left: 40px;
         width: 90%;
     }
     .news__header_name {
@@ -62,6 +61,7 @@
     }
     .news__content_card {
         margin: 0 auto 13px;
+        width: 224px;
     }
     .news__content_card-date {
         font-size: 18px;
@@ -76,40 +76,37 @@
     }
     .news__button {
         height: 56px;
-        margin: 0 auto;
+        margin: 22px auto 0;
         display: block;
     }
-    .about {
-        flex-wrap: wrap;
-    }
     .about__image {
-        margin: 20px auto;
+        margin: 40px auto 0;
+        max-width: 232px;
+        max-height: 232px;
+    }
+    .about {
+        flex-wrap: nowrap;
     }
     .about__text {
-        margin: auto;
+        margin: 40px auto 0;
+        width: 424px;
     }
     .about__text_title {
         font-size: 30px;
         line-height: 40px;
     }
-    .footer {
-        margin: 26px auto 0;
-    }
     .footer__navigation {
-        width: min-content;
-        flex-wrap: wrap-reverse;
+        flex-wrap: nowrap;
     }
     .footer__copyright {
-        margin: 40px auto 22px;
+        margin: 0;
+        width: 180px;
     }
     .footer__info {
-        margin: 0 auto;
-        width: auto;
-        flex-direction: column;
-        height: 120px;
+        margin-left: 0;
+        width: 360px;
     }
     .footer__social {
-        margin-left: auto;
-        margin-bottom: auto;
+        margin-left: 30px;
     }
 }

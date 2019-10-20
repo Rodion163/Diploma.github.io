@@ -3,5 +3,5 @@
 @import url('../news/__header/__header.css');
 .news {
   background: #f5f6f7;  
-  height: 1566px;
+  padding-bottom: 44px;
 }
