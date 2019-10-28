@@ -25,17 +25,17 @@
 }
 
 .card_icon_html {
-    background-image: url('../../../images/tech/html.png');
+    background-image: url('../../../../images/tech/html.png');
 }
 
 .card_icon_css {
-    background-image: url('../../../images/tech/css.png');
+    background-image: url('../../../../images/tech/css.png');
 }
 
 .card_icon_js {
-    background-image: url('../../../images/tech/js.png');
+    background-image: url('../../../../images/tech/js.png');
 }
 
 .card_icon_webpack {
-    background-image: url('../../../images/tech/webpack.png');
+    background-image: url('../../../../images/tech/webpack.png');
 }
