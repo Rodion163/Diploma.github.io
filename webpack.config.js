@@ -10,7 +10,7 @@ module.exports = {
     entry: { main: './src/script.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js'
+        filename: '[name].[chunkhash].js'
     },
     module: {
         rules: [
@@ -54,9 +54,18 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             inject: false,
-            hash: true,
             template: './src/index.html',
             filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            template: './src/analytics.html',
+            filename: 'analytics.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            template: './src/about.html',
+            filename: 'about.html'
         }),
         new WebpackMd5Hash(),
         new OptimizeCssAssetsPlugin({

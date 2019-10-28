@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rodion Dronov">
+    <meta name="description" content="Сайт по поиску новостей">
+    <link rel="shortcut icon" href="<%=require('./images/icon/icon.png')%>">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <title>News Analyzer</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="analytics">
+            <div class="analytics__header">
+                <p class="analytics__header_name">NewsAnalyzer</p>
+                <div class="analytics__header_link">
+                    <a href="./index.html" class="analytics__header_link analytics_link-selected">Главная</a>
+                    <a href="./about.html" class="analytics__header_link">О проекте</a>
+                </div>
+            </div>
+            <h1 class="analytics__title">Главная <span class="uncolored">/ Аналитика</span></h1>
+            <p class="analytics__subtitle">Вы спросили: «Путешествия»</p>
+            <p class="analytics__result">Новостей за неделю: <span class="digitalResult">34 324</span></p>
+            <p class="analytics__result">Упоминаний в загаловках: <span class="digitalResult">235</span></p>
+        </header>
+        <div class="chart">
+            <div class="chart__header">Аналитика по дням</div>
+            <div class="chart__designation">
+                <div class="chart__designation_date">дата (августа)</div>
+                <div class="chart__designation_amount">кол-во упоминаний</div>
+            </div>
+            <div class="chart__scale">
+                <div class="chart__scale_segment">0</div>
+                <div class="chart__scale_segment">25</div>
+                <div class="chart__scale_segment">50</div>
+                <div class="chart__scale_segment">75</div>
+                <div class="chart__scale_segment">100</div>
+            </div>
+            <div class="chart__content">
+                <div class="chart__content_date">19, пн</div>
+                <div class="chart__content_value content_value-15">
+                    <div class="content_value-numeric">15</div>
+                </div>
+            </div>
+            <div class="chart__content">
+                <div class="chart__content_date">20, вт</div>
+                <div class="chart__content_value content_value-18">
+                    <div class="content_value-numeric">18</div>
+                </div>
+            </div>
+            <div class="chart__content">
+                <div class="chart__content_date">21, ср</div>
+                <div class="chart__content_value content_value-11">
+                    <div class="content_value-numeric">11</div>
+                </div>
+            </div>
+            <div class="chart__content">
+                <div class="chart__content_date">22, чт</div>
+                <div class="chart__content_value content_value-39">
+                    <div class="content_value-numeric">39</div>
+                </div>
+            </div>
+            <div class="chart__content">
+                <div class="chart__content_date">23, пт</div>
+                <div class="chart__content_value content_value-45">
+                    <div class="content_value-numeric">45</div>
+                </div>
+            </div>
+            <div class="chart__content">
+                <div class="chart__content_date">24, сб</div>
+                <div class="chart__content_value content_value-73">
+                    <div class="content_value-numeric">73</div>
+                </div>
+            </div>
+            <div class="chart__content">
+                <div class="chart__content_date">25, вс</div>
+                <div class="chart__content_value content_value-34">
+                    <div class="content_value-numeric">34</div>
+                </div>
+            </div>
+            <div class="chart__scale scale-bottom">
+                <div class="chart__scale_segment">0</div>
+                <div class="chart__scale_segment">25</div>
+                <div class="chart__scale_segment">50</div>
+                <div class="chart__scale_segment">75</div>
+                <div class="chart__scale_segment">100</div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__copyright">&#169; 2019 Rodion Dronov</div>
+            <div class="footer__info">
+                <a href="./index.html" class="footer__info_link">Главная</a>
+                <a href="./about.html" class="footer__info_link">О проекте</a>
+                <a href="https://praktikum.yandex.ru/" class="footer__info_link">Яндекс.Практикум</a>
+            </div>
+            <div class="footer__social">
+                <a href="#" target="_blank" class="footer__social_link">
+                    <img class="footer__social_icon" src="<%=require('./images/git.png')%>" width="20px" height="20px"
+                        alt="Github" /></a>
+                <a href="#" target="_blank" class="footer__social_link">
+                    <img class="footer__social_icon" src="<%=require('./images/facebook.png')%>" width="20px" height="20px"
+                        alt="Facebook" /></a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</html>

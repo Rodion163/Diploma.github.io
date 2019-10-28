@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rodion Dronov">
     <meta name="description" content="Сайт по поиску новостей">
-    <link rel="shortcut icon" href="./images/icon/icon.png">
+    <link rel="shortcut icon" href="<%=require('./images/icon/icon.png')%>">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
     <title>News Analyzer</title>
 </head>
 
@@ -41,7 +41,7 @@
             </div>
             <div class="news__content">
                 <div class="news__content_card">
-                    <img src="./images/newsImages/lenta.png" class="news__content_card-image">
+                    <img src="<%=require('./images/newsImages/lenta.png')%>" class="news__content_card-image">
                     <div class="news__content_card-date">2 августа, 2019</div>
                     <div class="news__content_card-title">Национальное достояние – парки</div>
                     <div class="news__content_card-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад
@@ -52,7 +52,7 @@
                     <div class="news__content_card-source">Лента.ру</div>
                 </div>
                 <div class="news__content_card">
-                    <img src="./images/newsImages/medusa.png" class="news__content_card-image">
+                    <img src="<%=require('./images/newsImages/medusa.png')%>" class="news__content_card-image">
                     <div class="news__content_card-date">2 августа, 2019</div>
                     <div class="news__content_card-title">Лесные огоньки: история одной фотографии</div>
                     <div class="news__content_card-subtitle">Фотограф отвлеклась от освещения суровой политической
@@ -61,7 +61,7 @@
                     <div class="news__content_card-source">Медуза</div>
                 </div>
                 <div class="news__content_card">
-                    <img src="./images/newsImages/ria.png" class="news__content_card-image">
+                    <img src="<%=require('./images/newsImages/ria.png')%>" class="news__content_card-image">
                     <div class="news__content_card-date">2 августа, 2019</div>
                     <div class="news__content_card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</div>
                     <div class="news__content_card-subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы
@@ -71,7 +71,7 @@
                     <div class="news__content_card-source">Риа</div>
                 </div>
                 <div class="news__content_card">
-                    <img src="./images/newsImages/dzen.png" class="news__content_card-image">
+                    <img src="<%=require('./images/newsImages/dzen.png')%>" class="news__content_card-image">
                     <div class="news__content_card-date">2 августа, 2019</div>
                     <div class="news__content_card-title">Национальное достояние – парки</div>
                     <div class="news__content_card-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад
@@ -82,7 +82,7 @@
                     <div class="news__content_card-source">Дзен</div>
                 </div>
                 <div class="news__content_card">
-                    <img src="./images/newsImages/afisha.png" class="news__content_card-image">
+                    <img src="<%=require('./images/newsImages/afisha.png')%>" class="news__content_card-image">
                     <div class="news__content_card-date">2 августа, 2019</div>
                     <div class="news__content_card-title">Лесные огоньки: история одной фотографии</div>
                     <div class="news__content_card-subtitle">Фотограф отвлеклась от освещения суровой политической
@@ -91,7 +91,7 @@
                     <div class="news__content_card-source">Афиша</div>
                 </div>
                 <div class="news__content_card">
-                    <img src="./images/newsImages/mediazona.png" class="news__content_card-image">
+                    <img src="<%=require('./images/newsImages/mediazona.png')%>" class="news__content_card-image">
                     <div class="news__content_card-date">2 августа, 2019</div>
                     <div class="news__content_card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</div>
                     <div class="news__content_card-subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы
@@ -104,7 +104,7 @@
             <button class="news__button">Показать еще</button>
         </div>
         <div class="about">
-            <img class="about__image" src="./images/authorImage.png" width="100%" height="100%">
+            <img class="about__image" src="<%=require('./images/authorImage.png')%>" width="100%" height="100%">
             <div class="about__text">
                 <h2 class="about__text_title">Об авторе</h2>
                 <div class="about__text_subtitle">
@@ -118,30 +118,21 @@
     </div>
     <footer class="footer">
         <div class="footer__navigation">
-<<<<<<< HEAD
             <div class="footer__copyright">&#169; 2019 Rodion Dronov</div>
             <div class="footer__info">
                 <a href="./index.html" class="footer__info_link">Главная</a>
                 <a href="./about.html" class="footer__info_link">О проекте</a>
                 <a href="https://praktikum.yandex.ru/" class="footer__info_link">Яндекс.Практикум</a>
             </div>
-=======
-        <div class="footer__copyright">&#169; 2019 Rodion Dronov</div>
-        <div class="footer__info">
-            <a href="./index.html" class="footer__info_link">Главная</a>
-            <a href="./about.html" class="footer__info_link">О проекте</a>
-            <a href="https://praktikum.yandex.ru/" class="footer__info_link">Яндекс.Практикум</a>
-        </div>
->>>>>>> master
         </div>
         <div class="footer__social">
             <a href="#" target="_blank" class="footer__social_link">
-                <img class="footer__social_icon" src="./images/git.png" width="20px" height="20px" alt="Github" /></a>
+                <img class="footer__social_icon" src="<%=require('./images/git.png')%>" width="20px" height="20px" alt="Github" /></a>
             <a href="#" target="_blank" class="footer__social_link">
-                <img class="footer__social_icon" src="./images/facebook.png" width="20px" height="20px"
+                <img class="footer__social_icon" src="<%=require('./images/facebook.png')%>" width="20px" height="20px"
                     alt="Facebook" /></a>
         </div>
     </footer>
 </body>
-
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </html>
