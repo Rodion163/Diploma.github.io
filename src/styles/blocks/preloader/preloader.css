@@ -1,5 +1,5 @@
-@import url('../preloader/__circle/__circle.css');
-@import url('../preloader/__text/__text.css');
+@import url('./__circle/__circle.css');
+@import url('./__text/__text.css');
 
  .preloader {
     margin: 0 auto;

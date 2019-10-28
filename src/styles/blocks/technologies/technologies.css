@@ -1,4 +1,4 @@
-@import url('../technologies/__content/__content.css');
+@import url('./__content/__content.css');
 .technologies {
     background: #F5F6F7;
     position: relative;

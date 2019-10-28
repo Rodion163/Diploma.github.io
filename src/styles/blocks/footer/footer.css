@@ -1,5 +1,5 @@
-@import url('../footer/__social/social.css');
-@import url('../footer/__navigation/navigation.css');
+@import url('./__social/social.css');
+@import url('./__navigation/navigation.css');
 .footer {
     display: flex;
     height: 80px;

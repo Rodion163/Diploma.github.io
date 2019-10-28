@@ -1,7 +1,7 @@
-@import url('../main/__header/__header.css');
-@import url('../main/__search/__search.css');
-@import url('../main/__subtitle/__subtitle.css');
-@import url('../main/__title/__title.css');
+@import url('./__header/__header.css');
+@import url('./__search/__search.css');
+@import url('./__subtitle/__subtitle.css');
+@import url('./__title/__title.css');
 
 .main {
     position: relative;
