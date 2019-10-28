@@ -1,0 +1,22 @@
+.commitHistory__header {
+    display: flex;
+    justify-content: space-between;
+}
+.commitHistory__header_name {
+    color: #1A1B22;
+    font-size: 40px;
+    line-height: 46px;
+    margin: 72px 0 0 104px;
+    font-family: Roboto Slab;
+    width: 712px;
+}
+.commitHistory__header_link {
+    color: #1A1B22;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    display: flex;
+    margin-top: 85px;
+    text-decoration-line: none;
+    margin-right: 112px;
+}
