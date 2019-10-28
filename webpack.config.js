@@ -5,9 +5,9 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
-console.log('NODE_ENV', process.env.NODE_ENV);
+
 module.exports = {
-    entry: { main: './src/js/script.js' },
+    entry: { main: './src/script.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
