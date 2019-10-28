@@ -1,0 +1,11 @@
+@import url('./__author/__author.css');
+@import url('./__date/__date.css');
+@import url('./__text/__text.css');
+.commitCard {
+    display: flex;
+    flex-direction: column;
+    height: 288px;
+    width: 400px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}

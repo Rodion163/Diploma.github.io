@@ -9,7 +9,7 @@
 @import url('../blocks/toCustomers/toCustomers.css');
 @import url('../blocks/technologies/technologies.css');
 @import url('../blocks/commitHistory/commitHistory.css');
-@import url('../blocks/analytics/analytics.css');
+@import url('./blocks/analytics/analytics.css');
 @import url('../blocks/chart/chart.css');
 @import url('../media/320/320.css');
 @import url('../media/768/768.css');
