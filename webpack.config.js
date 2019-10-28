@@ -1,10 +1,10 @@
-const path = require('path');
+const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackMd5Hash = require('webpack-md5-hash');
-const webpack = require('webpack');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const isDev = process.env.NODE_ENV === 'development';
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const WebpackMd5Hash = require("webpack-md5-hash");
+const webpack = require("webpack");
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const isDev = process.env.NODE_ENV === "development";
 
 module.exports = {
     entry: { main: './src/script.js' },
@@ -12,7 +12,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
     },
-    // указали путь к файлу, в квадратных скобках куда вставлять сгенерированный хеш
     module: {
         rules: [
             {
@@ -25,7 +24,7 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
-                    'file-loader?name=../images/[name].[ext]', // указали папку, куда складывать изображения
+                    'file-loader?name=../images/[name].[ext]',
                     {
                         loader: 'image-webpack-loader',
                         options: {
