@@ -1,0 +1,41 @@
+.technologies__content {
+    margin-top: 93px;
+    margin-left: 176px;
+    display: flex;
+    flex-direction: row;
+}
+
+.technologies__content_card {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+}
+
+.technologies__content_card-name {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.technologies__content_card-icon {
+    background-repeat: space;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+}
+
+.card_icon_html {
+    background-image: url('../../../images/tech/html.png');
+}
+
+.card_icon_css {
+    background-image: url('../../../images/tech/css.png');
+}
+
+.card_icon_js {
+    background-image: url('../../../images/tech/js.png');
+}
+
+.card_icon_webpack {
+    background-image: url('../../../images/tech/webpack.png');
+}
