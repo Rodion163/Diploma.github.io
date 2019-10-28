@@ -2,7 +2,7 @@
 @import url('./normalize.css');
 @import url('../blocks/main/main.css');
 @import url('../blocks/preloader/preloader.css');
-@import url('../blocks/about/about.css');
+@import url('./blocks/about/about.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/commitCard/commitCard.css');
 @import url('../blocks/news/news.css');
