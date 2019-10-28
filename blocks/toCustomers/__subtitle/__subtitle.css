@@ -1,0 +1,10 @@
+.toCustomers__subtitle {
+    display: flex;
+    width: 815px;
+    line-height: 25px;
+    font-size: 18px;
+    margin: 0;
+    color: #1A1B22;
+    margin: 24px 104px 0;
+    font-family: Roboto;
+}
