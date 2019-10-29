@@ -1,5 +1,4 @@
 @import url('../fonts/roboto.css');
-@import url('./normalize.css');
 @import url('./blocks/main/main.css');
 @import url('./blocks/preloader/preloader.css');
 @import url('./blocks/about/about.css');
@@ -11,6 +10,7 @@
 @import url('./blocks/commitHistory/commitHistory.css');
 @import url('./blocks/analytics/analytics.css');
 @import url('./blocks/chart/chart.css');
+@import url('./blocks/chart/__scale/__scale.css');
 @import url('../media/320/320.css');
 @import url('../media/768/768.css');
 .page {
