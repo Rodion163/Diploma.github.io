@@ -10,4 +10,5 @@
     width: 100%;
     background-image: url('../../images/header-image.jpg');
     overflow: hidden;
+    background-size: cover;
 }

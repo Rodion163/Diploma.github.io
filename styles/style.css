@@ -13,6 +13,7 @@
 @import url('../blocks/chart/chart.css');
 @import url('../media/320/320.css');
 @import url('../media/768/768.css');
+@import url('../media/1024/1024.css');
 .page {
     min-width: 320px;
     max-width: 1440px;

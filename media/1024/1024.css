@@ -1,5 +1,5 @@
-@media (min-width: 768px) and (max-width: 1024px) {
-    .main {
+@media (min-width: 1025px) and (max-width: 1439px) {
+/*     .main {
         height: 400px;
     }
     .main__header {
@@ -44,7 +44,7 @@
     .main__search_button {
         height: 56px;
         min-width: 160px;
-    }
+    } */
     .news__header {
         padding-top: 40px;
         margin-left: 40px;
@@ -94,6 +94,7 @@
         font-size: 30px;
         line-height: 40px;
     }
+   
     .footer__navigation {
         flex-wrap: nowrap;
     }
@@ -102,10 +103,9 @@
         width: 180px;
     }
     .footer__info {
-        margin-left: 0;
         width: 360px;
     }
     .footer__social {
         margin-left: 30px;
-    }
+    } 
 }
