@@ -10,7 +10,6 @@
 @import url('./blocks/commitHistory/commitHistory.css');
 @import url('./blocks/analytics/analytics.css');
 @import url('./blocks/chart/chart.css');
-@import url('./blocks/chart/__scale/__scale.css');
 @import url('../media/320/320.css');
 @import url('../media/768/768.css');
 .page {
