@@ -1,7 +1,0 @@
-@import url('./__button/__button.css');
-@import url('./__content/__content.css');
-@import url('./__header/__header.css');
-.news {
-  background: #f5f6f7;  
-  padding-bottom: 44px;
-}

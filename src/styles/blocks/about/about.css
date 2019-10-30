@@ -1,9 +1,0 @@
-@import url('./__image/image.css');
-@import url('./__text/__text.css');
-.about {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 90%;
-}

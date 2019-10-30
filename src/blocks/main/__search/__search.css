@@ -1,5 +1,6 @@
 .main__search {
     margin: 64px 0 0 416px;
+    margin-left: 29%;
 }
 
 .main__search_input {
@@ -11,7 +12,7 @@
     height: 64px;
     background: #ffffff;
     backdrop-filter: blur(8px);
-    padding: 0 24px;
+    padding: 0 192px 0 24px;
 }
 
 .main__search_button {
@@ -25,7 +26,25 @@
     font-size: 18px;
     line-height: 24px;
     border: none;
+    position: absolute;
 }
+
 .main__search_button:hover {
     background: #347EFF;
+}
+
+.main__search_input:focus {
+    outline: none;
+}
+
+.main__search_input:active {
+    outline: none;
+}
+
+.main__search_button:focus {
+    outline: none;
+}
+
+.main__search_button:active {
+    outline: none;
 }

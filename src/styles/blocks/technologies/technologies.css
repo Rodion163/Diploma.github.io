@@ -1,9 +1,0 @@
-@import url('./__content/__content.css');
-.technologies {
-    background: #F5F6F7;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-top: 94px;
-    height: 334px;
-}
