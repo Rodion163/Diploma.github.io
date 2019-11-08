@@ -4,8 +4,6 @@
 
 .toCustomers {
     position: relative;
-    height: 100vh;
-    max-height: 576px;
     width: 100%;
     overflow: hidden;
     background: #FFFFFF;

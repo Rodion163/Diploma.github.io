@@ -39,7 +39,7 @@
                 нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
         </header>
         <div class="technologies">
-            <h2 class="technologies__title toCustomers__title">Используемые технологии</h2>
+            <h2 class="technologies__title">Используемые технологии</h2>
             <div class="technologies__content">
                 <div class="technologies__content_card">
                     <div class="technologies__content_card-name">HTML</div>
@@ -60,8 +60,7 @@
             </div>
         </div>
         <div class="about">
-            <img class="about__image" src="<%=require('../images/authorImage.png')%>" width="464px"
-                height="464px">
+            <img class="about__image" src="<%=require('../images/authorImage.png')%>" width="100%" height="100%">
             <div class="about__text">
                 <h3 class="about__text_title">Об авторе</h3>
                 <div class="about__text_subtitle">
@@ -69,13 +68,15 @@
                         как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.</p>
                     <p class="about__text_subtitle-second">Также можно рассказать о процессе обучения в Практикуме, чему
                         вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+                    <p class="about__text_subtitle-third">Если хотите, оставьте свои контакты: email и телефон. Так
+                        заказчики смогут с вами связаться.</p>
                 </div>
             </div>
         </div>
         <div class="commitHistory">
             <div class="commitHistory__header">
                 <h4 class="commitHistory__header_name">История коммитов из GitHub</h4>
-                <div class="commitHistory__header_link">Открыть в Github &#62;</div>
+                <div class="commitHistory__header_link">Открыть в Github&#8194;</div>
             </div>
             <div class="commitHistory__slider">
                 <div class="slider__content">
@@ -129,22 +130,25 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="footer__copyright">&#169; 2019 Rodion Dronov</div>
-            <div class="footer__info">
-                <a href="./index.html" class="footer__info_link">Главная</a>
-                <a href="./about.html" class="footer__info_link">О проекте</a>
-                <a href="https://praktikum.yandex.ru/" class="footer__info_link">Яндекс.Практикум</a>
+            <div class="footer__navigation">
+                <div class="footer__copyright">&#169; 2019 Rodion Dronov</div>
+                <div class="footer__info">
+                    <a href="./index.html" class="footer__info_link">Главная</a>
+                    <a href="./about.html" class="footer__info_link">О проекте</a>
+                    <a href="https://praktikum.yandex.ru/" class="footer__info_link">Яндекс.Практикум</a>
+                </div>
             </div>
             <div class="footer__social">
                 <a href="#" target="_blank" class="footer__social_link">
                     <img class="footer__social_icon" src="<%=require('./images/git.png')%>" width="20px" height="20px"
                         alt="Github" /></a>
                 <a href="#" target="_blank" class="footer__social_link">
-                    <img class="footer__social_icon" src="<%=require('./images/facebook.png')%>" width="20px" height="20px"
-                        alt="Facebook" /></a>
+                    <img class="footer__social_icon" src="<%=require('./images/facebook.png')%>" width="20px"
+                        height="20px" alt="Facebook" /></a>
             </div>
         </footer>
     </div>
 </body>
 <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
 </html>

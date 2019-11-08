@@ -1,4 +1,5 @@
 @import url('../technologies/__content/__content.css');
+@import url('../technologies/__title/__title.css');
 .technologies {
     background: #F5F6F7;
     position: relative;
@@ -6,4 +7,5 @@
     flex-direction: row;
     margin-top: 94px;
     height: 334px;
+    flex-wrap: wrap;
 }

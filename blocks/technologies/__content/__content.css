@@ -1,8 +1,8 @@
 .technologies__content {
     margin-top: 93px;
-    margin-left: 176px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .technologies__content_card {

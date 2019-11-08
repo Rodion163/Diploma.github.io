@@ -3,5 +3,6 @@
 .commitHistory {
     background: #F5F6F7;
     position: relative;
-    height: 606px;
+    height: 100%;
+    flex-wrap: wrap;
 }

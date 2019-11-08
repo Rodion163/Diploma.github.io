@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 767px)  {
+@media (min-width: 320px) and (max-width: 767px) {
     .main {
         height: 536px;
         background-image: url('../../images/header-image320.png');
@@ -7,7 +7,7 @@
     .main__header {
         min-width: 320px;
         padding-top: 16px;
-        padding-bottom: 16px;
+        padding-bottom: 19px;
     }
     .main__header_name {
         font-size: 16px;
@@ -118,5 +118,161 @@
     .footer__social {
         margin-left: auto;
         margin-bottom: auto;
+    }
+    .toCustomers {
+        height: max-content;
+    }
+    .toCustomers__header {
+        min-width: 320px;
+        padding-top: 16px;
+        padding-bottom: 19px;
+    }
+    .toCustomers__header_name {
+        font-size: 16px;
+        margin-left: 16px;
+        width: 0;
+    }
+    .toCustomers__header_link {
+        font-size: 16px;
+        margin-right: 14px;
+        height: 24px;
+    }
+    .toCustomers_link-selected {
+        height: 40px;
+    }
+    .toCustomers__title {
+        margin: 17px auto 0;
+        font-size: 30px;
+        line-height: 40px;
+        min-width: 285px;
+        font-weight: normal;
+    }
+    .toCustomers__subtitle {
+        margin: 16px auto 0;
+        width: 288px;
+    }
+    .technologies {
+        margin-top: 16px;
+        height: 100%;
+        padding-bottom: 52px;
+    }
+    .technologies__title {
+        margin: 32px 16px 0;
+        font-size: 30px;
+        line-height: 40px;
+        min-width: 285px;
+        font-weight: normal;
+    }
+    .technologies__content {
+        margin: 40px auto 0;
+    }
+    .commitHistory {
+        height: 568px;
+    }
+    .commitHistory__header_name {
+        margin: 32px 16px 0;
+        font-size: 30px;
+        line-height: 40px;
+        width: 50%;
+        font-weight: normal;
+    }
+    .commitHistory__header_link {
+        position: absolute;
+        bottom: 32px;
+        left: 50%;
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 80px;
+        height: 56px;
+        width: 288px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 3;
+        align-items: center;
+        text-align: center;
+        display: block;
+        margin-left: -144px;
+    }
+    .commitHistory__slider {
+        margin-top: 16px;
+    }
+    .commitCard {
+        height: 264px;
+        width: 288px;
+    }
+    .commitCard__author_avatar {
+        width: 48px;
+        height: 48px;
+    }
+    .commitCard__author_info {
+        justify-content: start;
+    }
+    .commitCard__author_info-name {
+        font-size: 20px;
+    }
+    .slider__content {
+        margin-left: 16px;
+    }
+    .slider__button-next {
+        display: none;
+    }
+    .slider__button-prev {
+        display: none;
+    }
+    .slider__pagination {
+        margin: 16px auto;
+    }
+    .commitHistory__header_link:after {
+        content: "";
+    }
+    .analytics__title {
+        display: none;
+    }
+    .analytics_link-selected {
+        color: #B6BCBF;
+        font-weight: normal;
+    }
+    .analytics__subtitle {
+        font-size: 30px;
+        line-height: 34px;
+        margin: 16px 0 12px 16px;
+        width: 280px;
+    }
+    .analytics__result {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 4px 0 0 16px;
+        width: 280px;
+    }
+    .chart {
+        margin-top: 24px;
+    }
+    .chart__header {
+        font-size: 22px;
+        line-height: 30px;
+        margin: 24px 0 0 16px;
+    }
+    .chart__designation {
+        margin: 16px 0 0 16px;
+        width: 90%;
+    }
+    .chart__scale {
+        display: none;
+    }
+    .chart__content {
+        margin-left: 16px;
+        margin-bottom: 24px;
+    }
+    .chart__content_value {
+        margin-left: 80px;
+    }
+    .footer {
+        margin-top: 20px;
+    }
+    .footer__info {
+        height: 120px;
+    }
+    .footer__social_link {
+        margin: 0 0 0 25px;
     }
 }

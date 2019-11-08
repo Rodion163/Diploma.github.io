@@ -1,5 +1,5 @@
 @media (min-width: 1025px) and (max-width: 1439px) {
-/*     .main {
+    /*     .main {
         height: 400px;
     }
     .main__header {
@@ -94,7 +94,6 @@
         font-size: 30px;
         line-height: 40px;
     }
-   
     .footer__navigation {
         flex-wrap: nowrap;
     }
@@ -107,5 +106,8 @@
     }
     .footer__social {
         margin-left: 30px;
-    } 
+    }
+    .commitCard {
+        margin: auto;
+    }
 }
