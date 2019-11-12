@@ -60,7 +60,7 @@
             </div>
         </div>
         <div class="about">
-            <img class="about__image" src="<%=require('../images/authorImage.png')%>" width="100%" height="100%">
+            <img class="about__image" src="<%=require('../images/authorImage.png')%>" alt="avatar">
             <div class="about__text">
                 <h3 class="about__text_title">Об авторе</h3>
                 <div class="about__text_subtitle">
@@ -76,23 +76,23 @@
         <div class="commitHistory">
             <div class="commitHistory__header">
                 <h4 class="commitHistory__header_name">История коммитов из GitHub</h4>
-                <div class="commitHistory__header_link">Открыть в Github&#8194;</div>
+                <a href="#" class="commitHistory__header_link">Открыть в Github&#8194;</a>
             </div>
             <div class="commitHistory__slider">
                 <div class="slider__content">
                     <div class="commitCard">
                         <div class="commitCard__date">14 августа, 2019</div>
                         <div class="commitCard__author">
-                            <img class="commitCard__author_avatar" src="<%=require('./images/avatarDolinin.png')%>">
+                            <img class="commitCard__author_avatar" src="<%=require('./images/avatarDolinin.png')%>" alt="commitCard-avatar">
                             <div class="commitCard__author_info">
                                 <div class="commitCard__author_info-name">Антон Долинин</div>
                                 <div class="commitCard__author_info-email">anton@yandex.ru</div>
                             </div>
                         </div>
-                        <div class="commitCard__text">Emmet (formerly Zen Coding) is a web-
-                            developer’s toolkit that can greatly improve your HTML & CSS workflow.</div>
+                        <p class="commitCard__text">Emmet (formerly Zen Coding) is a web-
+                            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
                     </div>
-                    <div class="commitCard">
+<!--                     <div class="commitCard">
                         <div class="commitCard__date">14 августа, 2019</div>
                         <div class="commitCard__author">
                             <img class="commitCard__author_avatar" src="<%=require('./images/avatarFedorova.png')%>">
@@ -118,7 +118,7 @@
                         <div class="commitCard__text">With Emmet, you can type CSS-like expressions
                             that can be dynamically parsed, and produce
                             output depending on what you type in the abb...</div>
-                    </div>
+                    </div> -->
                 </div>
                 <button class="slider__button-next"></button>
                 <button class="slider__button-prev"></button>
@@ -140,11 +140,9 @@
             </div>
             <div class="footer__social">
                 <a href="#" target="_blank" class="footer__social_link">
-                    <img class="footer__social_icon" src="<%=require('./images/git.png')%>" width="20px" height="20px"
-                        alt="Github" /></a>
+                    <img class="footer__social_icon" src="<%=require('./images/git.png')%>" alt="Github" /></a>
                 <a href="#" target="_blank" class="footer__social_link">
-                    <img class="footer__social_icon" src="<%=require('./images/facebook.png')%>" width="20px"
-                        height="20px" alt="Facebook" /></a>
+                    <img class="footer__social_icon" src="<%=require('./images/facebook.png')%>" alt="Facebook" /></a>
             </div>
         </footer>
     </div>

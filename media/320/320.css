@@ -85,6 +85,7 @@
         height: 56px;
         margin: 0 auto;
         display: block;
+        margin-top: 13px;
     }
     .about {
         flex-wrap: wrap;

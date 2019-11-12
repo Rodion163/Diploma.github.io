@@ -40,7 +40,6 @@
     .main__search_input {
         width: 437px;
         height: 56px;
-
     }
     .main__search_button {
         height: 56px;
@@ -108,5 +107,148 @@
     }
     .footer__social {
         margin-left: 30px;
+    }
+    .toCustomers {
+        height: max-content;
+    }
+    .toCustomers__header {
+        min-width: 320px;
+        padding-top: 16px;
+        padding-bottom: 19px;
+    }
+    .toCustomers__header_name {
+        font-size: 16px;
+        margin-left: 40px;
+        width: 0;
+    }
+    .toCustomers__header_link {
+        font-size: 16px;
+        margin-right: 40px;
+        height: 24px;
+    }
+    .toCustomers_link-selected {
+        height: 40px;
+        margin: 0;
+    }
+    .toCustomers__title {
+        margin: 30px 40px 0;
+        font-size: 30px;
+        line-height: 40px;
+        min-width: 285px;
+        font-weight: normal;
+    }
+    .toCustomers__subtitle {
+        margin: 16px 40px 0;
+        width: 90%;
+    }
+    .technologies {
+        margin-top: 16px;
+        height: 100%;
+        padding-bottom: 52px;
+    }
+    .technologies__title {
+        margin: 32px 40px 0;
+        font-size: 30px;
+        line-height: 40px;
+        min-width: 285px;
+        font-weight: normal;
+    }
+    .technologies__content {
+        margin: 40px auto 0;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .commitHistory__header_name {
+        margin: 32px 40px 0;
+        font-size: 30px;
+        line-height: 40px;
+        width: 50%;
+        font-weight: normal;
+    }
+    .commitHistory__header_link {
+        margin: 48px 42px 0;
+    }
+    .commitHistory__slider {
+        margin-top: 16px;
+    }
+    .commitCard {
+        height: 264px;
+        width: 288px;
+        margin: auto;
+    }
+    .commitCard__author_avatar {
+        width: 48px;
+        height: 48px;
+    }
+    .commitCard__author_info {
+        justify-content: start;
+    }
+    .commitCard__author_info-name {
+        font-size: 20px;
+    }
+    .slider__content {
+        margin-left: 40px;
+    }
+    .slider__button-next {
+        display: none;
+    }
+    .slider__button-prev {
+        display: none;
+    }
+    .slider__pagination {
+        margin: 16px auto;
+    }
+    .analytics__title {
+        margin: 32px 40px 0;
+    }
+    .analytics_link-selected {
+        color: #B6BCBF;
+        font-weight: normal;
+    }
+    .analytics__subtitle {
+        font-size: 32px;
+        line-height: 34px;
+        margin: 64px 0 20px 40px;
+    }
+    .analytics__result {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 4px 0 0 40px;
+        width: 280px;
+    }
+    .chart {
+        margin-top: 40px;
+    }
+    .chart__header {
+        font-size: 22px;
+        line-height: 30px;
+        margin: 40px 0 0 40px;
+    }
+    .chart__designation {
+        margin: 40px 0 0 40px;
+        width: 90%;
+    }
+    .chart__scale {
+        margin-left: 157px;
+    }
+    .chart__content {
+        margin-left: 40px;
+        margin-bottom: 48px;
+    }
+    .chart__content_value {
+        margin-left: 117px;
+    }
+    .footer {
+        height: 64px;
+    }
+    .footer__info {
+ 
+    }
+    .footer__social_link {
+        margin: 0 0 0 25px;
+    }
+    .scale-bottom {
+        margin-top: -32px;
+        margin-bottom: 40px;
     }
 }

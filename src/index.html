@@ -25,7 +25,7 @@
             <p class="main__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
                 прошедшую неделю.</p>
             <div class="main__search">
-                <input type="text" placeholder="Введите тему новости" class="main__search_input">
+                <input type="text" required placeholder="Введите тему новости" class="main__search_input">
                 <button type="submit" class="main__search_button">Искать</button>
             </div>
         </header>
@@ -37,75 +37,75 @@
         </div>
         <div class="news">
             <div class="news__header">
-                <div class="news__header_name">Результаты поиска</div>
+                <h1 class="news__header_name">Результаты поиска</h1>
                 <a href="./analytics.html" class="news__header_link">Посмотреть аналитику &#62;</a>
             </div>
             <div class="news__content">
                 <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/lenta.png')%>" class="news-cards-image">
+                    <img src="<%=require('./images/newsImages/lenta.png')%>" alt="lenta" class="news-cards-image">
                     <div class="news-cards-date">2 августа, 2019</div>
-                    <div class="news-cards-title">Национальное достояние – парки</div>
-                    <div class="news-cards-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад
+                    <h2 class="news-cards-title">Национальное достояние – парки</h2>
+                    <p class="news-cards-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад
                         здесь
                         начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый
                         может
-                        приобщиться к природе.</div>
+                        приобщиться к природе.</p>
                     <div class="news-cards-source">Лента.ру</div>
                 </div>
                 <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/medusa.png')%>" class="news-cards-image">
+                    <img src="<%=require('./images/newsImages/medusa.png')%>" alt="medusa" class="news-cards-image">
                     <div class="news-cards-date">2 августа, 2019</div>
-                    <div class="news-cards-title">Лесные огоньки: история одной фотографии</div>
-                    <div class="news-cards-subtitle">Фотограф отвлеклась от освещения суровой политической
+                    <h2 class="news-cards-title">Лесные огоньки: история одной фотографии</h2>
+                    <p class="news-cards-subtitle">Фотограф отвлеклась от освещения суровой политической
                         реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                        из местных чудес природы.</div>
+                        из местных чудес природы.</p>
                     <div class="news-cards-source">Медуза</div>
                 </div>
                 <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/ria.png')%>" class="news-cards-image">
+                    <img src="<%=require('./images/newsImages/ria.png')%>" alt="ria" class="news-cards-image">
                     <div class="news-cards-date">2 августа, 2019</div>
-                    <div class="news-cards-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</div>
-                    <div class="news-cards-subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы
+                    <h2 class="news-cards-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+                    <p class="news-cards-subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы
                         рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
                         где...
-                    </div>
+                    </p>
                     <div class="news-cards-source">Риа</div>
                 </div>
                 <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/dzen.png')%>" class="news-cards-image">
+                    <img src="<%=require('./images/newsImages/dzen.png')%>" alt="dzen" class="news-cards-image">
                     <div class="news-cards-date">2 августа, 2019</div>
-                    <div class="news-cards-title">Национальное достояние – парки</div>
-                    <div class="news-cards-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад
+                    <h2 class="news-cards-title">Национальное достояние – парки</h2>
+                    <p class="news-cards-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад
                         здесь
                         начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый
                         может
-                        приобщиться к природе.</div>
+                        приобщиться к природе.</p>
                     <div class="news-cards-source">Дзен</div>
                 </div>
                 <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/afisha.png')%>" class="news-cards-image">
+                    <img src="<%=require('./images/newsImages/afisha.png')%>" alt="afisha" class="news-cards-image">
                     <div class="news-cards-date">2 августа, 2019</div>
-                    <div class="news-cards-title">Лесные огоньки: история одной фотографии</div>
-                    <div class="news-cards-subtitle">Фотограф отвлеклась от освещения суровой политической
+                    <h2 class="news-cards-title">Лесные огоньки: история одной фотографии</h2>
+                    <p class="news-cards-subtitle">Фотограф отвлеклась от освещения суровой политической
                         реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                        из местных чудес природы.</div>
+                        из местных чудес природы.</p>
                     <div class="news-cards-source">Афиша</div>
                 </div>
                 <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/mediazona.png')%>" class="news-cards-image">
+                    <img src="<%=require('./images/newsImages/mediazona.png')%>" alt="mediazona" class="news-cards-image">
                     <div class="news-cards-date">2 августа, 2019</div>
-                    <div class="news-cards-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</div>
-                    <div class="news-cards-subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы
+                    <h2 class="news-cards-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+                    <p class="news-cards-subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы
                         рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
                         где...
-                    </div>
+                    </p>
                     <div class="news-cards-source">Медиазона</div>
                 </div>
             </div>
             <button class="news__button">Показать еще</button>
         </div>
         <div class="about">
-            <img class="about__image" src="<%=require('./images/authorImage.png')%>" width="100%" height="100%">
+            <img class="about__image" src="<%=require('./images/authorImage.png')%>" alt="avatar">
             <div class="about__text">
                 <h2 class="about__text_title">Об авторе</h2>
                 <div class="about__text_subtitle">
@@ -129,13 +129,11 @@
         </div>
         <div class="footer__social">
             <a href="#" target="_blank" class="footer__social_link">
-                <img class="footer__social_icon" src="<%=require('./images/git.png')%>" width="20px" height="20px"
-                    alt="Github" /></a>
+                <img class="footer__social_icon" src="<%=require('./images/git.png')%>" alt="Github" /></a>
             <a href="#" target="_blank" class="footer__social_link">
-                <img class="footer__social_icon" src="<%=require('./images/facebook.png')%>" width="20px" height="20px"
-                    alt="Facebook" /></a>
+                <img class="footer__social_icon" src="<%=require('./images/facebook.png')%>" alt="Facebook" /></a>
         </div>
     </footer>
 </body>
-
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </html>
