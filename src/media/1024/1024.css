@@ -58,6 +58,9 @@
         margin: 40px auto 0;
         width: 90%;
     }
+    .news__content-3more {
+        display: none;
+    }
     .news__content_card {
         margin: 0 auto 13px;
         width: 224px;

@@ -13,22 +13,22 @@
 
 <body>
     <div class="page">
-        <header class="main">
-            <div class="main__header">
-                <p class="main__header_name">NewsAnalyzer</p>
-                <div class="main__header_link">
-                    <a href="./index.html" class="main__header_link link-selected">Главная</a>
-                    <a href="./about.html" class="main__header_link">О проекте</a>
+        <div class="main">
+            <header class="header">
+                <p class="header__name">NewsAnalyzer</p>
+                <div class="header__link">
+                    <a href="./index.html" class="header__link-main">Главная</a>
+                    <a href="./about.html" class="header__link-about">О проекте</a>
                 </div>
-            </div>
+            </header>
             <h1 class="main__title">Что в мире творится?</h1>
             <p class="main__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
                 прошедшую неделю.</p>
             <div class="main__search">
-                <input type="text" required placeholder="Введите тему новости" class="main__search_input">
-                <button type="submit" class="main__search_button">Искать</button>
+                <input type="text" required placeholder="Введите тему новости" class="search__input">
+                <button type="submit" class="search__button">Искать</button>
             </div>
-        </header>
+        </div>
         <div class="preloader">
             <div class="preloader__circle"></div>
             <p class="preloader__title">Ничего не найдено</p>
@@ -37,83 +37,93 @@
         </div>
         <div class="news">
             <div class="news__header">
-                <h1 class="news__header_name">Результаты поиска</h1>
-                <a href="./analytics.html" class="news__header_link">Посмотреть аналитику &#62;</a>
+                <h1 class="news__header-name">Результаты поиска</h1>
+                <a href="./analytics.html" class="news__header-link">Посмотреть аналитику &#62;</a>
             </div>
             <div class="news__content">
-                <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/lenta.png')%>" alt="lenta" class="news-cards-image">
-                    <div class="news-cards-date">2 августа, 2019</div>
-                    <h2 class="news-cards-title">Национальное достояние – парки</h2>
-                    <p class="news-cards-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад
-                        здесь
-                        начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый
-                        может
-                        приобщиться к природе.</p>
-                    <div class="news-cards-source">Лента.ру</div>
+                <div class="news__content-3until">
+                    <div class="news-cards">
+                        <img src="<%=require('./images/newsImages/lenta.png')%>" alt="lenta" class="news-cards-image">
+                        <div class="news-cards-date">2 августа, 2019</div>
+                        <h2 class="news-cards-title">Национальное достояние – парки</h2>
+                        <p class="news-cards-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад
+                            здесь
+                            начала складываться система национальных парков – охраняемых территорий, где и сегодня
+                            каждый
+                            может
+                            приобщиться к природе.</p>
+                        <div class="news-cards-source">Лента.ру</div>
+                    </div>
+                    <div class="news-cards">
+                        <img src="<%=require('./images/newsImages/medusa.png')%>" alt="medusa" class="news-cards-image">
+                        <div class="news-cards-date">2 августа, 2019</div>
+                        <h2 class="news-cards-title">Лесные огоньки: история одной фотографии</h2>
+                        <p class="news-cards-subtitle">Фотограф отвлеклась от освещения суровой политической
+                            реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+                            из местных чудес природы.</p>
+                        <div class="news-cards-source">Медуза</div>
+                    </div>
+                    <div class="news-cards">
+                        <img src="<%=require('./images/newsImages/ria.png')%>" alt="ria" class="news-cards-image">
+                        <div class="news-cards-date">2 августа, 2019</div>
+                        <h2 class="news-cards-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+                        <p class="news-cards-subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы
+                            рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
+                            тайгу,
+                            где...
+                        </p>
+                        <div class="news-cards-source">Риа</div>
+                    </div>
                 </div>
-                <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/medusa.png')%>" alt="medusa" class="news-cards-image">
-                    <div class="news-cards-date">2 августа, 2019</div>
-                    <h2 class="news-cards-title">Лесные огоньки: история одной фотографии</h2>
-                    <p class="news-cards-subtitle">Фотограф отвлеклась от освещения суровой политической
-                        реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                        из местных чудес природы.</p>
-                    <div class="news-cards-source">Медуза</div>
-                </div>
-                <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/ria.png')%>" alt="ria" class="news-cards-image">
-                    <div class="news-cards-date">2 августа, 2019</div>
-                    <h2 class="news-cards-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
-                    <p class="news-cards-subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы
-                        рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
-                        где...
-                    </p>
-                    <div class="news-cards-source">Риа</div>
-                </div>
-                <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/dzen.png')%>" alt="dzen" class="news-cards-image">
-                    <div class="news-cards-date">2 августа, 2019</div>
-                    <h2 class="news-cards-title">Национальное достояние – парки</h2>
-                    <p class="news-cards-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад
-                        здесь
-                        начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый
-                        может
-                        приобщиться к природе.</p>
-                    <div class="news-cards-source">Дзен</div>
-                </div>
-                <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/afisha.png')%>" alt="afisha" class="news-cards-image">
-                    <div class="news-cards-date">2 августа, 2019</div>
-                    <h2 class="news-cards-title">Лесные огоньки: история одной фотографии</h2>
-                    <p class="news-cards-subtitle">Фотограф отвлеклась от освещения суровой политической
-                        реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                        из местных чудес природы.</p>
-                    <div class="news-cards-source">Афиша</div>
-                </div>
-                <div class="news-cards">
-                    <img src="<%=require('./images/newsImages/mediazona.png')%>" alt="mediazona" class="news-cards-image">
-                    <div class="news-cards-date">2 августа, 2019</div>
-                    <h2 class="news-cards-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
-                    <p class="news-cards-subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы
-                        рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
-                        где...
-                    </p>
-                    <div class="news-cards-source">Медиазона</div>
+                <div class="news__content-3more">
+                    <div class="news-cards">
+                        <img src="<%=require('./images/newsImages/dzen.png')%>" alt="dzen" class="news-cards-image">
+                        <div class="news-cards-date">2 августа, 2019</div>
+                        <h2 class="news-cards-title">Национальное достояние – парки</h2>
+                        <p class="news-cards-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад
+                            здесь
+                            начала складываться система национальных парков – охраняемых территорий, где и сегодня
+                            каждый
+                            может
+                            приобщиться к природе.</p>
+                        <div class="news-cards-source">Дзен</div>
+                    </div>
+                    <div class="news-cards">
+                        <img src="<%=require('./images/newsImages/afisha.png')%>" alt="afisha" class="news-cards-image">
+                        <div class="news-cards-date">2 августа, 2019</div>
+                        <h2 class="news-cards-title">Лесные огоньки: история одной фотографии</h2>
+                        <p class="news-cards-subtitle">Фотограф отвлеклась от освещения суровой политической
+                            реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+                            из местных чудес природы.</p>
+                        <div class="news-cards-source">Афиша</div>
+                    </div>
+                    <div class="news-cards">
+                        <img src="<%=require('./images/newsImages/mediazona.png')%>" alt="mediazona"
+                            class="news-cards-image">
+                        <div class="news-cards-date">2 августа, 2019</div>
+                        <h2 class="news-cards-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+                        <p class="news-cards-subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы
+                            рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
+                            тайгу,
+                            где...
+                        </p>
+                        <div class="news-cards-source">Медиазона</div>
+                    </div>
                 </div>
             </div>
-            <button class="news__button">Показать еще</button>
+            <button type="submit" class="news__button">Показать еще</button>
         </div>
         <div class="about">
             <img class="about__image" src="<%=require('./images/authorImage.png')%>" alt="avatar">
             <div class="about__text">
-                <h2 class="about__text_title">Об авторе</h2>
-                <div class="about__text_subtitle">
-                    <p class="about__text_subtitle-first">Это блок с описаением автора проекта. Здесь следует указать,
+                <h2 class="about__text-title">Об авторе</h2>
+                <div class="about__text-paragraphs">
+                    <p class="paragraph-first">Это блок с описаением автора проекта. Здесь следует указать,
                         как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.</p>
-                    <p class="about__text_subtitle-second">Также можно рассказать о процессе обучения в Практикуме, чему
+                    <p class="paragraph-second">Также можно рассказать о процессе обучения в Практикуме, чему
                         вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
-                    <p class="about__text_subtitle-third">Если хотите, оставьте свои контакты: email и телефон. Так заказчики смогут с вами связаться.</p>
+                    <p class="paragraph-third">Если хотите, оставьте свои контакты: email и телефон. Так
+                        заказчики смогут с вами связаться.</p>
                 </div>
             </div>
         </div>
@@ -122,18 +132,20 @@
         <div class="footer__navigation">
             <div class="footer__copyright">&#169; 2019 Rodion Dronov</div>
             <div class="footer__info">
-                <a href="./index.html" class="footer__info_link">Главная</a>
-                <a href="./about.html" class="footer__info_link">О проекте</a>
-                <a href="https://praktikum.yandex.ru/" class="footer__info_link">Яндекс.Практикум</a>
+                <a href="./index.html" class="footer__info-link">Главная</a>
+                <a href="./about.html" class="footer__info-link">О проекте</a>
+                <a href="https://praktikum.yandex.ru/" target="_blank" class="footer__info-link">Яндекс.Практикум</a>
             </div>
         </div>
         <div class="footer__social">
-            <a href="#" target="_blank" class="footer__social_link">
+            <a href="https://github.com/Rodion163" target="_blank" class="footer__social-link">
                 <img class="footer__social_icon" src="<%=require('./images/git.png')%>" alt="Github" /></a>
-            <a href="#" target="_blank" class="footer__social_link">
+            <a href="https://www.facebook.com/rodion.dronov" target="_blank" class="footer__social-link">
                 <img class="footer__social_icon" src="<%=require('./images/facebook.png')%>" alt="Facebook" /></a>
         </div>
     </footer>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
-<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+
 </html>

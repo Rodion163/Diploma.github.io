@@ -3,7 +3,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.commitHistory__header_name {
+.commitHistory__header-name {
     color: #1A1B22;
     font-size: 40px;
     line-height: 46px;
@@ -11,7 +11,7 @@
     font-family: Roboto Slab;
     width: 712px;
 }
-.commitHistory__header_link {
+.commitHistory__header-link {
     color: #1A1B22;
     font-size: 18px;
     line-height: 24px;
@@ -21,6 +21,6 @@
     text-decoration-line: none;
     margin-right: 112px;
 }
-.commitHistory__header_link:after {
+.commitHistory__header-link:after {
     content: ">";
 }

@@ -1,6 +1,5 @@
 .commitCard__text {
-    margin-left: 24px;
-    margin-top: 16px;
+margin: 16px 24px 0 24px;
     font-size: 16px;
     line-height: 22px;
 }

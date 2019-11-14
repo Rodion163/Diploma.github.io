@@ -9,3 +9,8 @@
     background: #FFFFFF;
     border-radius: 16px;
 }
+.commitCard_hidden {
+    display: flex;
+    width: 816px;
+    justify-content: space-between;
+}

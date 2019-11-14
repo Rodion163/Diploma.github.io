@@ -5,11 +5,11 @@
     position: relative;
 }
 
-.chart__content_date {
+.chart__content-date {
     font-size: 18px;
 }
 
-.chart__content_value {
+.chart__content-value {
     position: absolute;
     margin-left: 104px;
     color: #FFFFFF;
@@ -20,34 +20,34 @@
     line-height: 24px;
 }
 
-.content_value-numeric {
+.content-value {
     margin-left: 6px;
 }
 
-.content_value-15 {
+.content-value_15 {
     width: 15%;
 }
 
-.content_value-18 {
+.content-value_18 {
     width: 18%;
 }
 
-.content_value-11 {
+.content-value_11 {
     width: 11%;
 }
 
-.content_value-39 {
+.content-value_39 {
     width: 39%;
 }
 
-.content_value-45 {
+.content-value_45 {
     width: 45%;
 }
 
-.content_value-73 {
+.content-value_73 {
     width: 73%;
 }
 
-.content_value-34 {
+.content-value_34 {
     width: 34%;
 }

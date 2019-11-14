@@ -2,24 +2,48 @@
     .main {
         height: 400px;
     }
-    .main__header {
+    .header {
         max-width: 1024px;
         min-width: 768px;
         padding-top: 22px;
         padding-bottom: 18px;
     }
-    .main__header_name {
+    .header__name {
         font-size: 16px;
         margin-left: 40px;
         width: 0;
     }
-    .main__header_link {
+    .header__link {
         font-size: 16px;
-        margin-right: 14px;
+        margin-right: 42px;
         height: 24px;
+        width: 189px;
     }
-    .link-selected {
+    .header__link-main {
+        color: #B6BCBF;
+        border-bottom: none;
+    }
+    .header__link-about {
         height: 40px;
+        color: #ffffff;
+        text-decoration-line: none;
+        border-bottom: 3px solid #ffffff;
+    }
+    .header__link_black {
+        font-size: 16px;
+        margin-right: 42px;
+        height: 24px;
+        width: 189px;
+    }
+    .header__link-main_black {
+        color: #B6BCBF;
+        border-bottom: none;
+    }
+    .header__link-about_black {
+        height: 40px;
+        color: #ffffff;
+        text-decoration-line: none;
+        border-bottom: 3px solid #ffffff;
     }
     .main__title {
         margin: 0 163px;
@@ -37,11 +61,11 @@
     .main__search {
         margin: 24px 163px;
     }
-    .main__search_input {
+    .search__input {
         width: 437px;
         height: 56px;
     }
-    .main__search_button {
+    .search__button {
         height: 56px;
         min-width: 160px;
     }
@@ -50,32 +74,65 @@
         margin-left: 40px;
         width: 90%;
     }
-    .news__header_name {
+    .news__header-name {
         font-size: 30px;
         line-height: 34px;
+    }
+    .news {
+        padding-bottom: 40px;
     }
     .news__content {
         margin: 40px auto 0;
         width: 90%;
+        height: 422px;
     }
-    .news__content_card {
+    .news__content-3until {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .news__content-3more {
+        display: none;
+    }
+    .news-cards-image {
+        width: 224px;
+        height: 150px;
+    }
+    .news-cards {
         margin: 0 auto 13px;
         width: 224px;
+        height: 420px;
     }
-    .news__content_card-date {
-        font-size: 18px;
+    .news-cards-date {
+        margin-left: 16px;
+        margin-top: 16px;
+    }
+    .news-cards-title {
+        margin: 12px 16px 0;
         line-height: 24px;
-    }
-    .news__content_card-title {
         font-size: 22px;
-        line-height: 26px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
     }
-    .news__content_card-subtitle {
+    .news-cards-subtitle {
+        margin: 10px 16px 0;
         font-size: 16px;
+        line-height: 24px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+    .news-cards-source {
+        bottom: 16px;
+        margin-left: 16px;
+        margin-top: 0;
     }
     .news__button {
         height: 56px;
-        margin: 22px auto 0;
+        margin: 32px auto 0;
         display: block;
     }
     .about__image {
@@ -90,7 +147,7 @@
         margin: 40px auto 0;
         width: 424px;
     }
-    .about__text_title {
+    .about__text-title {
         font-size: 30px;
         line-height: 40px;
     }
@@ -241,9 +298,7 @@
     .footer {
         height: 64px;
     }
-    .footer__info {
- 
-    }
+    .footer__info {}
     .footer__social_link {
         margin: 0 0 0 25px;
     }

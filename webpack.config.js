@@ -24,7 +24,7 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
-                    'file-loader?name=../../images/[name].[ext]',
+                    'file-loader?name=./images/[name].[ext]',
                     {
                         loader: 'image-webpack-loader',
                         options: {
@@ -37,14 +37,23 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: [
-                    (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '../'
+                        }
+                    },
                     'css-loader',
                     'postcss-loader'
                 ]
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
-                loader: 'file-loader?name=../../fonts/[name].[ext]'
+                loader: 'file-loader?name=../../fonts/[name].[ext]',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: './fonts'
+                }
             }
         ]
     },

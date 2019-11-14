@@ -1,11 +1,12 @@
 @font-face {
-    font-family: Robotomedium;
-    src: url(../fonts/roboto-medium-webfont.woff);
-}
-@font-face {
     font-family: Roboto;
     src: url(../fonts/roboto-regular-webfont.woff);
 }
+@font-face {
+    font-family: Robotomedium;
+    src: url(../fonts/roboto-medium-webfont.woff);
+}
+
 @font-face {
     font-family: Roboto Slab;
     src: url(../fonts/robotoslab-regular-webfont.woff);

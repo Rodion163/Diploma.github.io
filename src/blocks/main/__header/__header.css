@@ -1,4 +1,4 @@
-.main__header {
+.header {
     max-height: 80px;
     padding-top: 30px;
     padding-bottom: 26px;
@@ -7,25 +7,95 @@
     box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
 }
 
-.main__header_name {
+.header__name {
     color: #ffffff;
     font-size: 20px;
     line-height: 24px;
     font-weight: bold;
     margin: 0 104px;
+    font-family: Roboto Slab;
 }
 
-.main__header_link {
-    color: #ffffff;
+.header__name_black {
+    color: #1A1B22;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin: 0 104px;
+    font-family: Roboto Slab;
+}
+
+
+
+.header__link {
     font-size: 18px;
     line-height: 24px;
     display: flex;
-    margin-right: 50px;
-    text-decoration-line: none;
+    justify-content: space-between;
+    margin-right: 101px;
+    width: 189px;
+    font-family: Robotomedium;
 }
 
-.link-selected {
+.header__link-main {
     text-decoration-line: none;
     border-bottom: 3px solid #ffffff;
-    height: 192%;
+    height: 180%;
+    color: #FFFFFF;
+}
+
+.header__link-about {
+    height: 180%;
+    color: #B6BCBF;
+    text-decoration: none;
+}
+
+.header_black {
+    max-height: 80px;
+    padding-top: 30px;
+    padding-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #D1D2D6;
+}
+
+.header__link-main_black {
+    color: #B6BCBF;
+    text-decoration-line: none;
+    border-bottom: 3px solid #ffffff;
+    height: 180%;
+}
+
+.header__link-about_black {
+    text-decoration-line: none;
+    border-bottom: 3px solid #1A1B22;
+    height: 180%;
+    color: #1A1B22;
+}
+.header__link-main_grey {
+    color: #B6BCBF;
+    text-decoration-line: none;
+    border-bottom: 3px solid #ffffff;
+    height: 180%;
+}
+.header__link-about_grey {
+    text-decoration-line: none;
+    height: 180%;
+    color: #B6BCBF;
+}
+.header__link_black {
+    font-family: Robotomedium;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 101px;
+    width: 189px;
+}
+.header__link-main_grey:hover {
+    color: #1A1B22;
+}
+.header__link-about_grey:hover {
+    color: #1A1B22;
 }

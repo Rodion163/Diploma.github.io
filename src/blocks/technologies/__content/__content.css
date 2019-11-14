@@ -1,41 +1,43 @@
 .technologies__content {
-    margin-top: 93px;
+    margin: 93px 0 0 192px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.technologies__content_card {
+.content__card {
     display: flex;
     flex-direction: column;
     width: 120px;
+    margin-right: 56px;
 }
 
-.technologies__content_card-name {
+.content__card-name {
     font-size: 18px;
     line-height: 24px;
     text-align: center;
 }
 
-.technologies__content_card-icon {
+.content__card-icon {
     background-repeat: space;
     background-position: center;
     width: 120px;
     height: 120px;
 }
 
-.card_icon_html {
+.icon-html {
     background-image: url('../../../images/tech/html.png');
 }
 
-.card_icon_css {
+.icon-css {
     background-image: url('../../../images/tech/css.png');
 }
 
-.card_icon_js {
+.icon-js {
     background-image: url('../../../images/tech/js.png');
 }
 
-.card_icon_webpack {
+.icon-webpack {
     background-image: url('../../../images/tech/webpack.png');
 }

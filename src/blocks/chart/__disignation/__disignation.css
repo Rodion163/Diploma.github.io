@@ -10,11 +10,11 @@
     height: 44px;
 }
 
-.chart__designation_date {
+.chart__designation-date {
     width: min-content;
 }
 
-.chart__designation_amount {
+.chart__designation-amount {
     margin-left: 104px;
     position: absolute;
 }

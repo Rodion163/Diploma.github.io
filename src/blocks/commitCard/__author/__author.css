@@ -5,20 +5,20 @@
     display: flex;
 }
 
-.commitCard__author_info {
+.author__info {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.commitCard__author_info-name {
+.author__info-name {
     height: 30px;
     font-size: 26px;
     line-height: 30px;
 }
 
-.commitCard__author_info-email {
+.author__info-email {
     height: 22px;
     font-size: 14px;
     line-height: 22px;

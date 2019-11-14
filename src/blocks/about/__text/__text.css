@@ -4,17 +4,35 @@
     height: 100%;
 }
 
-.about__text_title {
+.about__text-title {
     font-family: Roboto Slab;
     margin: 0;
     font-size: 40px;
     line-height: 46px;
+    font-weight: normal;
 }
 
-.about__text_subtitle {
-    margin: 0;
+.about__text-paragraphs {
+    margin: 24px 0 0;
     font-family: Roboto;
     max-width: 600px;
     font-size: 18px;
     line-height: 24px;
+}
+
+.paragraph-third {
+    display: none;
+}
+
+.paragraph-first_feedback {
+    margin: 0;
+}
+
+.paragraph-second_feedback {
+    margin: 0;
+}
+
+.paragraph-third_feedback {
+    display: initial;
+    margin: 0;
 }

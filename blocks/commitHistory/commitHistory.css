@@ -1,8 +1,0 @@
-@import url('../commitHistory/__header/__header.css');
-@import url('../commitHistory/__slaider/__slaider.css');
-.commitHistory {
-    background: #F5F6F7;
-    position: relative;
-    height: 100%;
-    flex-wrap: wrap;
-}

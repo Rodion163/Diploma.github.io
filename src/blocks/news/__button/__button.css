@@ -7,8 +7,19 @@
     font-size: 18px;
     line-height: 24px;
     border: none;
+    font-family: Roboto;
+    font-weight: bold;
 }
+
 .news__button:hover {
     background: #FFFFFF;
     opacity: 0.9;
+}
+
+.news__button:focus {
+    outline: none;
+}
+
+.news__button:active {
+    outline: none;
 }
