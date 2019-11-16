@@ -1,9 +1,15 @@
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1279px) {
     .main {
         height: 400px;
     }
     .header {
-        max-width: 1024px;
+        max-width: 1280px;
+        min-width: 768px;
+        padding-top: 22px;
+        padding-bottom: 18px;
+    }
+    .header_black {
+        max-width: 1280px;
         min-width: 768px;
         padding-top: 22px;
         padding-bottom: 18px;
@@ -41,9 +47,9 @@
     }
     .header__link-about_black {
         height: 40px;
-        color: #ffffff;
+        color: #1A1B22;
         text-decoration-line: none;
-        border-bottom: 3px solid #ffffff;
+        border-bottom: 3px solid #1A1B22;
     }
     .main__title {
         margin: 0 163px;
@@ -142,6 +148,7 @@
     }
     .about {
         flex-wrap: nowrap;
+        margin-bottom: 66px;
     }
     .about__text {
         margin: 40px auto 0;
@@ -153,6 +160,7 @@
     }
     .footer__navigation {
         flex-wrap: nowrap;
+        width: 75%;
     }
     .footer__copyright {
         margin: 0;
@@ -173,12 +181,12 @@
         padding-top: 16px;
         padding-bottom: 19px;
     }
-    .toCustomers__header_name {
+    .toCustomers__header-name {
         font-size: 16px;
         margin-left: 40px;
         width: 0;
     }
-    .toCustomers__header_link {
+    .toCustomers__header-link {
         font-size: 16px;
         margin-right: 40px;
         height: 24px;
@@ -215,14 +223,14 @@
         width: 90%;
         justify-content: space-between;
     }
-    .commitHistory__header_name {
+    .commitHistory__header-name {
         margin: 32px 40px 0;
         font-size: 30px;
         line-height: 40px;
         width: 50%;
         font-weight: normal;
     }
-    .commitHistory__header_link {
+    .commitHistory__header-link {
         margin: 48px 42px 0;
     }
     .commitHistory__slider {
@@ -232,19 +240,38 @@
         height: 264px;
         width: 288px;
         margin: auto;
+        display: none;
     }
-    .commitCard__author_avatar {
+    .commitCard_widescreen {
+        width: 336px;
+        height: 242px;
+    }
+    .slider__content:before {
+        display: none;
+    }
+    .slider__content:after {
+        display: none;
+    }
+    .commitCard_left {
+        display: none;
+    }
+    .commitCard_right {
+        height: 242px;
+        right: -408px;
+    }
+    .author__avatar {
         width: 48px;
         height: 48px;
     }
-    .commitCard__author_info {
+    .author__info {
         justify-content: start;
     }
-    .commitCard__author_info-name {
+    .author_info-name {
         font-size: 20px;
     }
     .slider__content {
         margin-left: 40px;
+        width: 680px;
     }
     .slider__button-next {
         display: none;
@@ -292,14 +319,13 @@
         margin-left: 40px;
         margin-bottom: 48px;
     }
-    .chart__content_value {
+    .chart__content-value {
         margin-left: 117px;
     }
     .footer {
         height: 64px;
     }
-    .footer__info {}
-    .footer__social_link {
+    .footer__social-link {
         margin: 0 0 0 25px;
     }
     .scale-bottom {

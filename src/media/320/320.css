@@ -242,12 +242,12 @@
         padding-top: 16px;
         padding-bottom: 19px;
     }
-    .toCustomers__header_name {
+    .toCustomers__header-name {
         font-size: 16px;
         margin-left: 16px;
         width: 0;
     }
-    .toCustomers__header_link {
+    .toCustomers__header-link {
         font-size: 16px;
         margin-right: 14px;
         height: 24px;
@@ -259,12 +259,12 @@
         margin: 17px auto 0;
         font-size: 30px;
         line-height: 40px;
-        min-width: 285px;
+        min-width: 288px;
         font-weight: normal;
     }
     .toCustomers__subtitle {
         margin: 16px auto 0;
-        width: 288px;
+        width: 90%;
         line-height: 24px;
     }
     .technologies {
@@ -273,29 +273,30 @@
         padding-bottom: 52px;
     }
     .technologies__title {
-        margin: 32px 16px 0;
+        margin: 32px auto 0;
         font-size: 30px;
         line-height: 40px;
-        min-width: 285px;
+        min-width: 288px;
         font-weight: normal;
     }
     .technologies__content {
-        margin: 0;
+        margin: 0 auto;
+        width: auto;
     }
-    .technologies__content_card {
+    .content__card {
         margin-top: 40px;
     }
     .commitHistory {
         height: 568px;
     }
-    .commitHistory__header_name {
-        margin: 32px 16px 0;
+    .commitHistory__header-name {
+        margin: 32px auto 0;
         font-size: 30px;
         line-height: 40px;
-        width: 50%;
+        width: 288px;
         font-weight: normal;
     }
-    .commitHistory__header_link {
+    .commitHistory__header-link {
         position: absolute;
         bottom: 32px;
         left: 50%;
@@ -315,22 +316,33 @@
     .commitHistory__slider {
         margin-top: 16px;
     }
+    .commitCard_left {
+        display: none;
+    }
+    .commitCard_right {
+        display: none;
+    }
+    .commitCard_widescreen {
+        display: none;
+    }
     .commitCard {
         height: 264px;
         width: 288px;
     }
-    .commitCard__author_avatar {
+    .author__avatar {
         width: 48px;
         height: 48px;
     }
-    .commitCard__author_info {
+    .author__info {
         justify-content: start;
     }
-    .commitCard__author_info-name {
+    .author__info-name {
         font-size: 20px;
     }
     .slider__content {
         margin-left: 16px;
+        width: 288px;
+        margin: auto;
     }
     .slider__button-next {
         display: none;

@@ -4,13 +4,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 45.56%;
 }
 
 .content__card {
     display: flex;
     flex-direction: column;
     width: 120px;
-    margin-right: 56px;
 }
 
 .content__card-name {

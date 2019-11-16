@@ -5,12 +5,36 @@
     display: flex;
     flex-direction: column;
     height: 288px;
-    width: 400px;
+    width: 32.3%;
     background: #FFFFFF;
     border-radius: 16px;
 }
-.commitCard_hidden {
+.commitCard_widescreen {
     display: flex;
-    width: 816px;
-    justify-content: space-between;
+    flex-direction: column;
+    height: 288px;
+    width: 32.3%;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.commitCard_left {
+    display: flex;
+    flex-direction: column;
+    height: 288px;
+    width: 400px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    position: absolute;
+    left: -416px;
+}
+.commitCard_right {
+    display: flex;
+    flex-direction: column;
+    height: 288px;
+    width: 400px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    position: absolute;
+    right: -416px;
 }
