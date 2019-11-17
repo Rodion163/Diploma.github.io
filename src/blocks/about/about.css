@@ -7,3 +7,22 @@
     margin: 0 auto;
     width: 90%;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .about {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .about {
+        flex-wrap: nowrap;
+        margin-bottom: 66px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .about {
+        flex-wrap: nowrap;
+    }
+}

@@ -9,6 +9,7 @@
     background: #FFFFFF;
     border-radius: 16px;
 }
+
 .commitCard_widescreen {
     display: flex;
     flex-direction: column;
@@ -28,6 +29,7 @@
     position: absolute;
     left: -416px;
 }
+
 .commitCard_right {
     display: flex;
     flex-direction: column;
@@ -37,4 +39,40 @@
     border-radius: 16px;
     position: absolute;
     right: -416px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .commitCard_left {
+        display: none;
+    }
+    .commitCard_right {
+        display: none;
+    }
+    .commitCard_widescreen {
+        display: none;
+    }
+    .commitCard {
+        height: 264px;
+        width: 288px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .commitCard {
+        height: 264px;
+        width: 288px;
+        margin: auto;
+        display: none;
+    }
+    .commitCard_widescreen {
+        width: 336px;
+        height: 242px;
+    }
+    .commitCard_left {
+        display: none;
+    }
+    .commitCard_right {
+        height: 242px;
+        right: -408px;
+    }
 }

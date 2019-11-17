@@ -1,20 +1,52 @@
-.chart__designation {
-    border-bottom: 1px solid #1A1B22;
-    display: flex;
-    flex-direction: row;
+.chart__designation-date {
+    width: min-content;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 16px;
     color: #B6BCBF;
-    margin: 48px 104px 0;
-    height: 44px;
-}
-
-.chart__designation-date {
-    width: min-content;
+    margin: 48px 0 0 104px;
 }
 
 .chart__designation-amount {
-    margin-left: 104px;
-    position: absolute;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6BCBF;
+    margin: 48px 0 0 0;
+}
+
+.chart__designation-line {
+    grid-column: span 2;
+    border-bottom: 1px solid #1A1B22;
+    margin: 24px 104px 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .chart__designation-date {
+        margin: 16px 0 0 16px;
+    }
+    .chart__designation-amount {
+        margin: 16px 0 0 0;
+    }
+    .chart__designation-line {
+        grid-column: span 2;
+        border-bottom: 1px solid #1A1B22;
+        margin: 8px 16px 0;
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .chart__designation-date {
+        margin: 49px 0 0 40px;
+    }
+    .chart__designation-amount {
+        margin: 49px 0 0 0;
+    }
+    .chart__designation-line {
+        grid-column: span 2;
+        border-bottom: 1px solid #1A1B22;
+        margin: 4px 40px 0;
+        width: 90%;
+    }
 }

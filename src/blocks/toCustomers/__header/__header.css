@@ -30,3 +30,46 @@
     height: 50px;
     border-bottom: 3px solid #1A1B22;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .toCustomers__header {
+        min-width: 320px;
+        padding-top: 16px;
+        padding-bottom: 19px;
+    }
+    .toCustomers__header-name {
+        font-size: 16px;
+        margin-left: 16px;
+        width: 0;
+    }
+    .toCustomers__header-link {
+        font-size: 16px;
+        margin-right: 14px;
+        height: 24px;
+    }
+    .toCustomers_link-selected {
+        height: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .toCustomers__header {
+        min-width: 320px;
+        padding-top: 16px;
+        padding-bottom: 19px;
+    }
+    .toCustomers__header-name {
+        font-size: 16px;
+        margin-left: 40px;
+        width: 0;
+    }
+    .toCustomers__header-link {
+        font-size: 16px;
+        margin-right: 40px;
+        height: 24px;
+    }
+    .toCustomers_link-selected {
+        height: 40px;
+        margin: 0;
+    }
+}

@@ -83,3 +83,48 @@
     background: #D1D2D6;
     border-radius: 100%;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .commitHistory__slider {
+        margin-top: 16px;
+    }
+    .slider__content {
+        margin-left: 16px;
+        width: 288px;
+        margin: auto;
+    }
+    .slider__button-next {
+        display: none;
+    }
+    .slider__button-prev {
+        display: none;
+    }
+    .slider__pagination {
+        margin: 16px auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .commitHistory__slider {
+        margin-top: 16px;
+    }
+    .slider__content:before {
+        display: none;
+    }
+    .slider__content:after {
+        display: none;
+    }
+    .slider__content {
+        margin-left: 40px;
+        width: 680px;
+    }
+    .slider__button-next {
+        display: none;
+    }
+    .slider__button-prev {
+        display: none;
+    }
+    .slider__pagination {
+        margin: 16px auto;
+    }
+}

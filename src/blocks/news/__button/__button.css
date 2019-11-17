@@ -23,3 +23,19 @@
 .news__button:active {
     outline: none;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .news__button {
+        height: 56px;
+        margin: 12.68px auto 0;
+        display: block;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .news__button {
+        height: 56px;
+        margin: 22px auto 0;
+        display: block;
+    }
+}

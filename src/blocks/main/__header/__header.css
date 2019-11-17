@@ -25,8 +25,6 @@
     font-family: Roboto Slab;
 }
 
-
-
 .header__link {
     font-size: 18px;
     line-height: 24px;
@@ -73,17 +71,20 @@
     height: 180%;
     color: #1A1B22;
 }
+
 .header__link-main_grey {
     color: #B6BCBF;
     text-decoration-line: none;
     border-bottom: 3px solid #ffffff;
     height: 180%;
 }
+
 .header__link-about_grey {
     text-decoration-line: none;
     height: 180%;
     color: #B6BCBF;
 }
+
 .header__link_black {
     font-family: Robotomedium;
     font-size: 18px;
@@ -93,9 +94,157 @@
     margin-right: 101px;
     width: 189px;
 }
+
 .header__link-main_grey:hover {
     color: #1A1B22;
 }
+
 .header__link-about_grey:hover {
     color: #1A1B22;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .header {
+        min-width: 320px;
+        padding-top: 16px;
+        padding-bottom: 19px;
+    }
+    .header_black {
+        min-width: 320px;
+        padding-top: 16px;
+        padding-bottom: 19px;
+    }
+    .header__name {
+        font-size: 16px;
+        margin-left: 16px;
+        width: 117px;
+        margin: 0 0 0 16px;
+    }
+    .header__name_black {
+        font-size: 16px;
+        margin-left: 16px;
+        width: 117px;
+        margin: 0 0 0 16px;
+    }
+    .header__link {
+        display: flex;
+        margin-right: 14px;
+        height: 24px;
+        margin: 0 14px 0 25px;
+        width: 148px;
+        justify-content: space-between;
+    }
+    .header__link-main {
+        font-size: 16px;
+        width: 61px;
+        margin: 0;
+        color: #B6BCBF;
+        border-bottom: none;
+    }
+    .header__link-about {
+        color: #FFFFFF;
+        font-size: 16px;
+        height: 40px;
+        width: 76px;
+        margin: 0;
+        text-decoration-line: none;
+        border-bottom: 3px solid #ffffff;
+    }
+    .header__link_black {
+        display: flex;
+        margin-right: 14px;
+        height: 24px;
+        margin: 0 14px 0 25px;
+        width: 148px;
+        justify-content: space-between;
+    }
+    .header__link-main_black {
+        font-size: 16px;
+        width: 61px;
+        margin: 0;
+        color: #B6BCBF;
+        border-bottom: none;
+    }
+    .header__link-about_black {
+        color: #1A1B22;
+        font-size: 16px;
+        height: 40px;
+        width: 76px;
+        margin: 0;
+        text-decoration-line: none;
+        border-bottom: 3px solid #1A1B22;
+    }
+    .header__link-about_grey {
+        color: #B6BCBF;
+        font-size: 16px;
+        height: 40px;
+        width: 76px;
+        margin: 0;
+        text-decoration-line: none;
+    }
+    .header__link-main_grey {
+        font-size: 16px;
+        width: 61px;
+        margin: 0;
+        color: #B6BCBF;
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .header {
+        max-width: 1280px;
+        min-width: 768px;
+        padding-top: 22px;
+        padding-bottom: 18px;
+    }
+    .header_black {
+        max-width: 1280px;
+        min-width: 768px;
+        padding-top: 22px;
+        padding-bottom: 18px;
+    }
+    .header__name {
+        font-size: 16px;
+        margin-left: 40px;
+        width: 0;
+    }
+    .header__name_black {
+        font-size: 16px;
+        margin-left: 16px;
+        width: 117px;
+        margin: 0 0 0 40px;
+    }
+    .header__link {
+        font-size: 16px;
+        margin-right: 42px;
+        height: 24px;
+        width: 189px;
+    }
+    .header__link-main {
+        color: #B6BCBF;
+        border-bottom: none;
+    }
+    .header__link-about {
+        height: 40px;
+        color: #ffffff;
+        text-decoration-line: none;
+        border-bottom: 3px solid #ffffff;
+    }
+    .header__link_black {
+        font-size: 16px;
+        margin-right: 42px;
+        height: 24px;
+        width: 189px;
+    }
+    .header__link-main_black {
+        color: #B6BCBF;
+        border-bottom: none;
+    }
+    .header__link-about_black {
+        height: 40px;
+        color: #1A1B22;
+        text-decoration-line: none;
+        border-bottom: 3px solid #1A1B22;
+    }
 }

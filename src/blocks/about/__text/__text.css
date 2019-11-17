@@ -36,3 +36,48 @@
     display: initial;
     margin: 0;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .about__text {
+        margin: auto;
+    }
+    .about__text-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about__text-paragraphs {
+        margin: 16px auto 44px;
+    }
+    .paragraph-first {
+        margin: 0;
+    }
+    .paragraph-second {
+        margin: 0;
+    }
+    .paragraph-third {
+        display: block;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .about__text {
+        margin: 40px auto 0;
+        width: 424px;
+    }
+    .about__text-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .about__text {
+        margin: 40px auto 0;
+        width: 424px;
+    }
+    .about__text_title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}

@@ -41,3 +41,21 @@
 .icon-webpack {
     background-image: url('../../../images/tech/webpack.png');
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .technologies__content {
+        margin: 0 auto;
+        width: auto;
+    }
+    .content__card {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .technologies__content {
+        margin: 40px auto 0;
+        width: 90%;
+        justify-content: space-between;
+    }
+}

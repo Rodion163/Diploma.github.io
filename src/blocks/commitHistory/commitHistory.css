@@ -6,3 +6,20 @@
     height: 100%;
     flex-wrap: wrap;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .commitHistory {
+        height: 568px;
+    }
+    .commitCard_widescreen {
+        width: 336px;
+        height: 242px;
+    }
+    .commitCard_left {
+        display: none;
+    }
+    .commitCard_right {
+        height: 242px;
+        right: -408px;
+    }
+}

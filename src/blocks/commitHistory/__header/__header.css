@@ -3,6 +3,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .commitHistory__header-name {
     color: #1A1B22;
     font-size: 40px;
@@ -11,6 +12,7 @@
     font-family: Roboto Slab;
     width: 712px;
 }
+
 .commitHistory__header-link {
     color: #1A1B22;
     font-size: 18px;
@@ -21,6 +23,50 @@
     text-decoration-line: none;
     margin-right: 112px;
 }
+
 .commitHistory__header-link:after {
     content: ">";
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .commitHistory__header-name {
+        margin: 32px auto 0;
+        font-size: 30px;
+        line-height: 40px;
+        width: 288px;
+        font-weight: normal;
+    }
+    .commitHistory__header-link {
+        position: absolute;
+        bottom: 32px;
+        left: 50%;
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 80px;
+        height: 56px;
+        width: 288px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 3;
+        align-items: center;
+        text-align: center;
+        display: block;
+        margin-left: -144px;
+    }
+    .commitHistory__header_link:after {
+        content: "";
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .commitHistory__header-name {
+        margin: 32px 40px 0;
+        font-size: 30px;
+        line-height: 40px;
+        width: 50%;
+        font-weight: normal;
+    }
+    .commitHistory__header-link {
+        margin: 48px 42px 0;
+    }
 }

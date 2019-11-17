@@ -11,3 +11,23 @@
     font-family: Roboto Slab;
     font-weight: normal;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .main__title {
+        margin: 30px auto 0;
+        font-size: 36px;
+        line-height: 40px;
+        width: min-content;
+        min-width: 285px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .main__title {
+        margin: 0 163px;
+        font-size: 36px;
+        line-height: 40px;
+        width: 385px;
+    }
+}

@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development --open --watch",
+    "dev": "webpack-dev-server --mode development --open --watch --host 0.0.0.0",
     "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
   },
   "repository": {
@@ -19,30 +19,30 @@
   },
   "homepage": "https://rodion163.github.io",
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "autoprefixer": "^9.7.0",
-    "babel-loader": "^8.0.6",
-    "cross-env": "^6.0.0",
-    "css-loader": "^3.2.0",
-    "cssnano": "^4.1.10",
-    "file-loader": "^4.2.0",
-    "gh-pages": "^2.1.1",
+    "@babel/cli": "7.6.4",
+    "@babel/core": "7.6.4",
+    "@babel/preset-env": "7.6.3",
+    "autoprefixer": "9.7.0",
+    "babel-loader": "8.0.6",
+    "cross-env": "6.0.0",
+    "css-loader": "3.2.0",
+    "cssnano": "4.1.10",
+    "file-loader": "4.2.0",
+    "gh-pages": "2.1.1",
     "html-webpack-plugin": "3.2.0",
-    "image-webpack-loader": "^6.0.0",
-    "mini-css-extract-plugin": "^0.8.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "postcss-loader": "^3.0.0",
-    "style-loader": "^1.0.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.9.0",
+    "image-webpack-loader": "6.0.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "postcss-loader": "3.0.0",
+    "style-loader": "1.0.0",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.9",
+    "webpack-dev-server": "3.9.0",
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "core-js": "^3.1.4",
-    "rimraf": "^3.0.0"
+    "babel-polyfill": "6.26.0",
+    "core-js": "3.1.4",
+    "rimraf": "3.0.0"
   }
 }

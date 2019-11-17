@@ -10,3 +10,23 @@
     width: min-content;
     height: fit-content;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .toCustomers__title {
+        margin: 17px auto 0;
+        font-size: 30px;
+        line-height: 40px;
+        min-width: 288px;
+        font-weight: normal;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .toCustomers__title {
+        margin: 30px 40px 0;
+        font-size: 30px;
+        line-height: 40px;
+        min-width: 285px;
+        font-weight: normal;
+    }
+}

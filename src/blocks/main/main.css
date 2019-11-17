@@ -2,7 +2,6 @@
 @import url('../main/__search/__search.css');
 @import url('../main/__subtitle/__subtitle.css');
 @import url('../main/__title/__title.css');
-
 .main {
     position: relative;
     height: 100vh;
@@ -10,4 +9,18 @@
     width: 100%;
     background-image: url('../../images/header-image.jpg');
     background-size: cover;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .main {
+        height: 536px;
+        background-image: url('../../images/header-image320.png');
+        background-position: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .main {
+        height: 400px;
+    }
 }

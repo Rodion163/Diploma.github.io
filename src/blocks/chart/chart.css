@@ -3,8 +3,25 @@
 @import url('../chart/__scale/__scale.css');
 @import url('../chart/__content/__content.css');
 .chart {
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    background: #F5F6F7
+  display: grid;
+  grid-template-columns: 208px auto;
+  background: #F5F6F7;
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .chart {
+    grid-template-columns: 96px auto;
+    margin-top: 24px;
+    padding-bottom: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .chart {
+    grid-template-columns: 157px auto;
+    margin-top: 40px;
+    padding-bottom: 0px;
+  }
 }
