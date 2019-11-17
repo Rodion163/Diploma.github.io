@@ -1,30 +1,15 @@
 @import url('../fonts/roboto.css');
 @import url('./normalize.css');
 @import url('../blocks/main/main.css');
-@import url('../blocks/preloader/preloader.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/about/about.css');
 @import url('../blocks/toCustomers/toCustomers.css');
 @import url('../blocks/technologies/technologies.css');
 @import url('../blocks/commitHistory/commitHistory.css');
-@import url('../blocks/about/about.css');
-@import url('../blocks/footer/footer.css');
 @import url('../blocks/commitCard/commitCard.css');
-@import url('../blocks/news/news.css');
-@import url('../blocks/analytics/analytics.css');
-@import url('../blocks/chart/chart.css');
 .page {
     min-width: 320px;
     max-width: 1440px;
     margin: 0 auto;
     font-family: Roboto, Roboto Slab, Robotomedium, Source Sans Pro, Arial, Helvetica, sans-serif;
-}
-
-body {
-    margin: 0;
-    display: block;
-}
-
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
 }
