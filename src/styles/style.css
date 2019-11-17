@@ -11,7 +11,6 @@
 @import url('../blocks/news/news.css');
 @import url('../blocks/analytics/analytics.css');
 @import url('../blocks/chart/chart.css');
-@import url('../media/1280/1280.css');
 .page {
     min-width: 320px;
     max-width: 1440px;
