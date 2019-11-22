@@ -55,7 +55,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-    .cards {
+    .card {
         margin: 0 auto 13px;
         height: 446.13px;
         width: min-content;
