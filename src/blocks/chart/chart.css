@@ -1,7 +1,7 @@
-@import url('../chart/__header/__header.css');
-@import url('../chart/__disignation/__disignation.css');
-@import url('../chart/__scale/__scale.css');
-@import url('../chart/__content/__content.css');
+@import url('../chart/chart__header/chart__header.css');
+@import url('../chart/chart__disignation/chart__disignation.css');
+@import url('../chart/chart__scale/chart__scale.css');
+@import url('../chart/chart__content/chart__content.css');
 .chart {
   display: grid;
   grid-template-columns: 208px auto;

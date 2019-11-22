@@ -1,5 +1,6 @@
 @import url('../fonts/roboto.css');
-@import url('./normalize.css');
+@import '~normalize.css';
+@import url('../blocks/page/page.css');
 @import url('../blocks/main/main.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/about/about.css');
@@ -7,9 +8,3 @@
 @import url('../blocks/technologies/technologies.css');
 @import url('../blocks/commitHistory/commitHistory.css');
 @import url('../blocks/commitCard/commitCard.css');
-.page {
-    min-width: 320px;
-    max-width: 1440px;
-    margin: 0 auto;
-    font-family: Roboto, Roboto Slab, Robotomedium, Source Sans Pro, Arial, Helvetica, sans-serif;
-}

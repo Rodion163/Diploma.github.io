@@ -15,16 +15,27 @@
     <div class="page">
         <div class="analytics">
             <header class="header_black">
-                <p class="header__name_black">NewsAnalyzer</p>
-                <div class="header__link_black">
-                    <a href="./index.html" class="header__link-main_grey">Главная</a>
-                    <a href="./about.html" class="header__link-about_grey">О проекте</a>
+                <p class="header__name header__name_black">NewsAnalyzer</p>
+                <div class="header__link-wrap">
+                    <ul>
+                        <li> <a href="./index.html" class="header__link header__link_color_grey">Главная</a></li>
+                        <li> <a href="./about.html" class="header__link header__link_color_grey">О проекте</a></li>
+                    </ul>
                 </div>
             </header>
-            <h1 class="analytics__title">Главная <span class="uncolored">/ Аналитика</span></h1>
-            <p class="analytics__subtitle">Вы спросили: «Путешествия»</p>
-            <p class="analytics__result">Новостей за неделю: <span class="digitalResult">34 324</span></p>
-            <p class="analytics__result">Упоминаний в загаловках: <span class="digitalResult">235</span></p>
+            <ul class="analytics__list list">
+                <li class="list__item"><a href="./index.html" class="list__title">Главная <span class="uncolored">/
+                            Аналитика</span></a></li>
+                <li class="list__item">
+                    <p class="list__subtitle">Вы спросили: «Путешествия»</p>
+                </li>
+                <li class="list__item">
+                    <p class="list__result">Новостей за неделю: <span class="digitalResult">34 324</span></p>
+                </li>
+                <li class="list__item">
+                    <p class="list__result">Упоминаний в загаловках: <span class="digitalResult">235</span></p>
+                </li>
+            </ul>
         </div>
         <div class="chart">
             <div class="chart__header">Аналитика по дням</div>
@@ -37,7 +48,7 @@
                 <div class="chart__scale-segment">50</div>
                 <div class="chart__scale-segment">75
                 </div>
-                <div class="chart__scale-segment-right">100</div>
+                <div class="chart__scale-segment_right">100</div>
             </div>
             <div class="chart__content-date">19, пн</div>
             <div class="chart__content-value ">
@@ -73,7 +84,7 @@
                 <div class="chart__scale-segment">25</div>
                 <div class="chart__scale-segment">50</div>
                 <div class="chart__scale-segment">75</div>
-                <div class="chart__scale-segment-right">100</div>
+                <div class="chart__scale-segment_right">100</div>
             </div>
         </div>
 
@@ -89,9 +100,9 @@
             </div>
             <div class="footer__social">
                 <a href="https://github.com/Rodion163" target="_blank" class="footer__social-link">
-                    <img class="footer__social_icon" src="<%=require('./images/git.png')%>" alt="Github" /></a>
+                    <img class="footer__social-icon" src="<%=require('./images/git.png')%>" alt="Github" /></a>
                 <a href="https://www.facebook.com/rodion.dronov" target="_blank" class="footer__social-link">
-                    <img class="footer__social_icon" src="<%=require('./images/facebook.png')%>" alt="Facebook" /></a>
+                    <img class="footer__social-icon" src="<%=require('./images/facebook.png')%>" alt="Facebook" /></a>
             </div>
         </footer>
     </div>

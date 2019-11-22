@@ -14,10 +14,12 @@
 <body>
     <div class="page">
         <header class="header_black">
-            <p class="header__name_black">NewsAnalyzer</p>
-            <div class="header__link_black">
-                <a href="./index.html" class="header__link-main_black">Главная</a>
-                <a href="./about.html" class="header__link-about_black">О проекте</a>
+            <p class="header__name header__name_black">NewsAnalyzer</p>
+            <div class="header__link-wrap">
+                <ul>
+                    <li><a href="./index.html" class="header__link_black">Главная</a></li>
+                    <li> <a href="./about.html" class="header__link header__link_color_black">О проекте</a></li>
+                </ul>
             </div>
         </header>
         <div class="toCustomers">
@@ -40,22 +42,22 @@
         </div>
         <div class="technologies">
             <h2 class="technologies__title">Используемые технологии</h2>
-            <div class="technologies__content">
-                <div class="content__card">
-                    <div class="content__card-name">HTML</div>
-                    <div class="content__card-icon icon-html"></div>
+            <div class="technologies__item">
+                <div class="item">
+                    <div class="item__name">HTML</div>
+                    <div class="item__icon icon-html"></div>
                 </div>
-                <div class="content__card">
-                    <div class="content__card-name">CSS</div>
-                    <div class="content__card-icon icon-css"></div>
+                <div class="item">
+                    <div class="item__name">CSS</div>
+                    <div class="item__icon icon-css"></div>
                 </div>
-                <div class="content__card">
-                    <div class="content__card-name">Java Script</div>
-                    <div class="content__card-icon icon-js"></div>
+                <div class="item">
+                    <div class="item__name">Java Script</div>
+                    <div class="item__icon icon-js"></div>
                 </div>
-                <div class="content__card">
-                    <div class="content__card-name">Webpack</div>
-                    <div class="content__card-icon icon-webpack"></div>
+                <div class="item">
+                    <div class="item__name">Webpack</div>
+                    <div class="item__icon icon-webpack"></div>
                 </div>
             </div>
         </div>
@@ -81,9 +83,22 @@
                 <a href="https://github.com/Rodion163" target="_blank" class="commitHistory__header-link">Открыть в
                     Github&#8194;</a>
             </div>
-            <div class="commitHistory__slider">
+            <div class="commitHistory__slider slider">
                 <div class="slider__content">
-                    <div class="commitCard_left">
+<!--                     <div class="commitCard_left">
+                        <div class="commitCard__date">14 августа, 2019</div>
+                        <div class="commitCard__author">
+                            <img class="author__avatar" src="<%=require('./images/avatarDolinin.png')%>"
+                                alt="commitCard-avatar">
+                            <div class="author__info">
+                                <div class="author__info-name">Антон Долинин</div>
+                                <div class="author__info-email">anton@yandex.ru</div>
+                            </div>
+                        </div>
+                        <p class="commitCard__text">Emmet (formerly Zen Coding) is a web-
+                            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                    </div> -->
+                    <div class="commitCard">
                         <div class="commitCard__date">14 августа, 2019</div>
                         <div class="commitCard__author">
                             <img class="author__avatar" src="<%=require('./images/avatarDolinin.png')%>"
@@ -99,19 +114,6 @@
                     <div class="commitCard">
                         <div class="commitCard__date">14 августа, 2019</div>
                         <div class="commitCard__author">
-                            <img class="author__avatar" src="<%=require('./images/avatarDolinin.png')%>"
-                                alt="commitCard-avatar">
-                            <div class="author__info">
-                                <div class="author__info-name">Антон Долинин</div>
-                                <div class="author__info-email">anton@yandex.ru</div>
-                            </div>
-                        </div>
-                        <p class="commitCard__text">Emmet (formerly Zen Coding) is a web-
-                            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-                    </div>
-                    <div class="commitCard_widescreen">
-                        <div class="commitCard__date">14 августа, 2019</div>
-                        <div class="commitCard__author">
                             <img class="author__avatar" src="<%=require('./images/avatarFedorova.png')%>"
                                 alt="commitCard-avatar">
                             <div class="author__info">
@@ -125,7 +127,7 @@
                             NetBeans, open Tools >
                             Plugins > Available plugins and find and install Emmet plugin.</div>
                     </div>
-                    <div class="commitCard_widescreen">
+                    <div class="commitCard">
                         <div class="commitCard__date">14 августа, 2019</div>
                         <div class="commitCard__author">
                             <img class="author__avatar" src="<%=require('./images/avatarIvanova.png')%>"
@@ -139,7 +141,7 @@
                             that can be dynamically parsed, and produce
                             output depending on what you type in the abb...</div>
                     </div>
-                    <div class="commitCard_right">
+<!--                     <div class="commitCard_right">
                         <div class="commitCard__date">14 августа, 2019</div>
                         <div class="commitCard__author">
                             <img class="author__avatar" src="<%=require('./images/avatarDolinin.png')%>"
@@ -151,7 +153,7 @@
                         </div>
                         <p class="commitCard__text">Emmet (formerly Zen Coding) is a web-
                             developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-                    </div>
+                    </div> -->
                 </div>
                 <button class="slider__button-next"></button>
                 <button class="slider__button-prev"></button>
@@ -176,9 +178,9 @@
             </div>
             <div class="footer__social">
                 <a href="https://github.com/Rodion163" target="_blank" class="footer__social-link">
-                    <img class="footer__social_icon" src="<%=require('./images/git.png')%>" alt="Github" /></a>
+                    <img class="footer__social-icon" src="<%=require('./images/git.png')%>" alt="Github" /></a>
                 <a href="https://www.facebook.com/rodion.dronov" target="_blank" class="footer__social-link">
-                    <img class="footer__social_icon" src="<%=require('./images/facebook.png')%>" alt="Facebook" /></a>
+                    <img class="footer__social-icon" src="<%=require('./images/facebook.png')%>" alt="Facebook" /></a>
             </div>
         </footer>
     </div>

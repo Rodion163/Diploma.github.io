@@ -1,10 +1,12 @@
-@import url('../preloader/__circle/__circle.css');
-@import url('../preloader/__title/__title.css');
-@import url('../preloader/__subtitle/__subtitle.css');
-
- .preloader {
+@import url('../preloader/preloader__circle/preloader__circle.css');
+@import url('../preloader/preloader__title/preloader__title.css');
+@import url('../preloader/preloader__subtitle/preloader__subtitle.css');
+.preloader {
     margin: 0 auto;
     max-width: 1440px;
     background-color: #F5F6F7;
     overflow: hidden;
+}
+.preloader__result {
+    display: none;
 }

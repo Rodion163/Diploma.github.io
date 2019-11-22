@@ -1,0 +1,22 @@
+.preloader__loading-subtitle {
+    margin: 24px auto;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+    text-align: center;
+    width: 356px;
+}
+.preloader__result-subtitle {
+    margin: 16px auto;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+    text-align: center;
+    width: 356px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .preloader__subtitle {
+        width: inherit;
+    }
+}

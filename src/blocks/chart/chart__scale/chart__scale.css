@@ -1,0 +1,32 @@
+.chart__scale {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 12% 13%;
+  margin: 16px 104px 0 0;
+  color: #B6BCBF;
+  letter-spacing: 0.4px;
+  font-size: 12px;
+}
+
+.chart__scale-segment_right {
+  text-align: right;
+}
+
+.scale-bottom {
+  margin-top: -40px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .chart__scale {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .chart__scale {
+    margin: 16px 40px 0 0;
+  }
+  .scale-bottom {
+    margin: -40px 0 40px;
+  }
+}

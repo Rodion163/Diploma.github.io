@@ -1,5 +1,5 @@
-@import url('../technologies/__content/__content.css');
-@import url('../technologies/__title/__title.css');
+@import url('../technologies/technologies__item/technologies__item.css');
+@import url('../technologies/technologies__title/technologies__title.css');
 .technologies {
     background: #F5F6F7;
     position: relative;
