@@ -1,13 +1,14 @@
 .analytics__list {
-    margin: 0;
+    margin: 40px 0 0 104px;
+    padding: 0;
 }
+
 .list__item {
     margin: 0;
-    display: block;
+    display: inline-block;
 }
 
 .list__title {
-    margin: 40px 104px 0;
     font-size: 18px;
     line-height: 24px;
     font-family: Roboto;
@@ -20,55 +21,24 @@
     color: #B6BCBF;
 }
 
-.list__result {
-    margin: 4px 104px 0;
-    font-family: Roboto;
-    font-size: 18px;
-    line-height: 24px;
-}
-
 .digitalResult {
     font-weight: bold;
 }
 
-.list__subtitle {
-    margin: 80px 104px 20px;
-    font-size: 40px;
-    line-height: 46px;
-    font-family: Roboto Slab;
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
-    .list__title {
+    .list__item {
         display: none;
-    }
-    .list__result {
-        font-size: 18px;
-        line-height: 24px;
-        margin: 4px 0 0 16px;
-        width: 280px;
-    }
-    .list__subtitle {
-        font-size: 30px;
-        line-height: 34px;
-        margin: 16px 0 12px 16px;
-        width: 280px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-    .list__title {
-        margin: 32px 40px 0;
-    }
-    .list__result {
-        font-size: 18px;
-        line-height: 24px;
-        margin: 4px 0 0 40px;
-        width: 280px;
-    }
     .list__subtitle {
         font-size: 32px;
         line-height: 34px;
         margin: 64px 0 20px 40px;
+    }
+    .analytics__list {
+        margin: 32px 0 0 40px;
+        padding: 0;
     }
 }

@@ -1,9 +1,23 @@
-
+.analytics__subtitle {
+    margin: 80px 104px 20px;
+    font-size: 40px;
+    line-height: 46px;
+    font-family: Roboto Slab;
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
-
+    .analytics__subtitle {
+        font-size: 30px;
+        line-height: 34px;
+        margin: 16px 0 12px 16px;
+        width: 280px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-
+    .analytics__subtitle {
+        font-size: 32px;
+        line-height: 34px;
+        margin: 64px 0 20px 40px;
+    }
 }

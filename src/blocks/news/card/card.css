@@ -33,7 +33,7 @@
     font-weight: normal;
 }
 
-.card__subtitle {
+.card__text {
     font-size: 16px;
     line-height: 22px;
     margin: 16px 24px 0 24px;
@@ -78,7 +78,7 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
     }
-    .card__subtitle {
+    .card__text {
         width: 249px;
         font-size: 16px;
         margin: 10px 16px 0;
@@ -118,7 +118,7 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
     }
-    .card__subtitle {
+    .card__text {
         margin: 10px 16px 0;
         font-size: 16px;
         line-height: 24px;

@@ -1,5 +1,7 @@
 @import url('../analytics/analytics__header/analytics__header.css');
 @import url('../analytics/analytics__list/analytics__list.css');
+@import url('../analytics/analytics__result/analytics__result.css');
+@import url('../analytics/analytics__subtitle/analytics__subtitle.css');
 .analytics__header {
     max-height: 80px;
     padding-top: 30px;

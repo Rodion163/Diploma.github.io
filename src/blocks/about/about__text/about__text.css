@@ -20,19 +20,15 @@
     line-height: 24px;
 }
 
-.paragraph-third {
+.paragraph-contact-me {
     display: none;
 }
 
-.paragraph-first_feedback {
+.paragraph_feedback {
     margin: 0;
 }
 
-.paragraph-second_feedback {
-    margin: 0;
-}
-
-.paragraph-third_feedback {
+.paragraph-contact-me_feedback {
     display: initial;
     margin: 0;
 }
@@ -48,13 +44,11 @@
     .about__text-paragraphs {
         margin: 16px auto 44px;
     }
-    .paragraph-first {
+    .paragraph {
         margin: 0;
     }
-    .paragraph-second {
-        margin: 0;
-    }
-    .paragraph-third {
+
+    .paragraph-contact-me {
         display: block;
         margin: 0;
     }
