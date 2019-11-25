@@ -1,0 +1,22 @@
+.header__link-wrap {
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 101px;
+    width: max-content;
+    font-family: Robotomedium;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .header__link-wrap {
+        font-size: 16px;
+        margin-right: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .header__link-wrap {
+        margin-right: 42px;
+    }
+}

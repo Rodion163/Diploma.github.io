@@ -1,0 +1,28 @@
+@import url('../__name/_black/header__name_black.css');
+.header__name {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin: 0 104px;
+    font-family: Roboto Slab;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .header__name {
+        font-size: 16px;
+        margin-left: 16px;
+        width: 117px;
+        margin: 0 0 0 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .header__name {
+        font-size: 16px;
+        margin-left: 40px;
+        width: 0;
+    }
+}

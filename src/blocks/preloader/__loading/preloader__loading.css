@@ -1,0 +1,18 @@
+.preloader__loading-circle {
+    display: block;
+    width: 74px;
+    height: 74px;
+    border: 1px solid #B6BCBF;
+    border-bottom-color: #888;
+    border-radius: 50%;
+    margin: 80px auto 0;
+    animation: spin .75s infinite linear;
+}
+.preloader__loading-subtitle {
+    margin: 24px auto;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+    text-align: center;
+    width: 356px;
+}

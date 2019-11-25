@@ -1,12 +1,8 @@
-@import url('../preloader/preloader__circle/preloader__circle.css');
-@import url('../preloader/preloader__title/preloader__title.css');
-@import url('../preloader/preloader__subtitle/preloader__subtitle.css');
+@import url('../preloader/__loading/preloader__loading.css');
+@import url('../preloader/__result/preloader__result.css');
 .preloader {
     margin: 0 auto;
     max-width: 1440px;
     background-color: #F5F6F7;
     overflow: hidden;
-}
-.preloader__result {
-    display: none;
 }

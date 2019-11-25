@@ -1,5 +1,5 @@
-@import url('../about/about__image/about__image.css');
-@import url('../about/about__text/about__text.css');
+@import url('../about/__image/about__image.css');
+@import url('../about/__text/about__text.css');
 .about {
     display: flex;
     flex-wrap: wrap;

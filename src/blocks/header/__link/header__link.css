@@ -1,0 +1,25 @@
+@import url('../__link/_black/header__link_black.css');
+@import url('../__link/_color_black/header__link_color_black.css');
+@import url('../__link/_color_grey/header__link_color_grey.css');
+@import url('../__link/_color_white/header__link_color_white.css');
+.header__link {
+    text-decoration: none;
+    display: flex;
+    color: #B6BCBF;
+}
+
+.header__link:hover {
+    color: #d4d4d4;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .header__link {
+        height: 39px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .header__link {
+        height: 41px;
+    }
+}

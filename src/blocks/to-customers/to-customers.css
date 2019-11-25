@@ -1,0 +1,21 @@
+@import url('../to-customers/__header/to-customers__header.css');
+@import url('../to-customers/__subtitle/to-customers__subtitle.css');
+@import url('../to-customers/__title/to-customers__title.css');
+.to-customers {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .to-customers {
+        height: max-content;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .to-customers {
+        height: max-content;
+    }
+}

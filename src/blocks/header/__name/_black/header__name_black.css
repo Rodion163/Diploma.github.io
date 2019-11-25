@@ -1,0 +1,28 @@
+.header__name.header__name_black {
+    color: #1A1B22;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin: 0 104px;
+    font-family: Roboto Slab;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .header__name.header__name_black {
+        font-size: 16px;
+        margin-left: 16px;
+        width: 117px;
+        margin: 0 0 0 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .header__name.header__name_black {
+        font-size: 16px;
+        margin-left: 16px;
+        width: 117px;
+        margin: 0 0 0 40px;
+    }
+}

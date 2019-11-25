@@ -1,7 +1,9 @@
-@import url('../news/news__button/news__button.css');
-@import url('../news/news__cards/news__cards.css');
-@import url('../news/card/card.css');
-@import url('../news/news__header/news__header.css');
+@import url('../news/__button/news__button.css');
+@import url('../news/__cards/news__cards.css');
+@import url('../news/__header/news__header.css');
+@import url('../news/__header-arrow/news__header-arrow.css');
+@import url('../news/__header-link/news__header-link.css');
+@import url('../news/__header-name/news__header-name.css');
 .news {
   background: #f5f6f7;
   padding-bottom: 44px;

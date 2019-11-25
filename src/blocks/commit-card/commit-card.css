@@ -1,0 +1,85 @@
+@import url('./__author/commit-card__author.css');
+@import url('./__date/commit-card__date.css');
+@import url('./__text/commit-card__text.css');
+.commit-card {
+    display: flex;
+    flex-direction: column;
+    height: 288px;
+    width: 32.3%;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.commit-card__author {
+    height: 64px;
+    margin-left: 24px;
+    margin-top: 16px;
+    display: flex;
+}
+
+.commit-card_widescreen {
+    display: flex;
+    flex-direction: column;
+    height: 288px;
+    width: 32.3%;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.commit-card_left {
+    display: flex;
+    flex-direction: column;
+    height: 288px;
+    width: 400px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    position: absolute;
+    left: -416px;
+}
+
+.commit-card_right {
+    display: flex;
+    flex-direction: column;
+    height: 288px;
+    width: 400px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    position: absolute;
+    right: -416px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .commit-card_left {
+        display: none;
+    }
+    .commit-card_right {
+        display: none;
+    }
+    .commit-card_widescreen {
+        display: none;
+    }
+    .commit-card {
+        height: 264px;
+        width: 288px;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .commit-card {
+        height: 264px;
+        margin-right: 16px;
+        width: 336px;
+    }
+    .commit-card_widescreen {
+        width: 336px;
+        height: 242px;
+    }
+    .commit-card_left {
+        display: none;
+    }
+    .commit-card_right {
+        height: 242px;
+        right: -408px;
+    }
+}

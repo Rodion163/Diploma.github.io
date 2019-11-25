@@ -1,0 +1,11 @@
+.news__header-arrow {
+    margin-left: 10.29px;
+    width: 8.12px;
+    height: 13.41px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .news__header-arrow {
+        margin-left: 7.29px;
+    }
+}

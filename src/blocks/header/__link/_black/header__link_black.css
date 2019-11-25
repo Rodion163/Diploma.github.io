@@ -1,0 +1,9 @@
+.header__link.header__link_black {
+    text-decoration: none;
+    display: flex;
+    color: #B6BCBF;
+}
+
+.header__link.header__link_black:hover {
+    color: #4d4d4d;
+}

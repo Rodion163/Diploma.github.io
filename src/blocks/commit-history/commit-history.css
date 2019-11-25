@@ -1,0 +1,25 @@
+@import url('../commit-history/__header/commit-history__header.css');
+@import url('../commit-history/__slaider/commit-history__slaider.css');
+.commit-history {
+    background: #F5F6F7;
+    position: relative;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .commit-history {
+        height: 568px;
+    }
+    .commitCard_widescreen {
+        width: 336px;
+        height: 242px;
+    }
+    .commitCard_left {
+        display: none;
+    }
+    .commitCard_right {
+        height: 242px;
+        right: -408px;
+    }
+}

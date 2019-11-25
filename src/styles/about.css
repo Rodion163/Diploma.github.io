@@ -4,7 +4,8 @@
 @import url('../blocks/main/main.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/about/about.css');
-@import url('../blocks/toCustomers/toCustomers.css');
+@import url('../blocks/to-customers/to-customers.css');
 @import url('../blocks/technologies/technologies.css');
-@import url('../blocks/commitHistory/commitHistory.css');
-@import url('../blocks/commitCard/commitCard.css');
+@import url('../blocks/commit-history/commit-history.css');
+@import url('../blocks/commit-card/commit-card.css');
+@import url('../blocks/header/header.css');

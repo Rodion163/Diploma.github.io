@@ -1,0 +1,26 @@
+@import url('../header/__link-item/header__link-item.css');
+@import url('../header/__link-list/header__link-list.css');
+@import url('../header/__link-wrap/header__link-wrap.css');
+@import url('../header/__link/header__link.css');
+@import url('../header/__name/header__name.css');
+@import url('../header/_black/header_black.css');
+.header {
+    max-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .header {
+        max-height: 56px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .header {
+        max-width: 1280px;
+        max-height: 64px;
+    }
+}
+

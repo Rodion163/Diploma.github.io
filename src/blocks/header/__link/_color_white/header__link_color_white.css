@@ -1,0 +1,5 @@
+.header__link.header__link_color_white {
+    box-shadow: inset 0px -3px 0px hsla(0, 0%, 100%, 1);
+    color: #FFFFFF;
+    height: 49px;
+}
