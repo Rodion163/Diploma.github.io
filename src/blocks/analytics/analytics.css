@@ -1,47 +1,4 @@
-@import url('../analytics/__header/analytics__header.css');
-@import url('../analytics/__list/analytics__list.css');
+@import url('../analytics/__navigation/analytics__navigation.css');
 @import url('../analytics/__result/analytics__result.css');
+@import url('../analytics/__result-value/analytics__result-value.css');
 @import url('../analytics/__subtitle/analytics__subtitle.css');
-.analytics__header {
-    max-height: 80px;
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2);
-}
-
-.analytics__header_name {
-    color: #1A1B22;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: bold;
-    margin: 0 104px;
-}
-
-.analytics__header_link {
-    color: #B6BCBF;
-    font-size: 18px;
-    line-height: 24px;
-    display: flex;
-    margin-right: 50px;
-    text-decoration-line: none;
-}
-
-.analytics_link-selected {
-    text-decoration-line: none;
-    height: 50px;
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-    .analytics_link-selected {
-        color: #B6BCBF;
-        font-weight: normal;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1279px) {
-    .analytics_link-selected {
-        color: #B6BCBF;
-        font-weight: normal;
-    }
-}

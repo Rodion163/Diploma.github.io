@@ -1,0 +1,20 @@
+.chart__designation-date {
+    width: min-content;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6BCBF;
+    margin: 48px 0 0 104px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .chart__designation-date {
+        margin: 16px 0 0 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .chart__designation-date {
+        margin: 49px 0 0 40px;
+    }
+}

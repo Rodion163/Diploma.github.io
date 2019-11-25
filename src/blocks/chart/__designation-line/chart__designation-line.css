@@ -1,0 +1,21 @@
+.chart__designation-line {
+    grid-column: span 2;
+    border-bottom: 1px solid #1A1B22;
+    margin: 24px 104px 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .chart__designation-line {
+        grid-column: span 2;
+        border-bottom: 1px solid #1A1B22;
+        margin: 8px 16px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .chart__designation-line {
+        grid-column: span 2;
+        border-bottom: 1px solid #1A1B22;
+        margin: 4px 40px 0;
+    }
+}

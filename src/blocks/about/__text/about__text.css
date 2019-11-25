@@ -4,53 +4,9 @@
     height: 100%;
 }
 
-.about__text-title {
-    font-family: Roboto Slab;
-    margin: 0;
-    font-size: 40px;
-    line-height: 46px;
-    font-weight: normal;
-}
-
-.about__text-paragraphs {
-    margin: 24px 0 0;
-    font-family: Roboto;
-    max-width: 600px;
-    font-size: 18px;
-    line-height: 24px;
-}
-
-.paragraph-contact-me {
-    display: none;
-}
-
-.paragraph_feedback {
-    margin: 0;
-}
-
-.paragraph-contact-me_feedback {
-    display: initial;
-    margin: 0;
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
     .about__text {
         margin: auto;
-    }
-    .about__text-title {
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .about__text-paragraphs {
-        margin: 16px auto 44px;
-    }
-    .paragraph {
-        margin: 0;
-    }
-
-    .paragraph-contact-me {
-        display: block;
-        margin: 0;
     }
 }
 
@@ -59,19 +15,11 @@
         margin: 40px auto 0;
         width: 424px;
     }
-    .about__text-title {
-        font-size: 30px;
-        line-height: 40px;
-    }
 }
 
 @media (min-width: 1280px) and (max-width: 1439px) {
     .about__text {
         margin: 40px auto 0;
         width: 424px;
-    }
-    .about__text_title {
-        font-size: 30px;
-        line-height: 40px;
     }
 }

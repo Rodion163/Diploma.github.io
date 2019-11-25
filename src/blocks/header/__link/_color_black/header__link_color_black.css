@@ -8,6 +8,7 @@
     .header__link.header__link_color_black {
         box-shadow: inset 0 -3px 0 #000;
         color: #1a1b22;
+        height: 39px;
     }
 }
 
@@ -15,5 +16,6 @@
     .header__link.header__link_color_black {
         box-shadow: inset 0 -3px 0 #000;
         color: #1a1b22;
+        height: 41px;
     }
 }

@@ -1,0 +1,31 @@
+.card__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 16px 24px 0 24px;
+    font-family: Roboto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .card__text {
+        width: 249px;
+        font-size: 16px;
+        margin: 10px 16px 0;
+        height: 88px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .card__text {
+        margin: 10px 16px 0;
+        font-size: 16px;
+        line-height: 24px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+}

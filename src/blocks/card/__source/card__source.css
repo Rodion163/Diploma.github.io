@@ -1,0 +1,29 @@
+.card__source {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 18px;
+    margin-left: 24px;
+    color: #b6bcbf;
+    position: absolute;
+    bottom: 24px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-family: Roboto Slab;
+    font-weight: bold;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .card__source {
+        bottom: 20.13px;
+        margin-left: 16px;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .card__source {
+        bottom: 16px;
+        margin-left: 16px;
+        margin-top: 0;
+    }
+}

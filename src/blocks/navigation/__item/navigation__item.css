@@ -1,0 +1,11 @@
+@import url('../__item/_disabled/navigation__item_disabled.css');
+.navigation__item {
+    margin: 0;
+    display: inline-block;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .navigation__item {
+        display: none;
+    }
+}

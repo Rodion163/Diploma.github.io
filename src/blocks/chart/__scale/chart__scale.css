@@ -1,3 +1,4 @@
+@import url('../__scale/_bottom/chart__scale_bottom.css');
 .chart__scale {
   grid-column: 2;
   display: grid;
@@ -6,14 +7,6 @@
   color: #B6BCBF;
   letter-spacing: 0.4px;
   font-size: 12px;
-}
-
-.chart__scale-segment_right {
-  text-align: right;
-}
-
-.scale-bottom {
-  margin-top: -40px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -25,8 +18,5 @@
 @media (min-width: 768px) and (max-width: 1279px) {
   .chart__scale {
     margin: 16px 40px 0 0;
-  }
-  .scale-bottom {
-    margin: -40px 40px 0 40px;
   }
 }

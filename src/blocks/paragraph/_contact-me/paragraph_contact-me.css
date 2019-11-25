@@ -1,0 +1,16 @@
+.paragraph.paragraph_contact-me {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .paragraph.paragraph_contact-me {
+        display: block;
+        margin: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+    .paragraph.paragraph_contact-me {
+        display: block;
+        margin: 0;
+    }
+}

@@ -1,6 +1,9 @@
 @import url('../chart/__header/chart__header.css');
-@import url('../chart/__disignation/chart__disignation.css');
+@import url('../chart/__designation-amount/chart__designation-amount.css');
+@import url('../chart/__designation-date/chart__designation-date.css');
+@import url('../chart/__designation-line/chart__designation-line.css');
 @import url('../chart/__scale/chart__scale.css');
+@import url('../chart/__scale-segment/chart__scale-segment.css');
 @import url('../chart/__content/chart__content.css');
 .chart {
   display: grid;

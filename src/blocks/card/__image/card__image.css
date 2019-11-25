@@ -1,0 +1,18 @@
+.card__image {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .card__image {
+        width: 288px;
+        height: 196px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .card__image {
+        width: 224px;
+        height: 150px;
+    }
+}

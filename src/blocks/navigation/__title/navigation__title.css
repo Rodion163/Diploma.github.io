@@ -1,0 +1,8 @@
+.navigation__title {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Roboto;
+    text-decoration: none;
+    display: flex;
+    color: #1A1B22;
+}

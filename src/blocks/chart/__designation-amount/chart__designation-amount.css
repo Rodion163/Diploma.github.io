@@ -1,0 +1,19 @@
+.chart__designation-amount {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6BCBF;
+    margin: 48px 0 0 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .chart__designation-amount {
+        margin: 16px 0 0 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .chart__designation-amount {
+        margin: 49px 0 0 0;
+    }
+}
