@@ -1,0 +1,27 @@
+.slider__button-prev {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: 0;
+    left: 24px;
+    top: 50%;
+    background-image: url('../../../images/prev_button.png');
+    background-position: 50% 40%;
+    box-shadow: 0px 3px 10px rgba(14, 26, 57, 0.2);
+    border-radius: 100%;
+    border: none;
+    font-size: 40px;
+    z-index: 2;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .slider__button-prev {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .slider__button-prev {
+        display: none;
+    }
+}

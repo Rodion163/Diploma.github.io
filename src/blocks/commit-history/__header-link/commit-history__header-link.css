@@ -1,0 +1,47 @@
+.commit-history__header-link {
+    color: #1A1B22;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    display: flex;
+    margin-top: 85px;
+    text-decoration-line: none;
+    margin-right: 112px;
+}
+
+.commit-history__header-link:hover {
+    color: rgb(102, 102, 102);
+}
+
+.commit-history__header-link:after {
+    content: ">";
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .commit-history__header-link {
+        position: absolute;
+        bottom: 32px;
+        left: 50%;
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 80px;
+        height: 56px;
+        width: 288px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 3;
+        align-items: center;
+        text-align: center;
+        display: block;
+        margin-left: -144px;
+    }
+    .commit-history__header_link:after {
+        content: "";
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .commit-history__header-link {
+        margin: 48px 42px 0;
+    }
+}

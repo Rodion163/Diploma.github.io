@@ -1,0 +1,13 @@
+@import url('../emblem/__icon/emblem__icon.css');
+@import url('../emblem/__name/emblem__name.css');
+.emblem {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .emblem {
+        margin-top: 40px;
+    }
+}

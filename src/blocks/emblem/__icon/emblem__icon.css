@@ -1,0 +1,10 @@
+@import url('../__icon/_css/emblem__icon_css.css');
+@import url('../__icon/_html/emblem__icon_html.css');
+@import url('../__icon/_js/emblem__icon_js.css');
+@import url('../__icon/_webpack/emblem__icon_webpack.css');
+.emblem__icon {
+    background-repeat: space;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+}

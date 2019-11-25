@@ -1,0 +1,18 @@
+.author__info {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .author__info {
+        justify-content: start;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .author__info {
+        justify-content: start;
+    }
+}

@@ -1,0 +1,23 @@
+.technologies__list {
+    margin: 93px 0 0 192px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 45.56%;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .technologies__list {
+        margin: 0 auto;
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .technologies__list {
+        margin: 40px auto 0;
+        width: 90%;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,6 @@
+.pagination__point-selected {
+    width: 8px;
+    height: 8px;
+    background: #1A1B22;
+    border-radius: 100%;
+}
