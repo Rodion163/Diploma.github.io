@@ -13,7 +13,7 @@
 
 <body>
     <div class="page">
-        <div class="main">
+        <form class="main">
             <header class="header">
                 <p class="header__name">NewsAnalyzer</p>
                 <nav class="header__link-wrap">
@@ -28,10 +28,10 @@
             <p class="main__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
                 прошедшую неделю.</p>
             <div class="main__search search">
-                <input type="text" required placeholder="Введите тему новости" class="search__input">
+                <input type="text" id="input" required placeholder="Введите тему новости" class="search__input">
                 <button type="submit" class="search__button">Искать</button>
             </div>
-        </div>
+        </form>
 
         <div class="preloader">
             <div class="preloader__loading">
