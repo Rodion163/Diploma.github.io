@@ -1,6 +1,7 @@
 import "./styles/index.css";
 import { createElement } from "./createElement";
 import { formatDate } from "./formatDate";
+import { CachedNewsApi } from "./newsApi";
 
 class InputForm {
     constructor(onSubmit, form, input) {
@@ -17,48 +18,7 @@ class InputForm {
 const form = document.querySelector('#form');
 const input = document.querySelector('#input');
 
-function pad(number) {
-    if (number < 10) {
-        return "0" + number;
-    }
-    return number;
-}
-
-function formatDateISO(date) {
-    return (
-        date.getFullYear() +
-        "-" +
-        pad(date.getMonth() + 1) +
-        "-" +
-        pad(date.getDate())
-    );
-}
-
-
-class Api {
-    constructor(url, token) {
-        this.url = url;
-        this.token = token;
-    }
-    load(searchText) {
-        const page = 1;
-        const today = new Date();
-        const weekEarlier = new Date(today.valueOf() - 60 * 60 * 24 * 7 * 1000);
-        return fetch(`${this.url}/v2/everything?q=${searchText}&language=ru&page=${page}` +
-            `&from=${formatDateISO(weekEarlier)}&to=${formatDateISO(today)}&pageSize=100&apiKey=${this.token}`
-        )
-            .then(res => {
-                if (res.ok) {
-                    return res.json();
-                }
-                return Promise.reject(`Ошибка: ${res.status}`);
-            })
-            .catch(err => {
-                console.log(err);
-            });
-    }
-}
-const api = new Api('https://newsapi.org', '9e16fa8cb67e41e39aba5e0b42032cf4');
+const api = new CachedNewsApi('https://newsapi.org', '9e16fa8cb67e41e39aba5e0b42032cf4');
 
 
 class LoadResult {
@@ -124,28 +84,23 @@ class Search {
         this.analyticsLink = document.querySelector('#analyticsLink')
     }
     onLoadMoreClick() {
-        const cachedNews = localStorage.getItem(this.searchText);
-        const parsedNews = JSON.parse(cachedNews);
-        this.loadResult.addCards(parsedNews.articles.slice(this.cardRendered, this.cardRendered + 3));
-        this.cardRendered += 3;
-        this.loadResult.setMoreVisible(parsedNews.articles.length > this.cardRendered);
+        api.load(this.searchText).then(result => {
+            this.loadResult.addCards(result.articles.slice(this.cardRendered, this.cardRendered + 3));
+            this.cardRendered += 3;
+            this.loadResult.setMoreVisible(result.articles.length > this.cardRendered);
+        })
     }
     onSearch(searchText) {
         this.searchText = searchText;
-        const cachedNews = localStorage.getItem(searchText);
-        if (cachedNews) {
-            const parsedNews = JSON.parse(cachedNews);
-            this.showResult(parsedNews);
-        } else {
-            this.loadResult.showLoading();
-            api.load(searchText).then(result => {
-                localStorage.setItem(searchText, JSON.stringify(result));
-                this.showResult(result);
-            })
-        }
+        this.loadResult.showLoading();
+        api.load(searchText).then(result => {
+            localStorage.setItem(searchText, JSON.stringify(result));
+            this.showResult(result);
+        })
     }
+
     showResult(result) {
-this.analyticsLink.setAttribute('href', `./analytics.html?search=${encodeURIComponent(this.searchText)}`)
+        this.analyticsLink.setAttribute('href', `./analytics.html?search=${encodeURIComponent(this.searchText)}`)
         if (result.articles.length == 0) {
             this.loadResult.showEmpty();
         } else {
