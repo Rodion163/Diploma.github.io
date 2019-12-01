@@ -2,30 +2,47 @@ import "./styles/index.css";
 import { runInThisContext } from "vm";
 
 class InputForm {
-    constructor(searchButton, input) {
-        this.searchButton = searchButton;
+    constructor(onSubmit, input, form) {
         this.input = input;
-        this.searchButton.addEventListener('submit', this.validate);
-    }
-    validate() {
-        if (this.input.value !== '') {
-            console.log('запрос');
-        } else {
-            console.log('Нужно ввести ключевое слово');
-        }
+        form.addEventListener('submit', () => {
+            event.preventDefault()
+            if (this.input.value !== '') {
+                onSubmit(input.value);
+            } else { '' }
+        })
+
     }
 }
-const searchButton = document.querySelector('.search__button');
+const form = document.querySelector('#form');
 const input = document.querySelector('#input');
-const inputForm = new InputForm(searchButton, input);
+new InputForm((value) => console.log(value), input, form);
+
+function pad(number) {
+    if (number < 10) {
+        return "0" + number;
+    }
+    return number;
+}
+
+function formatDate(date) {
+    return (
+        date.getFullYear() +
+        "-" +
+        pad(date.getMonth() + 1) +
+        "-" +
+        pad(date.getDate())
+    );
+}
 
 class Api {
     constructor(url, token) {
         this.url = url;
         this.token = token;
     }
-    load() {
-        return fetch(`${this.url}`, {
+    load(searchText, page) {
+        const today = new Date();
+        const weekEarlier = new Date(today.valueOf() - 60 * 60 * 24 * 7 * 1000);
+        return fetch(`${this.url}/v2/everything?q=${searchText}&page=${page}&from=${formatDate(weekEarlier)}&to=${formatDate(today)}&pageSize=100`, {
             method: "GET",
             headers: {
                 authorization: this.token,
@@ -43,18 +60,10 @@ class Api {
             });
     }
 }
-const api = new Api('https://newsapi.org/v2/everything?' +
-    'q=Apple&' +
-    'from=2019-11-29&' +
-    'sortBy=popularity&' +
-    'apiKey=9e16fa8cb67e41e39aba5e0b42032cf4', '9e16fa8cb67e41e39aba5e0b42032cf4');
+const api = new Api('https://newsapi.org/', '9e16fa8cb67e41e39aba5e0b42032cf4');
 
 
-class SearchForm {
-    constructor(input, form, onSearch) {
 
-    }
-}
 class NewsCards {
     constructor(urlToImage, description, publishedAt, title, sourceName) {
         this.urlToImage = urlToImage;
