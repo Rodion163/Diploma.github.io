@@ -1,6 +1,7 @@
 .slider__content-wrap {
     position: relative;
 }
+
 .slider__content-wrap:before {
     content: "";
     background: linear-gradient(270deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
@@ -20,4 +21,22 @@
     right: 0;
     top: 0;
     z-index: 1;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .slider__content-wrap:before {
+        display: none;
+    }
+    .slider__content-wrap:after {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .slider__content-wrap:before {
+        display: none;
+    }
+    .slider__content-wrap:after {
+        display: none;
+    }
 }

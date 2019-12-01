@@ -2,16 +2,7 @@ import "./styles/about.css";
 import Glide from '@glidejs/glide'
 import { createElement } from "./createElement";
 
-new Glide('.slider', {
-    perView: 3,
-    peek: {
-        before: 88,
-        after: 88
-    },
-    classes: {
-        activeNav: 'pagination__point_active',
-    }
-}).mount()
+
 
 class GithubApi {
     constructor() {
@@ -84,4 +75,33 @@ api.getCommits().then(commits => {
         const bullet = new Bullet(index);
         bulletContent.appendChild(bullet.elem);
     })
+    new Glide('.slider', {
+        perView: 3,
+        breakpoints: {
+            1024: {
+                perView: 2,
+                peek: {
+                    before: 88,
+                    after: 88
+                },
+            },
+            768: {
+                perView: 2,
+                peek: {
+                    before: 16,
+                    after: 16
+                },
+            },
+            600: {
+                perView: 1,
+            }
+        },
+        peek: {
+            before: 88,
+            after: 88
+        },
+        classes: {
+            activeNav: 'pagination__point_active',
+        }
+    }).mount()
 });

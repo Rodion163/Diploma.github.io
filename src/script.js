@@ -1,5 +1,5 @@
 import "./styles/index.css";
-import {createElement} from "./createElement";
+import { createElement } from "./createElement";
 class InputForm {
     constructor(onSubmit, form, input) {
         this.input = input;
@@ -58,14 +58,6 @@ class Api {
 const api = new Api('https://newsapi.org', '9e16fa8cb67e41e39aba5e0b42032cf4');
 
 
-
-
-
-
-
-
-
-
 class LoadResult {
     constructor(preloader, news, onLoadMoreClick) {
         this.preloader = preloader;
@@ -78,8 +70,8 @@ class LoadResult {
         news.querySelector('#moreButton').addEventListener('click', onLoadMoreClick);
 
     }
-    addCard(urlToImage, description, publishedAt, title, sourceName) {
-        const newsCard = new NewsCard(urlToImage, description, publishedAt, title, sourceName);
+    addCard(urlToImage, description, publishedAt, title, sourceName, url) {
+        const newsCard = new NewsCard(urlToImage, description, publishedAt, title, sourceName, url);
         this.cards.push(newsCard);
         this.newsCards.appendChild(newsCard.card);
     }
@@ -89,7 +81,7 @@ class LoadResult {
         this.news.classList.remove('news_hidden');
         cards.forEach(card => {
             console.log(card);
-            this.addCard(card.urlToImage, card.description, card.publishedAt, card.title, card.source.name);
+            this.addCard(card.urlToImage, card.description, card.publishedAt, card.title, card.source.name, card.url);
         })
     }
     clear() {
@@ -158,12 +150,13 @@ const search = new Search(news, preloader);
 
 
 class NewsCard {
-    constructor(urlToImage, description, publishedAt, title, sourceName) {
+    constructor(urlToImage, description, publishedAt, title, sourceName, url) {
         this.urlToImage = urlToImage;
         this.description = description;
         this.publishedAt = publishedAt;
         this.title = title;
         this.sourceName = sourceName;
+        this.url = url;
         this.create();
     }
     create() {
@@ -171,10 +164,11 @@ class NewsCard {
         const picture = createElement("picture", []);
         const cardImg = createElement("img", ["card__image"]);
         const cardDate = createElement("div", ["card__date"]);
-        const cardTitle = createElement("h2", ["card__title"]);
+        const cardTitle = createElement("a", ["card__title"]);
         const cardText = createElement("p", ["card__text"]);
         const cardSource = createElement("div", ["card__source"]);
         cardImg.setAttribute("src", this.urlToImage);
+        cardTitle.setAttribute("href", this.url);
         cardDate.innerText = this.publishedAt;
         cardTitle.innerText = this.title;
         cardText.innerText = this.description;

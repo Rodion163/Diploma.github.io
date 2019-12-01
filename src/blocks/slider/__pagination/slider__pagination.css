@@ -1,7 +1,6 @@
 .slider__pagination {
-    max-width: 75px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 48px auto;
 }
 
