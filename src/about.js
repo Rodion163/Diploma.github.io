@@ -78,11 +78,17 @@ api.getCommits().then(commits => {
     new Glide('.slider', {
         perView: 3,
         breakpoints: {
+            1280: {
+                peek: {
+                    before: 40,
+                    after: 40
+                },
+            },
             1024: {
                 perView: 2,
                 peek: {
-                    before: 88,
-                    after: 88
+                    before: 40,
+                    after: 40
                 },
             },
             768: {
@@ -94,7 +100,10 @@ api.getCommits().then(commits => {
             },
             600: {
                 perView: 1,
-                
+                peek: {
+                    before: 16,
+                    after: 16
+                },
             }
         },
         peek: {

@@ -8,7 +8,6 @@
 @media (min-width: 320px) and (max-width: 767px) {
     .slider__content {
         width: 288px;
-        margin: 0 16px;
         display: -webkit-box;
     }
     .slider__content:before {
