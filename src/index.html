@@ -34,18 +34,18 @@
         </form>
 
         <div class="preloader" id="preloader">
-            <div class="preloader__loading">
+            <div class="preloader__loading preloader__loading_hidden">
                 <i class="preloader__loading-circle"></i>
                 <p class="preloader__loading-subtitle">Идет поиск новостей...</p>
             </div>
-            <div class="preloader__result">
+            <div class="preloader__result preloader__result_hidden">
                 <div class="preloader__result-circle"></div>
                 <p class="preloader__result-title">Ничего не найдено</p>
                 <p class="preloader__result-subtitle">К сожалению по вашему запросу
                     ничего не найдено.</p>
             </div>
         </div>
-        <div class="news" id="news">
+        <div class="news news_hidden" id="news">
             <div class="news__header">
                 <h1 class="news__header-name">Результаты поиска</h1>
                 <div class="news__header-subname">
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="news__cards">
-                <div class="card">
+                <!--      <div class="card">
                     <picture>
                         <img src="<%=require('./images/newsImages/lenta.png')%>" alt="lenta" class="card__image">
                     </picture>
@@ -93,7 +93,7 @@
                     </p>
                     <div class="card__source">Риа</div>
                 </div>
-                <!--                 <div class="card">
+                           <div class="card">
                     <picture>
                         <img src="<%=require('./images/newsImages/dzen.png')%>" alt="dzen" class="card__image">
                     </picture>
@@ -133,7 +133,7 @@
                     <div class="card__source">Медиазона</div>
                 </div> -->
             </div>
-            <button type="submit" class="news__button">Показать еще</button>
+            <button type="submit" id="moreButton" class="news__button">Показать еще</button>
         </div>
     </div>
 

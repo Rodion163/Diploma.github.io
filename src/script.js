@@ -42,8 +42,9 @@ class Api {
         const page = 1;
         const today = new Date();
         const weekEarlier = new Date(today.valueOf() - 60 * 60 * 24 * 7 * 1000);
-        return fetch(`${this.url}/v2/everything?q=${searchText}&page=${page}&from=${formatDate(weekEarlier)}&to=${formatDate(today)}&pageSize=100&apiKey=${this.token}`, {
-        })
+        return fetch(`${this.url}/v2/everything?q=${searchText}&language=ru&page=${page}` +
+            `&from=${formatDate(weekEarlier)}&to=${formatDate(today)}&pageSize=100&apiKey=${this.token}`
+        )
             .then(res => {
                 if (res.ok) {
                     return res.json();
@@ -69,19 +70,44 @@ const api = new Api('https://newsapi.org', '9e16fa8cb67e41e39aba5e0b42032cf4');
 class LoadResult {
     constructor(preloader, news, onLoadMoreClick) {
         this.preloader = preloader;
+        this.preloaderLoading = preloader.querySelector('.preloader__loading');
+        this.preloaderResult = preloader.querySelector('.preloader__result');
+        this.cards = [];
         this.news = news;
         this.onLoadMoreClick = onLoadMoreClick;
         this.newsCards = news.querySelector('.news__cards');
+        news.querySelector('#moreButton').addEventListener('click', onLoadMoreClick);
+
     }
     addCard(urlToImage, description, publishedAt, title, sourceName) {
         const newsCard = new NewsCard(urlToImage, description, publishedAt, title, sourceName);
+        this.cards.push(newsCard);
         this.newsCards.appendChild(newsCard.card);
     }
     addCards(cards) {
+        this.preloaderLoading.classList.add('preloader__loading_hidden');
+        this.preloaderResult.classList.add('preloader__result_hidden');
+        this.news.classList.remove('news_hidden');
         cards.forEach(card => {
             console.log(card);
             this.addCard(card.urlToImage, card.description, card.publishedAt, card.title, card.source.name);
         })
+    }
+    clear() {
+        this.cards.forEach(card => {
+            this.newsCards.removeChild(card.card);
+        });
+        this.cards = [];
+    }
+    showLoading() {
+        this.preloaderLoading.classList.remove('preloader__loading_hidden');
+        this.preloaderResult.classList.add('preloader__result_hidden');
+        this.news.classList.add('news_hidden');
+    }
+    showEmpty() {
+        this.preloaderLoading.classList.add('preloader__loading_hidden');
+        this.preloaderResult.classList.remove('preloader__result_hidden');
+        this.news.classList.add('news_hidden');
     }
 }
 const news = document.querySelector('#news');
@@ -100,24 +126,36 @@ class Search {
         this.loadResult = new LoadResult(preloader, news, this.onLoadMoreClick);
     }
     onLoadMoreClick() {
-
+        const cachedNews = localStorage.getItem(this.searchText);
+        const parsedNews = JSON.parse(cachedNews);
+        this.loadResult.addCards(parsedNews.articles.slice(this.cardRendered, this.cardRendered + 3));
+        this.cardRendered += 3;
     }
     onSearch(searchText) {
-        const cachedNews = sessionStorage.getItem(searchText);
+        this.searchText = searchText;
+        const cachedNews = localStorage.getItem(searchText);
         if (cachedNews) {
             const parsedNews = JSON.parse(cachedNews);
-            this.loadResult.addCards(parsedNews.articles.slice(0, 2));
-            this.cardRendered = 3;
+            this.showResult(parsedNews);
         } else {
+            this.loadResult.showLoading();
             api.load(searchText).then(result => {
-                sessionStorage.setItem(searchText, JSON.stringify(result));
-                this.loadResult.addCards(result.articles.slice(0, 2));
-                this.cardRendered = 3;
+                localStorage.setItem(searchText, JSON.stringify(result));
+                this.showResult(result);
             })
         }
     }
+    showResult(result) {
+        if (result.articles.length == 0) {
+            this.loadResult.showEmpty();
+        } else {
+            this.loadResult.clear();
+            this.loadResult.addCards(result.articles.slice(0, 3));
+            this.cardRendered = 3;
+        }
+    }
 }
-
+const search = new Search(news, preloader);
 
 function createElement(type, classList) {
     const elem = document.createElement(type);

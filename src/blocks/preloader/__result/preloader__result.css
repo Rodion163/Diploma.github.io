@@ -1,6 +1,4 @@
-.preloader__result {
-    display: none;
-}
+@import url('_hidden/preloader__result_hidden.css');
 .preloader__result-circle {
     display: block;
     width: 96px;

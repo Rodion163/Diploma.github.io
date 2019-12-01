@@ -1,3 +1,4 @@
+@import url('_hidden/preloader__loading_hidden.css');
 .preloader__loading-circle {
     display: block;
     width: 74px;
