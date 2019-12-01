@@ -17,8 +17,10 @@
             <p class="header__name header__name_black">NewsAnalyzer</p>
             <div class="header__link-wrap">
                 <ul class="header__link-list">
-                    <li class="header__link-item"><a href="./index.html" class="header__link header__link_black">Главная</a></li>
-                    <li class="header__link-item"> <a href="./about.html" class="header__link header__link_color_black">О проекте</a></li>
+                    <li class="header__link-item"><a href="./index.html"
+                            class="header__link header__link_black">Главная</a></li>
+                    <li class="header__link-item"> <a href="./about.html"
+                            class="header__link header__link_color_black">О проекте</a></li>
                 </ul>
             </div>
         </header>
@@ -72,7 +74,8 @@
                         как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.</p>
                     <p class="paragraph paragraph_tight">Также можно рассказать о процессе обучения в Практикуме, чему
                         вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
-                    <p class="paragraph paragraph_contact-me paragraph_tight">Если хотите, оставьте свои контакты: email и телефон. Так
+                    <p class="paragraph paragraph_contact-me paragraph_tight">Если хотите, оставьте свои контакты: email
+                        и телефон. Так
                         заказчики смогут с вами связаться.</p>
                 </div>
             </div>
@@ -84,8 +87,9 @@
                     Github&#8194;</a>
             </div>
             <div class="commit-history__slider slider">
-                <div class="slider__content" data-glide-el="track">
-<!--                     <div class="commit-card_left">
+                <div class="slider__content-wrap" data-glide-el="track">
+                    <div class="slider__content">
+                        <!--                     <div class="commit-card_left">
                         <div class="commit-card__date">14 августа, 2019</div>
                         <div class="commit-card__author">
                             <img class="author__avatar" src="<%=require('./images/avatarDolinin.png')%>"
@@ -98,50 +102,50 @@
                         <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
                             developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
                     </div> -->
-                    <div class="commit-card">
-                        <div class="commit-card__date">14 августа, 2019</div>
-                        <div class="commit-card__author author">
-                            <img class="author__avatar" src="<%=require('./images/avatarDolinin.png')%>"
-                                alt="commit-card-avatar">
-                            <div class="author__info">
-                                <div class="author__info-name">Антон Долинин</div>
-                                <div class="author__info-email">anton@yandex.ru</div>
+                        <div class="commit-card">
+                            <div class="commit-card__date">14 августа, 2019</div>
+                            <div class="commit-card__author author">
+                                <img class="author__avatar" src="<%=require('./images/avatarDolinin.png')%>"
+                                    alt="commit-card-avatar">
+                                <div class="author__info">
+                                    <div class="author__info-name">Антон Долинин</div>
+                                    <div class="author__info-email">anton@yandex.ru</div>
+                                </div>
                             </div>
+                            <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
+                                developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
                         </div>
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-                    </div>
-                    <div class="commit-card">
-                        <div class="commit-card__date">14 августа, 2019</div>
-                        <div class="commit-card__author author">
-                            <img class="author__avatar" src="<%=require('./images/avatarFedorova.png')%>"
-                                alt="commit-card-avatar">
-                            <div class="author__info">
-                                <div class="author__info-name">Мария Фёдорова</div>
-                                <div class="author__info-email">mariiifed@yandex.ru</div>
+                        <div class="commit-card">
+                            <div class="commit-card__date">14 августа, 2019</div>
+                            <div class="commit-card__author author">
+                                <img class="author__avatar" src="<%=require('./images/avatarFedorova.png')%>"
+                                    alt="commit-card-avatar">
+                                <div class="author__info">
+                                    <div class="author__info-name">Мария Фёдорова</div>
+                                    <div class="author__info-email">mariiifed@yandex.ru</div>
+                                </div>
                             </div>
+                            <div class="commit-card__text">You can install this plugin directly from NetBeans Plugin
+                                Portal:
+                                in
+                                NetBeans, open Tools >
+                                Plugins > Available plugins and find and install Emmet plugin.</div>
                         </div>
-                        <div class="commit-card__text">You can install this plugin directly from NetBeans Plugin
-                            Portal:
-                            in
-                            NetBeans, open Tools >
-                            Plugins > Available plugins and find and install Emmet plugin.</div>
-                    </div>
-                    <div class="commit-card">
-                        <div class="commit-card__date">14 августа, 2019</div>
-                        <div class="commit-card__author author">
-                            <img class="author__avatar" src="<%=require('./images/avatarIvanova.png')%>"
-                                alt="commit-card-avatar">
-                            <div class="author__info">
-                                <div class="author__info-name">Инга Иванова</div>
-                                <div class="author__info-email">ingaiva@yandex.ru</div>
+                        <div class="commit-card">
+                            <div class="commit-card__date">14 августа, 2019</div>
+                            <div class="commit-card__author author">
+                                <img class="author__avatar" src="<%=require('./images/avatarIvanova.png')%>"
+                                    alt="commit-card-avatar">
+                                <div class="author__info">
+                                    <div class="author__info-name">Инга Иванова</div>
+                                    <div class="author__info-email">ingaiva@yandex.ru</div>
+                                </div>
                             </div>
+                            <div class="commit-card__text">With Emmet, you can type CSS-like expressions
+                                that can be dynamically parsed, and produce
+                                output depending on what you type in the abb...</div>
                         </div>
-                        <div class="commit-card__text">With Emmet, you can type CSS-like expressions
-                            that can be dynamically parsed, and produce
-                            output depending on what you type in the abb...</div>
-                    </div>
-<!--                     <div class="commit-card_right">
+                        <!--                     <div class="commit-card_right">
                         <div class="commit-card__date">14 августа, 2019</div>
                         <div class="commit-card__author">
                             <img class="author__avatar" src="<%=require('./images/avatarDolinin.png')%>"
@@ -154,15 +158,18 @@
                         <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
                             developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
                     </div> -->
+                    </div>
                 </div>
-                <button class="slider__button-next"></button>
-                <button class="slider__button-prev"></button>
-                <div class="slider__pagination pagination">
-                    <span class="pagination__point"></span>
-                    <span class="pagination__point"></span>
-                    <span class="pagination__point-selected"></span>
-                    <span class="pagination__point"></span>
-                    <span class="pagination__point"></span>
+                <div class="slider__controls" data-glide-el="controls">
+                    <button class="slider__button-next" data-glide-dir="<"></button>
+                    <button class="slider__button-prev" data-glide-dir=">"></button>
+                </div>
+                <div class="slider__pagination pagination" data-glide-el="controls[nav]">
+                    <span class="pagination__point" data-glide-dir="=0"></span>
+                    <span class="pagination__point" data-glide-dir="=1"></span>
+                    <span class="pagination__point pagination__point_active" data-glide-dir="=2"></span>
+                    <span class="pagination__point" data-glide-dir="=3"></span>
+                    <span class="pagination__point" data-glide-dir="=4"></span>
                 </div>
             </div>
         </div>
