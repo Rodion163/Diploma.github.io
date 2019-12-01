@@ -1,6 +1,5 @@
 import "./styles/index.css";
-import { runInThisContext } from "vm";
-
+import {createElement} from "./createElement";
 class InputForm {
     constructor(onSubmit, form, input) {
         this.input = input;
@@ -157,13 +156,7 @@ class Search {
 }
 const search = new Search(news, preloader);
 
-function createElement(type, classList) {
-    const elem = document.createElement(type);
-    classList.forEach(clazz => {
-        elem.classList.add(clazz);
-    });
-    return elem;
-}
+
 class NewsCard {
     constructor(urlToImage, description, publishedAt, title, sourceName) {
         this.urlToImage = urlToImage;
