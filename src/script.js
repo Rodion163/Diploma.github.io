@@ -2,7 +2,7 @@ import "./styles/index.css";
 import { runInThisContext } from "vm";
 
 class InputForm {
-    constructor(onSubmit, input, form) {
+    constructor(onSubmit, form, input) {
         this.input = input;
         form.addEventListener('submit', event => {
             event.preventDefault()
@@ -41,12 +41,15 @@ class Api {
         this.token = token;
     }
     load(searchText) {
-        const page = 0;
+        const page = 1;
         const today = new Date();
         const weekEarlier = new Date(today.valueOf() - 60 * 60 * 24 * 7 * 1000);
-        return fetch(`${this.url}/v2/everything?q=${searchText}&page=${page}&from=${formatDate(weekEarlier)}&to=${formatDate(today)}&pageSize=100`, {
+        return fetch(`${this.url}/v2/everything?q=${searchText}&page=${page}&from=${formatDate(weekEarlier)}&to=${formatDate(today)}&pageSize=100&apiKey=${this.token}`, {
             method: "GET",
+
             headers: {
+                mode: 'cors',
+                site: 'cross-site',
                 authorization: this.token,
                 "Content-Type": "application/json"
             }
@@ -62,7 +65,7 @@ class Api {
             });
     }
 }
-const api = new Api('https://newsapi.org/', '9e16fa8cb67e41e39aba5e0b42032cf4');
+const api = new Api('https://newsapi.org', '9e16fa8cb67e41e39aba5e0b42032cf4');
 new InputForm(searchText => api.load(searchText, 0).then(result => console.log(result)), form, input);
 
 
