@@ -1,5 +1,7 @@
 import "./styles/index.css";
 import { createElement } from "./createElement";
+import { formatDate } from "./formatDate";
+
 class InputForm {
     constructor(onSubmit, form, input) {
         this.input = input;
@@ -22,7 +24,7 @@ function pad(number) {
     return number;
 }
 
-function formatDate(date) {
+function formatDateISO(date) {
     return (
         date.getFullYear() +
         "-" +
@@ -31,6 +33,7 @@ function formatDate(date) {
         pad(date.getDate())
     );
 }
+
 
 class Api {
     constructor(url, token) {
@@ -42,7 +45,7 @@ class Api {
         const today = new Date();
         const weekEarlier = new Date(today.valueOf() - 60 * 60 * 24 * 7 * 1000);
         return fetch(`${this.url}/v2/everything?q=${searchText}&language=ru&page=${page}` +
-            `&from=${formatDate(weekEarlier)}&to=${formatDate(today)}&pageSize=100&apiKey=${this.token}`
+            `&from=${formatDateISO(weekEarlier)}&to=${formatDateISO(today)}&pageSize=100&apiKey=${this.token}`
         )
             .then(res => {
                 if (res.ok) {
@@ -169,7 +172,7 @@ class NewsCard {
         const cardSource = createElement("div", ["card__source"]);
         cardImg.setAttribute("src", this.urlToImage);
         cardTitle.setAttribute("href", this.url);
-        cardDate.innerText = this.publishedAt;
+        cardDate.innerText = formatDate(new Date(this.publishedAt));
         cardTitle.innerText = this.title;
         cardText.innerText = this.description;
         cardSource.innerText = this.sourceName;

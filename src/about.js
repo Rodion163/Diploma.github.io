@@ -1,7 +1,7 @@
 import "./styles/about.css";
 import Glide from '@glidejs/glide'
 import { createElement } from "./createElement";
-
+import { formatDate } from "./formatDate";
 
 
 class GithubApi {
@@ -38,7 +38,7 @@ class CommitCard {
         const description = createElement("p", ["commit-card__text"]);
 
         avatar.setAttribute("src", this.avatar);
-        date.innerText = this.date;
+        date.innerText = formatDate(new Date(this.date));
         name.innerText = this.author;
         email.innerText = this.email;
         description.innerText = this.description;
@@ -94,6 +94,7 @@ api.getCommits().then(commits => {
             },
             600: {
                 perView: 1,
+                
             }
         },
         peek: {
