@@ -121,6 +121,7 @@ class Search {
         this.cardRendered = 0;
         this.InputForm = new InputForm(this.onSearch, form, input);
         this.loadResult = new LoadResult(preloader, news, this.onLoadMoreClick);
+        this.analyticsLink = document.querySelector('#analyticsLink')
     }
     onLoadMoreClick() {
         const cachedNews = localStorage.getItem(this.searchText);
@@ -144,6 +145,7 @@ class Search {
         }
     }
     showResult(result) {
+this.analyticsLink.setAttribute('href', `./analytics.html?search=${encodeURIComponent(this.searchText)}`)
         if (result.articles.length == 0) {
             this.loadResult.showEmpty();
         } else {
