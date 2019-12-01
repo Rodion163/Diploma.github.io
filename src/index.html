@@ -13,7 +13,7 @@
 
 <body>
     <div class="page">
-        <form class="main" id="form">
+        <form class="main" id="form" autocomplete="off">
             <header class="header">
                 <p class="header__name">NewsAnalyzer</p>
                 <nav class="header__link-wrap">
@@ -28,12 +28,12 @@
             <p class="main__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
                 прошедшую неделю.</p>
             <div class="main__search search">
-                <input type="text" id="input" required placeholder="Введите тему новости" class="search__input">
+                <input type="text" id="input" autocomplete="false" required placeholder="Введите тему новости" class="search__input">
                 <button type="submit" class="search__button">Искать</button>
             </div>
         </form>
 
-        <div class="preloader">
+        <div class="preloader" id="preloader">
             <div class="preloader__loading">
                 <i class="preloader__loading-circle"></i>
                 <p class="preloader__loading-subtitle">Идет поиск новостей...</p>
@@ -45,7 +45,7 @@
                     ничего не найдено.</p>
             </div>
         </div>
-        <div class="news">
+        <div class="news" id="news">
             <div class="news__header">
                 <h1 class="news__header-name">Результаты поиска</h1>
                 <div class="news__header-subname">
