@@ -4,7 +4,7 @@ import { runInThisContext } from "vm";
 class InputForm {
     constructor(onSubmit, input, form) {
         this.input = input;
-        form.addEventListener('submit', () => {
+        form.addEventListener('submit', event => {
             event.preventDefault()
             if (this.input.value !== '') {
                 onSubmit(input.value);
@@ -15,7 +15,8 @@ class InputForm {
 }
 const form = document.querySelector('#form');
 const input = document.querySelector('#input');
-new InputForm((value) => console.log(value), input, form);
+/* new InputForm((value) => console.log(value), input, form); */
+
 
 function pad(number) {
     if (number < 10) {
@@ -39,7 +40,8 @@ class Api {
         this.url = url;
         this.token = token;
     }
-    load(searchText, page) {
+    load(searchText) {
+        const page = 0;
         const today = new Date();
         const weekEarlier = new Date(today.valueOf() - 60 * 60 * 24 * 7 * 1000);
         return fetch(`${this.url}/v2/everything?q=${searchText}&page=${page}&from=${formatDate(weekEarlier)}&to=${formatDate(today)}&pageSize=100`, {
@@ -61,6 +63,7 @@ class Api {
     }
 }
 const api = new Api('https://newsapi.org/', '9e16fa8cb67e41e39aba5e0b42032cf4');
+new InputForm(searchText => api.load(searchText, 0).then(result => console.log(result)), form, input);
 
 
 
