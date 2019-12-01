@@ -70,6 +70,7 @@ class LoadResult {
         this.news = news;
         this.onLoadMoreClick = onLoadMoreClick;
         this.newsCards = news.querySelector('.news__cards');
+        this.button = news.querySelector('#moreButton');
         news.querySelector('#moreButton').addEventListener('click', onLoadMoreClick);
 
     }
@@ -83,7 +84,6 @@ class LoadResult {
         this.preloaderResult.classList.add('preloader__result_hidden');
         this.news.classList.remove('news_hidden');
         cards.forEach(card => {
-            console.log(card);
             this.addCard(card.urlToImage, card.description, card.publishedAt, card.title, card.source.name, card.url);
         })
     }
@@ -102,6 +102,9 @@ class LoadResult {
         this.preloaderLoading.classList.add('preloader__loading_hidden');
         this.preloaderResult.classList.remove('preloader__result_hidden');
         this.news.classList.add('news_hidden');
+    }
+    setMoreVisible(isVisible) {
+        this.button.classList.toggle('news__button_hidden', !isVisible);
     }
 }
 const news = document.querySelector('#news');
@@ -124,6 +127,7 @@ class Search {
         const parsedNews = JSON.parse(cachedNews);
         this.loadResult.addCards(parsedNews.articles.slice(this.cardRendered, this.cardRendered + 3));
         this.cardRendered += 3;
+        this.loadResult.setMoreVisible(parsedNews.articles.length > this.cardRendered);
     }
     onSearch(searchText) {
         this.searchText = searchText;
@@ -146,6 +150,7 @@ class Search {
             this.loadResult.clear();
             this.loadResult.addCards(result.articles.slice(0, 3));
             this.cardRendered = 3;
+            this.loadResult.setMoreVisible(result.articles.length > this.cardRendered);
         }
     }
 }

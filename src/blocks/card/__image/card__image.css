@@ -1,6 +1,8 @@
 .card__image {
     border-radius: 16px 16px 0 0;
-    width: 100%;
+    width: 400px;
+    height: 272px;
+    object-fit: cover;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
