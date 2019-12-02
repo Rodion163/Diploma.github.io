@@ -7,7 +7,7 @@
     <meta name="author" content="Rodion Dronov">
     <meta name="description" content="Сайт по поиску новостей">
     <link rel="shortcut icon" href="./images/icon.png">
-    <link rel="stylesheet" href="./styles/analytics.c8b39c64d9ea44672848.css">
+    <link rel="stylesheet" href="./styles/analytics.7b1119fb0734fd9d3a14.css">
     <title>News Analyzer</title>
 </head>
 
@@ -29,9 +29,9 @@
                 <li class="navigation__item"><a href="./index.html" class="navigation__title">Главная</a></li>
                 <li class="navigation__item"><span class="navigation__item navigation__item_disabled">/ Аналитика</span></li>
             </ul>
-            <p class="analytics__subtitle">Вы спросили: «Путешествия»</p>
-            <p class="analytics__result">Новостей за неделю: <span class="analytics__result-value">34 324</span></p>
-            <p class="analytics__result">Упоминаний в загаловках: <span class="analytics__result-value">235</span></p>
+            <p class="analytics__subtitle">Вы спросили: «<span id="searchText"></span>»</p>
+            <p class="analytics__result">Новостей за неделю: <span class="analytics__result-value" id="totalOnWeek">34 324</span></p>
+            <p class="analytics__result">Упоминаний в загаловках: <span class="analytics__result-value" id="totalInText">235</span></p>
         </div>
         <div class="chart">
             <div class="chart__header">Аналитика по дням</div>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="chart__scale-segment_right">100</div>
             </div>
-            <div class="chart__content-date">19, пн</div>
+           <!--  <div class="chart__content-date">19, пн</div>
             <div class="chart__content-value ">
                 <div class="chart__content-value-background">15</div>
                 <div class="content-value chart__content-value-bar" style="width: 15%">15</div>
@@ -74,7 +74,7 @@
             <div class="chart__content-date">25, вс</div>
             <div class="chart__content-value ">
                 <div class="content-value chart__content-value-bar" style="width: 34%">34</div>
-            </div>
+            </div> -->
             <div class="chart__scale chart__scale_bottom">
                 <div class="chart__scale-segment">0</div>
                 <div class="chart__scale-segment">25</div>
@@ -102,7 +102,7 @@
             </div>
         </footer>
     </div>
-    <script src="analytics.7473ec6614f4c3eb459f.js"></script>
+    <script src="analytics.8ea78bd533ea438e8f06.js"></script>
 </body>
 
 
