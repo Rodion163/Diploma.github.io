@@ -2,7 +2,7 @@ import "./styles/index.css";
 import { createElement } from "./createElement";
 import { formatDate } from "./formatDate";
 import { CachedNewsApi } from "./newsApi";
-
+import { NEWS_TOKEN, NEWS_URL } from "./config";
 class InputForm {
     constructor(onSubmit, form, input) {
         this.input = input;
@@ -18,7 +18,7 @@ class InputForm {
 const form = document.querySelector('#form');
 const input = document.querySelector('#input');
 
-const api = new CachedNewsApi('https://newsapi.org', '9e16fa8cb67e41e39aba5e0b42032cf4');
+const api = new CachedNewsApi(NEWS_URL, NEWS_TOKEN);
 
 
 class LoadResult {

@@ -1,18 +1,4 @@
-function pad(number) {
-    if (number < 10) {
-        return "0" + number;
-    }
-    return number;
-}
-function formatDateISO(date) {
-    return (
-        date.getFullYear() +
-        "-" +
-        pad(date.getMonth() + 1) +
-        "-" +
-        pad(date.getDate())
-    );
-}
+import {formatDateISO} from './formatDate';
 export class NewsApi {
     constructor(url, token) {
         this.url = url;
