@@ -134,6 +134,7 @@ class NewsCard {
         const cardSource = createElement("div", ["card__source"]);
         cardImg.setAttribute("src", this.urlToImage);
         cardTitle.setAttribute("href", this.url);
+        cardTitle.setAttribute("target", "_blank");
         cardDate.innerText = formatDate(new Date(this.publishedAt));
         cardTitle.innerText = this.title;
         cardText.innerText = this.description;
