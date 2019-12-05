@@ -28,26 +28,30 @@ function calculateAnalytics(articles, word) {
 
 class Analytics {
     constructor(searchTextPlaceholder, chart, searchText, totalnText, totalOnWeek) {
-        this.totalnText = totalnText;
-        this.totalOnWeek = totalOnWeek;
-        this.searchTextPlaceholder = searchTextPlaceholder;
-        this.chart = chart;
-        this.searchText = searchText;
-        this.api = new CachedNewsApi(NEWS_URL, NEWS_TOKEN);
-        this.scale = chart.querySelector(".chart__scale_bottom");
-        this.create()
+        this._totalnText = totalnText;
+        this._totalOnWeek = totalOnWeek;
+        this._searchTextPlaceholder = searchTextPlaceholder;
+        this._chart = chart;
+        this._searchText = searchText;
+        this._today = new Date();
+        this._weekEarlier = new Date(this._today.valueOf() - 60 * 60 * 24 * 7 * 1000);
+        this._api = new CachedNewsApi(NEWS_URL, NEWS_TOKEN);
+        this._scale = chart.querySelector(".chart__scale_bottom");
+        this._mainLink = document.querySelector('#mainLink');
+        this._create();
+        this._updateMainLink();
     }
-    create() {
-        this.searchTextPlaceholder.innerText = this.searchText;
+    _create() {
+        this._searchTextPlaceholder.innerText = this._searchText;
 
-        this.api.load(this.searchText).then(result => {
-            const statistic = calculateAnalytics(result.articles, this.searchText);
+        this._api.load(this._searchText, this._today, this._weekEarlier).then(result => {
+            const statistic = calculateAnalytics(result.articles, this._searchText);
             let sum = 0;
             statistic.forEach(entry => {
                 sum += entry.count;
             })
-            this.totalnText.innerText = sum;
-            this.totalOnWeek.innerText = result.articles.length;
+            this._totalnText.innerText = sum;
+            this._totalOnWeek.innerText = result.articles.length;
             statistic.forEach(entry => {
                 const dateElem = createElement("div", ["chart__content-date"]);
                 dateElem.innerText = formatDateShort(new Date(entry.date));
@@ -56,12 +60,14 @@ class Analytics {
                 valueElem.appendChild(barElem);
                 barElem.innerText = entry.count;
                 barElem.setAttribute("style", `width: ${entry.count / sum * 100}%`);
-                chart.insertBefore(dateElem, this.scale);
-                chart.insertBefore(valueElem, this.scale);
+                chart.insertBefore(dateElem, this._scale);
+                chart.insertBefore(valueElem, this._scale);
 
             })
         })
-
+    }
+    _updateMainLink() {
+        this._mainLink.setAttribute('href', `./index.html?search=${encodeURIComponent(this._searchText)}`)
     }
 }
 

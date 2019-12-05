@@ -1,15 +1,13 @@
 import {formatDateISO} from './formatDate';
 export class NewsApi {
     constructor(url, token) {
-        this.url = url;
-        this.token = token;
+        this._url = url;
+        this._token = token;
     }
-    load(searchText) {
+    load(searchText, today, weekEarlier) {
         const page = 1;
-        const today = new Date();
-        const weekEarlier = new Date(today.valueOf() - 60 * 60 * 24 * 7 * 1000);
-        return fetch(`${this.url}/v2/everything?q=${searchText}&language=ru&page=${page}` +
-            `&from=${formatDateISO(weekEarlier)}&to=${formatDateISO(today)}&pageSize=100&apiKey=${this.token}`
+        return fetch(`${this._url}/v2/everything?q=${searchText}&language=ru&page=${page}` +
+            `&from=${formatDateISO(weekEarlier)}&to=${formatDateISO(today)}&pageSize=100&apiKey=${this._token}`
         )
             .then(res => {
                 if (res.ok) {
@@ -24,17 +22,20 @@ export class NewsApi {
 }
 export class CachedNewsApi {
     constructor(url, token) {
-        this.url = url;
-        this.token = token;
-        this.api = new NewsApi(url, token);
+        this._url = url;
+        this._token = token;
+        this._api = new NewsApi(url, token);
     }
-    load(searchText) {
-        const cachedResult = localStorage.getItem(searchText);
+    _getCacheKey(searchText, today, weekEarlier) {
+        return today + ',' + weekEarlier + ',' + searchText
+    }
+    load(searchText, today, weekEarlier) {
+        const cachedResult = localStorage.getItem(this._getCacheKey(today, weekEarlier, searchText));
         if (cachedResult) {
             return Promise.resolve(JSON.parse(cachedResult));
         } else {
-            return this.api.load(searchText).then(result => {
-                localStorage.setItem(searchText, JSON.stringify(result));
+            return this._api.load(searchText, today, weekEarlier).then(result => {
+                localStorage.setItem(this._getCacheKey(today, weekEarlier, searchText), JSON.stringify(result));
                 return result;
             })
         }
