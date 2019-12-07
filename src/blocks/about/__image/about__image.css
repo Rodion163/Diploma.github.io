@@ -2,8 +2,8 @@
     border-radius: 100%;
     color: black;
     margin: 80px 0 80px 104px;
-    max-width: 464px;
-    max-height: 464px;
+    width: 464px;
+    height: 464px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -17,15 +17,13 @@
 @media (min-width: 768px) and (max-width: 1279px) {
     .about__image {
         margin: 40px auto 0;
-        max-width: 232px;
-        max-height: 232px;
+        width: 232px;
+        height: 232px;
     }
 }
 
 @media (min-width: 1280px) and (max-width: 1439px) {
     .about__image {
         margin: 40px auto 0;
-        max-width: 232px;
-        max-height: 232px;
     }
 }
