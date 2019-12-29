@@ -102,7 +102,7 @@ class Search {
     _onSearch(searchText) {
         this._searchText = searchText;
         this._loadResult.showLoading();
-
+        localStorage.setItem('lastQuery', this._searchText)
         api.load(searchText, this._today, this._weekEarlier).then(result => {
             this._showResult(result);
         })
@@ -123,7 +123,15 @@ class Search {
 }
 const currentUrl = new URL(location.href);
 const searchText = currentUrl.searchParams.get('search');
-const search = new Search(news, preloader, searchText);
+
+const lastQuery = localStorage.getItem('lastQuery');
+
+if (!searchText && lastQuery) {
+    location.replace(`./index.html?search=${encodeURIComponent(lastQuery)}`);
+} else {
+    const search = new Search(news, preloader, searchText);
+}
+
 
 
 class NewsCard {
