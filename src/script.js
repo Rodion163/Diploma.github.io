@@ -104,7 +104,6 @@ class Search {
         this._loadResult.showLoading();
 
         api.load(searchText, this._today, this._weekEarlier).then(result => {
-            localStorage.setItem(searchText, JSON.stringify(result));
             this._showResult(result);
         })
     }

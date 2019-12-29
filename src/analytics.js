@@ -59,7 +59,7 @@ class Analytics {
                 const barElem = createElement("div", ["chart__content-value-bar"]);
                 valueElem.appendChild(barElem);
                 barElem.innerText = entry.count;
-                barElem.setAttribute("style", `width: ${entry.count / sum * 100}%`);
+                barElem.setAttribute("style", `width: ${entry.count}%`);
                 chart.insertBefore(dateElem, this._scale);
                 chart.insertBefore(valueElem, this._scale);
 

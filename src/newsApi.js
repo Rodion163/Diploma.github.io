@@ -1,4 +1,4 @@
-import {formatDateISO} from './formatDate';
+import { formatDateISO } from './formatDate';
 export class NewsApi {
     constructor(url, token) {
         this._url = url;
@@ -26,8 +26,8 @@ export class CachedNewsApi {
         this._token = token;
         this._api = new NewsApi(url, token);
     }
-    _getCacheKey(searchText, today, weekEarlier) {
-        return today + ',' + weekEarlier + ',' + searchText
+    _getCacheKey(today, weekEarlier, searchText) {
+        return formatDateISO(today) + ',' + formatDateISO(weekEarlier) + ',' + searchText
     }
     load(searchText, today, weekEarlier) {
         const cachedResult = localStorage.getItem(this._getCacheKey(today, weekEarlier, searchText));
